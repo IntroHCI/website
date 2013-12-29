@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Introduction to Human-Computer Interaction">
+    <title>Intro to HCI</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/hci.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">University Name</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#calendar">Calendar</a></li>
+            <li class="dropdown">
+			    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Logistics <b class="caret"></b></a>
+		        <ul class="dropdown-menu">
+		          <li><a href="logistics.html#prereqs">Prerequisites</a></li>
+		          <li><a href="logistics.html#lab">Lab</a></li>
+		          <li><a href="logistics.html#grading">Grading</a></li>
+		          <li><a href="logistics.html#attendance">Attendance</a></li>
+		          <li><a href="logistics.html#cs77">CS 77</a></li>
+		          <li><a href="logistics.html#faq">FAQ</a></li>
+		        </ul>
+      		</li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="staffemailorpiazzaforum@university.edu">Questions</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+	<!-- this is a comment in HTML -->
+	<div class="container">
+		<div class="jumbotron">
+  			<h1>Intro to Human-Computer Interaction</h1>
+  			<p>instructor name &middot; term</p>
+  			<!-- <p><a class="btn btn-primary btn-lg" role="button">Contact me</a></p> -->
+		</div>
+
+		<div id="syllabus">
+			<p class="lead">In this course, you will learn how to design technologies that bring people joy, rather than frustration. To do this, you'll learn techniques for rapidly prototyping and evaluating multiple interface alternatives — and why rapid prototyping and comparative evaluation are essential to excellent interaction design. You'll learn how to conduct fieldwork with people to help generate design ideas. You'll learn how to make paper prototypes and low-fidelity mock-ups that are interactive — and how to use these designs to get feedback from teammates, clients, and users. You'll learn principles of visual design, perception and cognition so that you can effectively organize and present information with your interfaces. And you'll learn how to perform and analyze controlled experiments online.</p>
+
+			<p class="lead">Through a series of weekly assignments, you will complete a quarter-long project in teams of three. Each week, in small design studios, you present and discuss work with peers. The setting for the course is mobile web applications. The constraints of this small form factor set the stage for this challenge.</p>
+
+			<hr>
+
+			<div class="row">
+				<div class="col-md-4">
+					<ul class="list-unstyled">
+	  					<li>Lecture <span class="text-muted">Mondays 2:15-3:45pm</span></li>
+	  					<li>Lab <span class="text-muted">Wednesdays 2:15-3:45pm</span></li>
+	  					<li>Studio <span class="text-muted">Fridays 9:30-10:45am, 11am-12:15pm, or 2:15-3:30pm</span></li>
+	  					<li>Lectures in Annenberg. Studio locations vary.</li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<ul class="list-unstyled">
+	  					<li><a href="#">Prof. Instructor Name</a> <span class="text-muted">Wednesdays 3:45-5:30pm</span></li>
+	  					<li>TAName 1 <span class="text-muted">Monday 2:15-3:45pm</span></li>
+	  					<li>TAName 2 <span class="text-muted">Monday 2:15-3:45pm</span></li>
+	  					<li>TAName 3 <span class="text-muted">Monday 2:15-3:45pm</span></li>
+	  					<li>TAName 4 <span class="text-muted">Monday 2:15-3:45pm</span></li>
+	  				</ul>
+				</div>
+				<div class="col-md-4">  				
+					<ul class="list-unstyled">
+	  					<li>TAName 5 <span class="text-muted">Monday 2:15-3:45pm</span></li>
+	  					<li>TAName 6 <span class="text-muted">Monday 2:15-3:45pm</span></li>
+	  					<li>TAName 7 <span class="text-muted">Monday 2:15-3:45pm</span></li>
+	  					<li>TAName 8 <span class="text-muted">Monday 2:15-3:45pm</span></li>
+	  					<li>TAName 9 <span class="text-muted">Monday 2:15-3:45pm</span></li>  					
+	  				</ul>
+				</div>
+			</div>
+
+			<p>Instructor bio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac tincidunt felis, eget condimentum felis. Vestibulum porttitor accumsan erat, ut facilisis velit. Donec ligula tellus, aliquam vel sollicitudin sed, tempor ac dui. Pellentesque turpis arcu, venenatis sit amet purus ac, pellentesque facilisis massa. Nunc magna mauris, tincidunt nec egestas sed, tempor vel erat. Nunc risus est, tincidunt sed dui nec, viverra consequat diam. Curabitur faucibus tellus vitae facilisis sagittis. Fusce ultrices auctor mi, sit amet iaculis sem ultrices sit amet.</p>
+		</div>
+		<div id="calendar" class="anchor">
+			<h3>Calendar</h3>
+			<table class="table">
+	          	<thead>
+	            	<tr>
+	              		<th>Week</td>
+		              	<th>Lecture</td>
+		              	<th>Lab</td>
+		            	<th>Assignment</td>
+	            	</tr>
+	          	</thead>
+	          	<tbody>
+		            <tr>
+		              	<td><h6>1</h6></td>
+		              	<td>
+	              			<h6>January 6</h6>
+							<p>Course introduction</p>
+						</td>
+		              	<td>
+	              			<h6>January 8</h6>
+							<p>Source control, serving static HTML with node.js</p>
+						</td>
+		              	<td>
+		              		<h6>Due Thursday, 1/9, 11:59 pm PDT</h6>
+	              			<p>Assignment 1: Waiting in Line</p>
+						</td>						
+		            </tr>
+		            <tr>
+		              	<td><h6>2</h6></td>
+		              	<td>
+	              			<h6>January 13</h6>
+							<p>Needfinding</p>
+						</td>
+		              	<td>
+	              			<h6>January 15</h6>
+							<p><strong>Lecture</strong>: prototyping</p>
+						</td>
+		              	<td>
+	              			<h6>Due Thursday, 1/16, 11:59 pm PDT</h6>
+							<p>Assignment 2: Needfinding</p>
+						</td>						
+		            </tr>
+		            <tr>
+		              	<td><h6>3</h6></td>
+		              	<td>
+	              			<h6>January 20</h6>
+							<p>MLK Day: no class</p>
+						</td>
+		              	<td>
+	              			<h6>January 22</h6>
+							<p>HTML, CSS and Bootstrap</p>
+						</td>
+		              	<td>
+	              			<h6>Due Thursday, 1/23, 11:59 pm PDT</h6>
+							<p>Assignment 3: Prototyping</p>
+						</td>						
+		            </tr>
+		            <tr>
+		              	<td><h6>4</h6></td>
+		              	<td>
+	              			<h6>January 27</h6>
+							<p>Heuristic evaluation</p>
+						</td>
+		              	<td>
+	              			<h6>January 29</h6>
+							<p>Javascript and jQuery</p>
+						</td>
+		              	<td>
+	              			<h6>Due Thursday, 1/30, 11:59 pm PDT</h6>
+							<p>Assignment 4: Heuristic evaluation</p>
+						</td>						
+		            </tr>
+		            <tr>
+		              	<td><h6>5</h6></td>
+		              	<td>
+	              			<h6>February 3</h6>
+							<p>Mental models and distributing cognition</p>
+						</td>
+		              	<td>
+	              			<h6>February 5</h6>
+							<p>ExpressJS, dynamic server responses and the logged-in web</p>
+						</td>
+		              	<td>
+	              			<h6>Due Thursday, 2/6, 11:59 pm PDT</h6>
+							<p>Assignment 5: Skeleton and a plan</p>
+						</td>						
+		            </tr>
+		            <tr>
+		              	<td><h6>6</h6></td>
+		              	<td>
+	              			<h6>February 10</h6>
+							<p>Visual design and information design</p>
+						</td>
+		              	<td>
+	              			<h6>February 12</h6>
+							<p>AJAX</p>
+						</td>
+		              	<td>
+	              			<h6>Due Thursday, 2/13, 11:59 pm PDT</h6>
+							<p>Assignment 6: Meat on the bones</p>
+						</td>						
+		            </tr>
+		            <tr>
+		              	<td><h6>7</h6></td>
+		              	<td>
+	              			<h6>February 17</h6>
+							<p>Presidents' Day: no class</p>
+						</td>
+		              	<td>
+	              			<h6>February 19</h6>
+							<p>Database-backed web (MongoDB, mongoose)</p>
+						</td>
+		              	<td>
+	              			<h6>Due Thursday, 2/20, 11:59 pm PDT</h6>
+							<p>Assignment 7: Ready for testing</p>
+						</td>						
+		            </tr>
+		            <tr>
+		              	<td><h6>8</h6></td>
+		              	<td>
+	              			<h6>February 24</h6>
+							<p>Designing experiments</p>
+						</td>
+		              	<td>
+	              			<h6>February 26</h6>
+							<p>Responsive design, web fonts, and analytics</p>
+						</td>
+		              	<td>
+	              			<h6>Due Thursday, 2/27, 11:59 pm PDT</h6>
+							<p>Assignment 8: User test results and online test proposal</p>
+						</td>						
+		            </tr>
+		            <tr>
+		              	<td><h6>9</h6></td>
+		              	<td>
+	              			<h6>March 3</h6>
+							<p>Input</p>
+						</td>
+		              	<td>
+	              			<h6>March 5</h6>
+							<p>Presenting design work</p>
+						</td>
+		              	<td>
+	              			<h6>Due Thursday, 3/6, 11:59 pm PDT</h6>
+							<p>Assignment 9: Results!</p>
+						</td>						
+		            </tr>
+		            <tr>
+		              	<td><h6>10</h6></td>
+		              	<td>
+	              			<h6>March 10</h6>
+							<p>Social computing</p>
+						</td>
+		              	<td>
+	              			<h6>March 12</h6>
+							<p>Creating video summaries</p>
+						</td>
+		              	<td>
+	              			<h6>Due Thursday, 3/13, 11:59 pm PDT</h6>
+							<p>Assignment 10: Final presentation</p>
+
+							<h6>Final presentations date TBA</h6>
+						</td>						
+		            </tr>
+	          	</tbody>          
+        	</table>
+		</div>
+
+	</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
