@@ -30,6 +30,7 @@ body {
 .navbar-default {
     text-transform:uppercase;
     font-family: "Gill Sans", Calibri, AvenirNext, Avenir, HelveticaNeue, Helvetica, Arial, Verdana, sans-serif;
+    font-size: 12pt;
 }
 
 .navbar-default .navbar-brand {
