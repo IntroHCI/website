@@ -9,3 +9,20 @@ body {
   	margin-top: -40px;
   	display: inline-block; /* required for webkit browsers */
 }
+
+.jumbotron {
+        position: relative;
+        background: none;
+}
+
+.jumbotron:after {
+     content:"";
+     background: url("../images/verplank.jpg"); /* Image Creative Commons, thanks JoshDamon! http://www.flickr.com/photos/joshdamon/2870730178/ */
+     opacity: 0.15;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     position: absolute;
+     z-index: -1;        
+}
