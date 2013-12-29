@@ -24,5 +24,18 @@ body {
      bottom: 0;
      right: 0;
      position: absolute;
-     z-index: -1;        
+     z-index: -1;       
+}
+
+.navbar-default {
+    text-transform:uppercase;
+    font-family: "Gill Sans", Calibri, AvenirNext, Avenir, HelveticaNeue, Helvetica, Arial, Verdana, sans-serif;
+}
+
+.navbar-default .navbar-brand {
+    font-size: 20pt;
+}
+
+.navbar-nav {
+    font-weight: 300;
 }
