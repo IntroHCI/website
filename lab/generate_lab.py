@@ -5,12 +5,43 @@ import string
 
 SLIDE_TEMPLATE = """
 		<div id="slide-SLIDE_NUMBER" class="row lab-slide">
+			<div class="col-md-1">
+				<h4>SLIDE_NUMBER</h4>
+			</div>
 			<img src="SLIDE_IMAGE" class="img-responsive col-md-6" title="SLIDE_NUMBER" />
-			<div class="col-md-6">
-				<!-- <h3>Video</h3> -->
-				<!-- <h3>Links</h3> -->
-				<!-- <h3>Code</h3> -->
-				<!-- <h3>Debug</h3> -->
+			<div class="col-md-5">
+				<!-- 
+				<div class="video">
+					<h4>Video</h4>
+					<video src="" style="width: 100%" controls></video>
+				</div>
+				-->
+
+				<!-- 
+				<div class="links">
+					<h4>Links</h4>
+					<ul>
+						<li><a href=""></a></li>
+					</ul> 
+				</div>
+				-->
+
+				<!-- 
+				<div class="code">
+					<h4>Code</h4>
+					<pre class="pre-scrollable"><code>
+					</code></pre>
+				</div>
+				-->				
+
+				<!--
+				<div class="debug">
+					<h4>Debug</h4> 
+					<ul>
+						<li><code></code></li>
+					</ul>
+				</div>
+				-->
 			</div>
 		</div>
 """

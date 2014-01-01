@@ -44,3 +44,11 @@ body {
 .lab-slide {
   margin-bottom: 2em;
 }
+
+.lab-slide h1,h2,h3,h4,h5,h6 {
+  margin-top: 0;
+}
+
+.lab-slide .pre-scrollable {
+  max-height: 300px;
+}
