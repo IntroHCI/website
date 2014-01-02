@@ -730,7 +730,7 @@ Checking connectivity... done
 					<h4>Debug</h4> 
 					<ul>
 						<li>OS X: <pre><code>xcode-select: note: no developer tools were found at '/Applications/XCode.app', requesting install. Choose an option in the dialog to download the command line developer tools.</code></pre> Then a popup asking you to choose "Get Xcode", "Not Now", or "Install". Choose "Install". Once the install is done, try again.</li>
-						<li>OS X: <pre><code>Agreeing to the XCode/iOS license requires admin priveleges, please re-run as root via sudo.</code></pre> As it suggests, add sudo to the front: <pre><code>sudo git clone https://github.com/yourgithubusername/lab1.git</code></pre>, scroll through the license, and agree at the bottom. Another path would be to open Xcode and agree to the license there.</li>
+						<li>OS X: <pre><code>Agreeing to the XCode/iOS license requires admin priveleges, please re-run as root via sudo.</code></pre> As it suggests, add sudo to the front: <pre><code>sudo git clone https://github.com/yourgithubusername/lab1.git</code></pre> Scroll through the license, and agree at the bottom. Another path would be to open Xcode and agree to the license there.</li>
 						<li>Windows: how do I paste into Git Bash? Click on the icon in the upper left of the window: Edit, Paste. For a shortcut: Alt-spacebar, then e, then p.</li>
 					</ul>
 				</div>
@@ -1123,7 +1123,8 @@ To https://github.com/mbernst/lab1.git
 				<div class="debug">
 					<h4>Debug</h4> 
 					<ul>
-						<li><pre><code>git-credential-osxkeychain died of signal 11</code></pre> If you're willing to enter your password every time you push to git, you can run <code>sudo rm /usr/local/git/etc/gitconfig</code>. That's a pretty huge sledgehammer for this problem, though. <a href="http://stackoverflow.com/questions/14272634/error-git-credential-osxkeychain-died-of-signal-11">StackOverflow has more solutions.</a>
+						<li>Git asks me for my password but it's not showing up: command line terminals typically don't show your password or any ****s while you're typing it. Don't worry, just keep going and press enter at the end. Likewise, if you paste the password into the terminal, you won't see anything. Don't worry, the terminal got the message.</li>
+						<li><pre><code>git-credential-osxkeychain died of signal 11</code></pre> If you're willing to enter your password every time you push to git, you can run <code>sudo rm /usr/local/git/etc/gitconfig</code>. That's a pretty huge sledgehammer for this problem, though. <a href="http://stackoverflow.com/questions/14272634/error-git-credential-osxkeychain-died-of-signal-11">StackOverflow has more solutions.</a></li>
 					</ul>
 				</div>
 				
