@@ -60,8 +60,8 @@
 
 	<!-- this is a comment in HTML -->
 	<div class="container">
-		<div id="instructions" class="well">
-			<h4>When done, submit at <a href="http://hci.st/lab-submit">http://hci.st/lab-submit</a>.</h4>
+		<div id="instructions" class="alert alert-info">
+			When done, submit at <a href="http://hci.st/lab-submit" class="alert-link">http://hci.st/lab-submit</a>.
 		</div>
 
     
@@ -1071,7 +1071,11 @@ Total 4 (delta 2), reused 0 (delta 0)
 To https://github.com/mbernst/lab1.git
    1180cca..f283015  master -> master	
    					</code></pre>			
-				<!-- <h2>Debug</h2> -->
+				
+				<h2>Debug</h2>
+				<ul>
+					<li>OS X: <code>git-credential-osxkeychain died of signal 11</code>. If you're willing to enter your password every time you push to git, you can run <code>sudo rm /usr/local/git/etc/gitconfig</code>. That's a pretty huge sledgehammer for this problem, though. <a href="http://stackoverflow.com/questions/14272634/error-git-credential-osxkeychain-died-of-signal-11">StackOverflow has more solutions.</a>
+				</ul>
 			</div>
 		</div>
 
@@ -1229,6 +1233,9 @@ To https://github.com/mbernst/lab1.git
 			</div>
 		</div>
 
+		<div id="instructions" class="alert alert-info">
+			When done, submit at <a href="http://hci.st/lab-submit" class="alert-link">http://hci.st/lab-submit</a>.
+		</div>
 
 	</div>
 
