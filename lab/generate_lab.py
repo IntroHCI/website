@@ -6,7 +6,7 @@ import string
 SLIDE_TEMPLATE = """
 		<div id="slide-SLIDE_NUMBER" class="row lab-slide">
 			<div class="col-md-1">
-				<h4>SLIDE_NUMBER</h4>
+				<h2>SLIDE_NUMBER</h2>
 			</div>
 			<img src="SLIDE_IMAGE" class="img-responsive col-md-6" title="SLIDE_NUMBER" />
 			<div class="col-md-5">
@@ -38,7 +38,7 @@ SLIDE_TEMPLATE = """
 				<div class="debug">
 					<h4>Debug</h4> 
 					<ul>
-						<li><code></code></li>
+						<li><pre class="pre-scrollable"><code></code></pre></li>
 					</ul>
 				</div>
 				-->
