@@ -52,3 +52,7 @@ body {
 .lab-slide .pre-scrollable {
   max-height: 300px;
 }
+
+.lab-slide video {
+  border: 1px solid gray;
+}
