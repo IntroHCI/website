@@ -18,7 +18,7 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".sidenav">
 
     <!-- Fixed navbar -->
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -34,10 +34,10 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#calendar">Calendar</a></li>
+            <li class=""><a href="index.html">Home</a></li>
+            <li><a href="index.html#calendar">Calendar</a></li>
             <li><a href="lab/">Lab</a></li>
-            <li class="dropdown">
+            <li class="dropdown active">
 			    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Logistics <b class="caret"></b></a>
 		        <ul class="dropdown-menu">
 		          <li><a href="logistics.html#prereqs">Prerequisites</a></li>
@@ -59,275 +59,284 @@
 
 	<!-- this is a comment in HTML -->
 	<div class="container">
-		<div id="prereqs" class="anchor">
-			<h3>Prerequisites</h3>
-			<p>CS106B or equivalent programming experience is a prerequisite for this course. The prerequisite exists because all students will need some fluency in building interactive systems to complete the project. Every student must make a significant contribution to their team's implementation; students who are unable to do so should not take the class. That said, some may do more of the programming work, and others more of the user testing work. Project teams will benefit from being multidisciplinary. Students with less programming experience (and e.g., more design experience) should consider partnering with students who with complementary strengths. Additionally, we presume that all students will have access to a digital camera for use in assignments.</p>
+		<div class="row">
+			<div class="col-md-3">
+                <div class="sidenav" data-spy="affix">
+                    <ul class="nav nav-stacked" id="navcontent">   
+                    </ul>
+                </div> <!-- /sidenav -->
+            </div> <!-- /col-md-3 -->  
+            <div class="col-md-9" id="logistics"> 
+				<div id="prereqs" class="sidenav-anchor">
+					<h3>Prerequisites</h3>
+					<p>CS106B or equivalent programming experience is a prerequisite for this course. The prerequisite exists because all students will need some fluency in building interactive systems to complete the project. Every student must make a significant contribution to their team's implementation; students who are unable to do so should not take the class. That said, some may do more of the programming work, and others more of the user testing work. Project teams will benefit from being multidisciplinary. Students with less programming experience (and e.g., more design experience) should consider partnering with students who with complementary strengths. Additionally, we presume that all students will have access to a digital camera for use in assignments.</p>
 
-			<p>Students without the expected background can take CS 77 instead.</p>
-		</div>
-
-		<div id="lab" class="anchor">
-			<h3>Lab</h3>
-			<p>The laboratory curriculum teaches you the tools for designing and implementing effective interaction designs. It functions as an interactive session with downloadable code and walkthroughs.</p>
-
-			<p>If you know already most of the material in this class, we'll be asking you to help other students by acting as helpers during the class. We want to make lab exciting and relevant for everyone, including those who might already have the technical skills to do well.</p>
-
-			<p>Each Wednesday, there will be a lab assignment due by 11:59pm. You should be able to complete the lab assignment by attending the lab session and following the instructor.</p>
-		</div>
-
-		<div id="grading" class="anchor">
-			<h3>Assignments and Grading</h3>
-
-			<div id="deliverables" class="anchor">
-				<h4>Deliverables</h4>
-				<p>You'll have a weekly design project, submitted online by Thursday 11.59pm and shared in studio on Friday. Your project work culminates in a presentation and poster at the end of the quarter in front of invited design jurors. Your team will share its quarter-long design project.</p>
-
-				<p>You will use Coursera to submit your work. Your assignments will be submitted online as a body of plain text and a series of digital photograph attachments. Do not spend time "beautifying" your submission. Submit early! Late assignments will not be accepted. There are three reasons that assignments need to be submitted on time. First, to be able to provide you with rapid feedback about your work, the teaching staff meets on Friday afternoon to grade. Second, you'll present your work in studio every week, and you need to be prepared to participate. Third, after the submission deadline, students can view each others' assignments, so that you can learn from each other. We encourage you to see what your peers are up to.</p>
-
-				<p>There are rubrics beneath each assignment that explain how you and the staff will grade your submission. Different columns represent different scores.</p>
-			</div>
-			<div id="breakdown" class="anchor">
-				<h4>Grade breakdown</h4>
-				The course grade is out of 280 points, comprising:
-				<ul>
-					<li>Ten weekly assignments (16 to 30 points each) total 200 points.</li>
-					<li>Three in-class quizzes total 30 points.</li>
-					<li>Self assessments total 25 points: one point each for completion, one point each for accuracy, and five points for the end-of-quarter team assessment.</li>
-					<li>Class / studio participation totals 25 points.</li>
-				</ul>
-
-				<h4>Credit/no credit</h4>
-				<p>Letter grade only: the "credit/no credit" option is not available. (CS77 is graded S/NC.)</p>
-
-				<h4>Regrades</h4>
-				<p>It is very important to us that all assignments are properly graded. The teaching staff works extremely hard to grade fairly and to turn around assignments quickly. We know what you work hard, and we respect that. Occasionally, mistakes happen, and it's important to us to correct them. If you believe there is an error in your assignment or exam grading, please submit an explanation in writing to your studio TA within 7 days of receiving the grade. We will regrade the entire assignment to ensure quality. No regrade requests will be accepted orally, and no regrade requests will be accepted more than 7 days after receipt of the assignment. Regrade requests must be respectful; we will not consider any regrade requests containing disrespectful language.</p>
-
-				<h4>Self and team assessment</h4>
-				<p>Every week in studio you will submit a self-assessment of your work for that week's assignment. You will receive the max of your grade and the TA's grade if the two grades are within 5% of each other, otherwise you will receive the TA's grade. Submitting a self-assessment is a prerequisite for receiving a grade. (Even if you miss studio, you are still responsible for submitting a self-assessment.) For team projects, you'll submit a self-assessment as a team and then individually assess your own and teammates performance. In general, everyone on the team will earn the same grade. However, if a majority of the team reports that an individual was more/less successful in achieving their goals, that individual's grade will be adjusted accordingly.</p>
-
-				<p>Why this approach? Being able to successfully assess your own performance in comparison to a given criterion is a skill that you will draw benefit from, both as a student and in your professional career. This is not always an easy task and we hope that this exercise will help you improve your self-assessment skills and get you start thinking about how to evaluate your own work using the yardstick of the setting.</p>
-			</div>
-
-			<div id="attendance" class="anchor">
-				<h3>Attendance</h3>
-				<p>Design is a contact sport, and studio is where the action is. Sharing your work and discussing designs with others is an important part of your design education. Therefore, attendance of all studios is mandatory. To receive credit for attendance, you must arrive on time. You are allowed <strong>one excused</strong> absence for the quarter without penalty; thereafter you will receive zero credit for the missed studio. To receive an excused absence, you must ask your studio leader <strong>in advance</strong>, and receive an acknowledgment from the studio leader.
-
-				<p>If you are more than 5 minutes late (or leave early), you will be marked as absent. Because of the number of group activities that we do in studio, it's important that everyone comes on time.</p>
-
-				<ul>
-					<li>Excusable absences include family emergencies, job interviews, and presenting at a conference. It does not include wanting to leave early for long weekend or vacation.</li>
-					<li>Attending another class during lecture or studio is not an excusable absence.</li>
-					<li>Varsity athletes who would like to miss more than one studio to participate in athletic competitions must make any request before the study list deadline (the first day of class). No exceptions will be granted after the study list deadline.</li>
-					<li>No late assignments will be accepted, but you may submit them early. If there is a problem with the website that makes it so you cannot submit your assignment, you must email your TA by 1am or else it’s a 0. You can only do this once.</li>
-					<li>The participation grade comprises both lecture and studio participation.</li>
-				</ul>
-			</div>
-
-			<div id="cs77" class="anchor">
-				<h3>CS77</h3>
-				<p>CS77, the non-implementation version of the course, focuses on the core concepts in the material without any implementation requirements. It is ideal for non-majors who want to learn the material and are concerned about having sufficient programming background.</p>
-
-				<div class="row">
-					<div class="col-md-8">
-						<table class="table">
-				          <thead>
-				            <tr>
-				              <th>Requirement</td>
-				              <th>CS 147</td>
-				              <th>CS 77</td>
-				            </tr>
-				          </thead>
-				          <tbody>
-				            <tr>
-				              <td>Prerequisites</td>
-				              <td>CS106B or equivalent (co-requisite for graduate students)</td>
-				              <td>none</td>
-				            </tr>
-				            <tr>
-				              <td>Units</td>
-				              <td>4 (3 for grad students w/cap)</td>
-				              <td>2</td>
-				            </tr>  
-				            <tr>
-				              <td>Grading</td>
-				              <td>Letter</td>
-				              <td>S/NC</td>
-				            </tr>  
-				            <tr>
-				              <td>Required attendance</td>
-				              <td>Lecture+Lab+Studio</td>
-				              <td>Lecture+Studio</td>
-				            </tr>  
-				            <tr>
-				              <td>Units</td>
-				              <td>4 (3 for grad students w/cap)</td>
-				              <td>2</td>
-				            </tr>  	
-				            <tr>
-				              <td>Counts towards major or masters degree</td>
-				              <td>Yes</td>
-				              <td>No</td>
-				            </tr>  			            	            		            		            
-				          </tbody>          
-				        </table>
-				    </div>
-				</div>
-			</div>
-
-			<div id="faq" class="anchor">
-				<h3>Frequently asked questions</h3>
-				<div class="row">
-					<div class="col-md-4">
-  						<strong>What's the amount of time involved in the class?</strong>
-  					</div>
-  					<div class="col-md-8">
-  						<p>There's a healthy amount of work involved. As with any design experience, you get out what you put in. Great projects explore broadly and dive deep, and needfinding, design, implementation and evaluation take time to do well. A decent project usually takes 5-10 hours of out-of-classroom collaboration time throughout the quarter - just remember not to leave things to the last minute!</p>
-  					</div>
-  				</div>
-
-  				<div class="row">
-					<div class="col-md-4">
-  						<strong>What's the distribution of engineering, designing thinking and psychology?</strong>
-  					</div>
-  					<div class="col-md-8">
-  						<p>There's a healthy balance of all three. Mondays will be lectures and principles (or sometimes activities) which supplement the videos. Wednesday is purely engineering. Friday is the time you'll have to share and give feedback on your progress.</p>
-  					</div> 
-  				</div>
-
-				<div class="row">
-					<div class="col-md-4">
-  						<strong>The class teaches node.js and Javascript. Can our group use other technologies, like Ruby or a native app?</strong>
-  					</div>
-  					<div class="col-md-8">
-  						<p>We recommend against it. Most group problems arise when one person strongarms their teammates into using another technology. Late in the quarter, it turns out that only one person can really do the work, and that causes all the problems you can imagine. If you use node.js & Javascript, lab will teach you key techniques and the TA's will help you if you get stuck. With other technologies, you're off-piste: we can't save you, and it can get awfully cold when the sun goes down. With that information, the choice is yours.</p>
-  					</div> 
+					<p>Students without the expected background can take CS 77 instead.</p>
 				</div>
 
-				<div class="row">
-					<div class="col-md-4">
-  						<strong>If I'm familiar with the course materials, should I still attend lab?</strong>
-  					</div>
-  					<div class="col-md-8">
-  						<p>Yes. We'll be asking you to pitch in and help other students during the lab.</p>
-  					</div> 
+				<div id="lab" class="sidenav-anchor">
+					<h3>Lab</h3>
+					<p>The laboratory curriculum teaches you the tools for designing and implementing effective interaction designs. It functions as an interactive session with downloadable code and walkthroughs.</p>
+
+					<p>If you know already most of the material in this class, we'll be asking you to help other students by acting as helpers during the class. We want to make lab exciting and relevant for everyone, including those who might already have the technical skills to do well.</p>
+
+					<p>Each Wednesday, there will be a lab assignment due by 11:59pm. You should be able to complete the lab assignment by attending the lab session and following the instructor.</p>
 				</div>
 
-				<div class="row">
-					<div class="col-md-4">
-  						<strong>Do I have to go to studios?</strong>
-  					</div>
-  					<div class="col-md-8">
-  						<p>Yes. Attendance at studios is mandatory.</p>
-  					</div> 
+				<div id="grading" class="sidenav-anchor">
+					<h3>Assignments and Grading</h3>
+
+					<div id="deliverables" class="sidenav-anchor">
+						<h4>Deliverables</h4>
+						<p>You'll have a weekly design project, submitted online by Thursday 11.59pm and shared in studio on Friday. Your project work culminates in a presentation and poster at the end of the quarter in front of invited design jurors. Your team will share its quarter-long design project.</p>
+
+						<p>You will use Coursera to submit your work. Your assignments will be submitted online as a body of plain text and a series of digital photograph attachments. Do not spend time "beautifying" your submission. Submit early! Late assignments will not be accepted. There are three reasons that assignments need to be submitted on time. First, to be able to provide you with rapid feedback about your work, the teaching staff meets on Friday afternoon to grade. Second, you'll present your work in studio every week, and you need to be prepared to participate. Third, after the submission deadline, students can view each others' assignments, so that you can learn from each other. We encourage you to see what your peers are up to.</p>
+
+						<p>There are rubrics beneath each assignment that explain how you and the staff will grade your submission. Different columns represent different scores.</p>
+					</div>
+					<div id="breakdown" class="sidenav-anchor">
+						<h4>Grade breakdown</h4>
+						The course grade is out of 250 points, comprising:
+						<ul>
+							<li>Ten weekly assignments (10 to 24 points each) total 175 points.</li>
+							<li>Three in-class quizzes total 32 points.</li>
+							<li>Self assessments total 23 points: one point each for completion, one point each for accuracy, and three points for the end-of-quarter team assessment.</li>
+							<li>Class / studio participation totals 20 points.</li>
+						</ul>
+
+						<h4>Credit</h4>
+						<p>Letter grade only: the "credit/no credit" option is not available. (CS77 is graded S/NC.)</p>
+
+						<h4>Regrades</h4>
+						<p>It is very important to us that all assignments are properly graded. The teaching staff works extremely hard to grade fairly and to turn around assignments quickly. We know what you work hard, and we respect that. Occasionally, mistakes happen, and it's important to us to correct them. If you believe there is an error in your assignment or exam grading, please submit an explanation in writing to your studio TA within 7 days of receiving the grade. We will regrade the entire assignment to ensure quality. No regrade requests will be accepted orally, and no regrade requests will be accepted more than 7 days after receipt of the assignment. Regrade requests must be respectful; we will not consider any regrade requests containing disrespectful language.</p>
+
+						<h4>Self and team assessment</h4>
+						<p>Every week in studio you will submit a self-assessment of your work for that week's assignment. You will receive the max of your grade and the TA's grade if the two grades are within 5% of each other, otherwise you will receive the TA's grade. Submitting a self-assessment is a prerequisite for receiving a grade. (Even if you miss studio, you are still responsible for submitting a self-assessment.) For team projects, you'll submit a self-assessment as a team and then individually assess your own and teammates performance. In general, everyone on the team will earn the same grade. However, if a majority of the team reports that an individual was more/less successful in achieving their goals, that individual's grade will be adjusted accordingly.</p>
+
+						<p>Why this approach? Being able to successfully assess your own performance in comparison to a given criterion is a skill that you will draw benefit from, both as a student and in your professional career. This is not always an easy task and we hope that this exercise will help you improve your self-assessment skills and get you start thinking about how to evaluate your own work using the yardstick of the setting.</p>
+					</div>
+
+					<div id="attendance" class="sidenav-anchor">
+						<h3>Attendance</h3>
+						<p>Design is a contact sport, and studio is where the action is. Sharing your work and discussing designs with others is an important part of your design education. Therefore, attendance of all studios is mandatory. To receive credit for attendance, you must arrive on time. You are allowed <strong>one excused</strong> absence for the quarter without penalty; thereafter you will receive zero credit for the missed studio. To receive an excused absence, you must ask your studio leader <strong>in advance</strong>, and receive an acknowledgment from the studio leader.
+
+						<p>If you are more than 5 minutes late (or leave early), you will be marked as absent. Because of the number of group activities that we do in studio, it's important that everyone comes on time.</p>
+
+						<ul>
+							<li>Excusable absences include family emergencies, job interviews, and presenting at a conference. It does not include wanting to leave early for long weekend or vacation.</li>
+							<li>Attending another class during lecture or studio is not an excusable absence.</li>
+							<li>Varsity athletes who would like to miss more than one studio to participate in athletic competitions must make any request before the study list deadline (the first day of class). No exceptions will be granted after the study list deadline.</li>
+							<li>No late assignments will be accepted, but you may submit them early. If there is a problem with the website that makes it so you cannot submit your assignment, you must email your TA by 1am or else it’s a 0. You can only do this once.</li>
+							<li>The participation grade comprises both lecture and studio participation.</li>
+						</ul>
+					</div>
+
+					<div id="cs77" class="sidenav-anchor">
+						<h3>CS77</h3>
+						<p>CS77, the non-implementation version of the course, focuses on the core concepts in the material without any implementation requirements. It is ideal for non-majors who want to learn the material and are concerned about having sufficient programming background.</p>
+
+						<div class="row">
+							<div class="col-md-8">
+								<table class="table">
+						          <thead>
+						            <tr>
+						              <th>Requirement</td>
+						              <th>CS 147</td>
+						              <th>CS 77</td>
+						            </tr>
+						          </thead>
+						          <tbody>
+						            <tr>
+						              <td>Prerequisites</td>
+						              <td>CS106B or equivalent (co-requisite for graduate students)</td>
+						              <td>none</td>
+						            </tr>
+						            <tr>
+						              <td>Units</td>
+						              <td>4 (3 for grad students w/cap)</td>
+						              <td>2</td>
+						            </tr>  
+						            <tr>
+						              <td>Grading</td>
+						              <td>Letter</td>
+						              <td>S/NC</td>
+						            </tr>  
+						            <tr>
+						              <td>Required attendance</td>
+						              <td>Lecture+Lab+Studio</td>
+						              <td>Lecture+Studio</td>
+						            </tr>  
+						            <tr>
+						              <td>Units</td>
+						              <td>4 (3 for grad students w/cap)</td>
+						              <td>2</td>
+						            </tr>  	
+						            <tr>
+						              <td>Counts towards major or masters degree</td>
+						              <td>Yes</td>
+						              <td>No</td>
+						            </tr>  			            	            		            		            
+						          </tbody>          
+						        </table>
+						    </div>
+						</div>
+					</div>
+
+					<div id="faq" class="sidenav-anchor">
+						<h3>Frequently asked questions</h3>
+						<div class="row">
+							<div class="col-md-4">
+		  						<strong>What's the amount of time involved in the class?</strong>
+		  					</div>
+		  					<div class="col-md-8">
+		  						<p>There's a healthy amount of work involved. As with any design experience, you get out what you put in. Great projects explore broadly and dive deep, and needfinding, design, implementation and evaluation take time to do well. A decent project usually takes 5-10 hours of out-of-classroom collaboration time throughout the quarter - just remember not to leave things to the last minute!</p>
+		  					</div>
+		  				</div>
+
+		  				<div class="row">
+							<div class="col-md-4">
+		  						<strong>What's the distribution of engineering, designing thinking and psychology?</strong>
+		  					</div>
+		  					<div class="col-md-8">
+		  						<p>There's a healthy balance of all three. Mondays will be lectures and principles (or sometimes activities) which supplement the videos. Wednesday is purely engineering. Friday is the time you'll have to share and give feedback on your progress.</p>
+		  					</div> 
+		  				</div>
+
+						<div class="row">
+							<div class="col-md-4">
+		  						<strong>The class teaches node.js and Javascript. Can our group use other technologies, like Ruby or a native app?</strong>
+		  					</div>
+		  					<div class="col-md-8">
+		  						<p>We recommend against it. Most group problems arise when one person strongarms their teammates into using another technology. Late in the quarter, it turns out that only one person can really do the work, and that causes all the problems you can imagine. If you use node.js & Javascript, lab will teach you key techniques and the TA's will help you if you get stuck. With other technologies, you're off-piste: we can't save you, and it can get awfully cold when the sun goes down. With that information, the choice is yours.</p>
+		  					</div> 
+						</div>
+
+						<div class="row">
+							<div class="col-md-4">
+		  						<strong>If I'm familiar with the course materials, should I still attend lab?</strong>
+		  					</div>
+		  					<div class="col-md-8">
+		  						<p>Yes. We'll be asking you to pitch in and help other students during the lab.</p>
+		  					</div> 
+						</div>
+
+						<div class="row">
+							<div class="col-md-4">
+		  						<strong>Do I have to go to studios?</strong>
+		  					</div>
+		  					<div class="col-md-8">
+		  						<p>Yes. Attendance at studios is mandatory.</p>
+		  					</div> 
+						</div>
+
+						<div class="row">
+							<div class="col-md-4">
+		  						<strong>Can I have an extension? I have a lot of work in other classes, I'll be out of town, I'm generally overwhelmed...</strong>
+		  					</div>
+		  					<div class="col-md-8">
+		  						<p>No. It's not because we're callous — we've all been in your shoes. Two reasons: 1) because sharing work in studio is integral to the class, there's no practical way to offer extensions. 2) Psychology teaches us that people consistently believe they'll have more time in the future than in the present -- and that it's a fallacy. When you pick classes for the quarter, make sure not to overcommit. In our experience, you'll learn more and have a better resume by doing a great job in a smaller of classes, rather than trying to take as many units as humanly possible and doing a mediocre job with all of it.</p>
+		  					</div> 
+						</div>
+
+						<div class="row">
+							<div class="col-md-4">
+		  						<strong>Are there any midterms or finals?</strong>
+		  					</div>
+		  					<div class="col-md-8">
+		  						<p>Nope! (There are 3 in-class quizzes. The quizzes are closed-note, so you may not use any outside resources.)</p>
+		  					</div> 
+						</div>
+
+						<div class="row">
+							<div class="col-md-4">
+		  						<strong>What is the 'out of the box' column in the rubric?</strong>
+		  					</div>
+		  					<div class="col-md-8">
+		  						<p>Design can excel in many ways, and often the best designs are unanticipated. To acknowledge and encourage this, each assignment offers a few points for this truly out-of-the-box work. Great design is also rare. So these points can only be achieved by at most 5% of submissions. If it helps, you can think of this as kind of like an A+.</p>
+		  					</div> 
+						</div>
+
+						<div class="row">
+							<div class="col-md-4">
+		  						<strong>When do we form groups?</strong>
+		  					</div>
+		  					<div class="col-md-8">
+		  						<p>You will form groups in the studio on the second Friday of the quarter. You can form and sign up for studios as a group but they have to be groups of 3. We'll be encouraging everyone to form groups as soon as possible so that you can pool resources. In the second studio, during team formation make sure to ask your potential teammates 2 questions. 1) When are you available to meet? 2) What level of performance to you intend to achieve? This will help you find like-minded teammates.</p>
+		  					</div> 
+						</div>
+
+						<div class="row">
+							<div class="col-md-4">
+		  						<strong>One or more of my teammates aren't pulling their weight...</strong>
+		  					</div>
+		  					<div class="col-md-8">
+		  						<p>In classes as in life, some team problems are inevitable. As soon as you encounter subpar performance by a teammate: talk to them and accurately record their performance in your team assessment. There are many benefits to speaking up early. First, you've made your expectations clear so your teammate can adjust their performance. Second, it's on record in case things get worse later. Past performance is the best predictor of future performance, and transparency is the best management tool. If you speak up early, we can help. If you wait until late in the quarter to speak up, you share responsibility for the problem — and there's little we can do.</p>
+		  					</div> 
+						</div>
+
+						<div class="row">
+							<div class="col-md-4">
+		  						<strong>...Can I fire them or quit?</strong>
+		  					</div>
+		  					<div class="col-md-8">
+		  						<p>If you have a serious problem with your teammate(s), email them with your concerns, cc'ing the instructor, and requesting that the team attend office hours to discuss the issue. If this discussion doesn't ameliorate the issue, you may notify your teammate(s) via email (cc'ding the instructor) of your intention to quit/fire them unless performance improves. Finally, if performance doesn't improve, you may email your teammate(s) (cc'ing the instructor) with your resignation/firing. A teammate who quits or is fired is responsible for future assignments on their own. This short essay by Oakley et al. provides great advice on diagnosing 'hitchhikers' and dealing with them effectively.</p>
+		  					</div> 
+						</div>
+
+						<div class="row">
+							<div class="col-md-4">
+		  						<strong>I was signed up for 77 but I want to do the programming too for 147. Can I switch?</strong>
+		  					</div>
+		  					<div class="col-md-8">
+		  						<p>Definitely! The Wednesday labs will introduce (mobile) Web application programming, so if you feel up for the challenge (and have at least a CS 106B-level programming background), join us in the lab!</p>
+		  					</div> 
+		  				</div>
+
+						<div class="row">
+							<div class="col-md-4">
+		  						<strong>I was thinking of designing for tablets - is this okay?</strong>
+		  					</div>
+		  					<div class="col-md-8">
+		  						<p>It's fine as long as you can make a compelling case that your application benefits from being on a tablet and that those benefits don't extend necessarily to a desktop app or browser.</p>
+		  					</div> 
+		  				</div>
+
+						<div class="row">
+							<div class="col-md-4">
+		  						<strong>I would like to take another class that overlaps this class. What should I know?</strong>
+		  					</div>
+		  					<div class="col-md-8">
+		  						<p>Class attendance is required because the in-class material and exercises connect the principles taught through lecture/videos to the design project work. Often, you'll submit work in class that will count toward your participation grade. Arriving late or leaving early may prevent you from doing so. Because of the large number of students enrolled, these exercises must be done during class — we don't have the resources to make individual exceptions. However, we understand that life happens — you might have a family event, job interview, attend a conference, or get sick. Consequently, CS147 students may miss 3 days of Monday/Wednesday class without penalty. (CS77 students may miss 2 days of Monday class without penalty.)</p>
+		  					</div> 
+		  				</div>
+
+						<div class="row">
+							<div class="col-md-4">
+		  						<strong>A personal issue (health, family event, other commitment) will take me away from class. What should I do?</strong>
+		  					</div>
+		  					<div class="col-md-8">
+		  						<p>Most importantly, let your studio leader and your team know ASAP. The sooner we hear from you, the more we can help. If you give your team a heads-up quickly, they're sure to be empathetic. If you just disappear for a few weeks, they'll be unlikely to want you back. Even if you have a good reason, no one likes being left out in the cold.</p>
+
+								<p>Fairness requires us to grade on performance, not desire. Think about if this issue came up when you were about to take the SAT -- or if it came up in a job. Realistically, if you're away for more than a week, you have two choices: you can push forward and accept lower performance, or you can drop the class and retake it when you have more time. We recommend the second option whenever possible.</p>
+		  					</div> 
+		  				</div>
+
+						<div class="row">
+							<div class="col-md-4">
+		  						<strong>I have a question that's not answered here. How do I contact the teaching staff?</strong>
+		  					</div>
+		  					<div class="col-md-8">
+		  						<p>If you have a question, post it <a href="staffemailorpiazzalink@university.edu">to the forum</a> — don't send email. This includes <strong>all</strong> questions about assignment clarifications and class requirements. The reason: you may think you're the only one with this question. With nearly 300 students, someone else is bound to be interested. Answering all questions in a public place means that every student has access to the same information. It's both efficient and fair.</p>
+		 
+								<p>If you missed class (or will miss class) and would like to find out what's covered, review the syllabus materials then ask a fellow student to fill you in. Do not send email -- it's your responsibility.</p>
+		 
+								<p>Also, you're welcome to come to office hours and ask any question you want. You can ask questions about classes, internships, design, graduate school, jobs, or simply come to say hi, listen to other students questions, or share your background and interests. Office hours are for you, and Michael and the teaching staff really value your presence and questions.</p>
+		 
+								<p>With 300 students, we unfortunately cannot accommodate requests to meet outside of office hours. We trust that if your question is important, you can find a way to make the time to come to office hours.</p>
+		  					</div> 
+		  				</div>
+					</div>
 				</div>
-
-				<div class="row">
-					<div class="col-md-4">
-  						<strong>Can I have an extension? I have a lot of work in other classes, I'll be out of town, I'm generally overwhelmed...</strong>
-  					</div>
-  					<div class="col-md-8">
-  						<p>No. It's not because we're callous — we've all been in your shoes. Two reasons: 1) because sharing work in studio is integral to the class, there's no practical way to offer extensions. 2) Psychology teaches us that people consistently believe they'll have more time in the future than in the present -- and that it's a fallacy. When you pick classes for the quarter, make sure not to overcommit. In our experience, you'll learn more and have a better resume by doing a great job in a smaller of classes, rather than trying to take as many units as humanly possible and doing a mediocre job with all of it.</p>
-  					</div> 
-				</div>
-
-				<div class="row">
-					<div class="col-md-4">
-  						<strong>Are there any midterms or finals?</strong>
-  					</div>
-  					<div class="col-md-8">
-  						<p>Nope! (There are 3 in-class quizzes. The quizzes are closed-note, so you may not use any outside resources.)</p>
-  					</div> 
-				</div>
-
-				<div class="row">
-					<div class="col-md-4">
-  						<strong>What is the 'out of the box' column in the rubric?</strong>
-  					</div>
-  					<div class="col-md-8">
-  						<p>Design can excel in many ways, and often the best designs are unanticipated. To acknowledge and encourage this, each assignment offers a few points for this truly out-of-the-box work. Great design is also rare. So these points can only be achieved by at most 5% of submissions. If it helps, you can think of this as kind of like an A+.</p>
-  					</div> 
-				</div>
-
-				<div class="row">
-					<div class="col-md-4">
-  						<strong>When do we form groups?</strong>
-  					</div>
-  					<div class="col-md-8">
-  						<p>You will form groups in the studio on the second Friday of the quarter. You can form and sign up for studios as a group but they have to be groups of 3. We'll be encouraging everyone to form groups as soon as possible so that you can pool resources. In the second studio, during team formation make sure to ask your potential teammates 2 questions. 1) When are you available to meet? 2) What level of performance to you intend to achieve? This will help you find like-minded teammates.</p>
-  					</div> 
-				</div>
-
-				<div class="row">
-					<div class="col-md-4">
-  						<strong>One or more of my teammates aren't pulling their weight...</strong>
-  					</div>
-  					<div class="col-md-8">
-  						<p>In classes as in life, some team problems are inevitable. As soon as you encounter subpar performance by a teammate: talk to them and accurately record their performance in your team assessment. There are many benefits to speaking up early. First, you've made your expectations clear so your teammate can adjust their performance. Second, it's on record in case things get worse later. Past performance is the best predictor of future performance, and transparency is the best management tool. If you speak up early, we can help. If you wait until late in the quarter to speak up, you share responsibility for the problem — and there's little we can do.</p>
-  					</div> 
-				</div>
-
-				<div class="row">
-					<div class="col-md-4">
-  						<strong>...Can I fire them or quit?</strong>
-  					</div>
-  					<div class="col-md-8">
-  						<p>If you have a serious problem with your teammate(s), email them with your concerns, cc'ing the instructor, and requesting that the team attend office hours to discuss the issue. If this discussion doesn't ameliorate the issue, you may notify your teammate(s) via email (cc'ding the instructor) of your intention to quit/fire them unless performance improves. Finally, if performance doesn't improve, you may email your teammate(s) (cc'ing the instructor) with your resignation/firing. A teammate who quits or is fired is responsible for future assignments on their own. This short essay by Oakley et al. provides great advice on diagnosing 'hitchhikers' and dealing with them effectively.</p>
-  					</div> 
-				</div>
-
-				<div class="row">
-					<div class="col-md-4">
-  						<strong>I was signed up for 77 but I want to do the programming too for 147. Can I switch?</strong>
-  					</div>
-  					<div class="col-md-8">
-  						<p>Definitely! The Wednesday labs will introduce (mobile) Web application programming, so if you feel up for the challenge (and have at least a CS 106B-level programming background), join us in the lab!</p>
-  					</div> 
-  				</div>
-
-				<div class="row">
-					<div class="col-md-4">
-  						<strong>I was thinking of designing for tablets - is this okay?</strong>
-  					</div>
-  					<div class="col-md-8">
-  						<p>It's fine as long as you can make a compelling case that your application benefits from being on a tablet and that those benefits don't extend necessarily to a desktop app or browser.</p>
-  					</div> 
-  				</div>
-
-				<div class="row">
-					<div class="col-md-4">
-  						<strong>I would like to take another class that overlaps this class. What should I know?</strong>
-  					</div>
-  					<div class="col-md-8">
-  						<p>Class attendance is required because the in-class material and exercises connect the principles taught through lecture/videos to the design project work. Often, you'll submit work in class that will count toward your participation grade. Arriving late or leaving early may prevent you from doing so. Because of the large number of students enrolled, these exercises must be done during class — we don't have the resources to make individual exceptions. However, we understand that life happens — you might have a family event, job interview, attend a conference, or get sick. Consequently, CS147 students may miss 3 days of Monday/Wednesday class without penalty. (CS77 students may miss 2 days of Monday class without penalty.)</p>
-  					</div> 
-  				</div>
-
-				<div class="row">
-					<div class="col-md-4">
-  						<strong>A personal issue (health, family event, other commitment) will take me away from class. What should I do?</strong>
-  					</div>
-  					<div class="col-md-8">
-  						<p>Most importantly, let your studio leader and your team know ASAP. The sooner we hear from you, the more we can help. If you give your team a heads-up quickly, they're sure to be empathetic. If you just disappear for a few weeks, they'll be unlikely to want you back. Even if you have a good reason, no one likes being left out in the cold.</p>
-
-						<p>Fairness requires us to grade on performance, not desire. Think about if this issue came up when you were about to take the SAT -- or if it came up in a job. Realistically, if you're away for more than a week, you have two choices: you can push forward and accept lower performance, or you can drop the class and retake it when you have more time. We recommend the second option whenever possible.</p>
-  					</div> 
-  				</div>
-
-				<div class="row">
-					<div class="col-md-4">
-  						<strong>I have a question that's not answered here. How do I contact the teaching staff?</strong>
-  					</div>
-  					<div class="col-md-8">
-  						<p>If you have a question, post it <a href="staffemailorpiazzalink@university.edu">to the forum</a> — don't send email. This includes <strong>all</strong> questions about assignment clarifications and class requirements. The reason: you may think you're the only one with this question. With nearly 300 students, someone else is bound to be interested. Answering all questions in a public place means that every student has access to the same information. It's both efficient and fair.</p>
- 
-						<p>If you missed class (or will miss class) and would like to find out what's covered, review the syllabus materials then ask a fellow student to fill you in. Do not send email -- it's your responsibility.</p>
- 
-						<p>Also, you're welcome to come to office hours and ask any question you want. You can ask questions about classes, internships, design, graduate school, jobs, or simply come to say hi, listen to other students questions, or share your background and interests. Office hours are for you, and Michael and the teaching staff really value your presence and questions.</p>
- 
-						<p>With 300 students, we unfortunately cannot accommodate requests to meet outside of office hours. We trust that if your question is important, you can find a way to make the time to come to office hours.</p>
-  					</div> 
-  				</div>
-
 			</div>
 		</div>
 
@@ -337,5 +346,6 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/hci.js"></script>
   </body>
 </html>
