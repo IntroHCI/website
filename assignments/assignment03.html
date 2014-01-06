@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Introduction to Human-Computer Interaction: Assignment">
+    <title>Intro to HCI: Assignment 3</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="../css/hci.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body data-spy="scroll" data-target=".sidenav">
+
+    <!-- 
+    IntroHCI assignment template
+    ------------------
+    To create a new assignment:
+    1) Write all the HTML as you normally would underneath the #assignment-description div.
+    2) Anything that you want to appear in the navbar on the left needs to be enclosed
+        in a <div id="unique-id" class="sidenav-anchor">. On page load, hci.js will look up
+        anything enclosed in .sidenav-anchor, find the first header (h1-h6) inside it, and add
+        it to the navigation pane on the left. Make sure it has a unique div id so that there is something
+        to anchor the hyperlink to.
+    3) I recommend going with Bootstrap's recommendation and putting any <table class="table"> elements enclosed in a
+        <div class="table-responsive">.
+    -->
+
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Intro to HCI</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class=""><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#calendar">Calendar</a></li>
+            <li><a href="../lab/">Lab</a></li>
+            <li class="dropdown active">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Logistics <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="../logistics.html#prereqs">Prerequisites</a></li>
+                  <li><a href="../logistics.html#lab">Lab</a></li>
+                  <li><a href="../logistics.html#grading">Grading</a></li>
+                  <li><a href="../logistics.html#attendance">Attendance</a></li>
+                  <li><a href="../logistics.html#cs77">CS 77</a></li>
+                  <li><a href="../logistics.html#faq">FAQ</a></li>
+                </ul>
+            </li>            
+            <li><a href="http://www.coursera.org">Submit Work</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="staffemailorpiazzaforum@university.edu">Questions</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="sidenav" data-spy="affix">
+                    <ul class="nav nav-stacked" id="sidenav-content">   
+                    </ul>
+                </div> <!-- /sidenav -->
+            </div> <!-- /col-md-3 -->  
+            <div class="col-md-9" id="assignment-description"> 
+                
+                <div>
+                    <h1>Assignment 3: Prototyping</h1>
+                </div>
+
+                <div id="brief" class="sidenav-anchor">
+                    <h2>Brief</h2>
+                    <p>Review the user needs you brainstormed in last week's assignment. This week you will begin solidifying these needs by seeking inspiration, developing a point of view, and creating two storyboards. We also encourage you to download a low-fidelity prototyping tool like Balsamiq in preparation for the next assignment. </p>
+                </div>
+
+                <div id="assignment" class="sidenav-anchor">
+                    <h2>Assignment</h2>
+                </div>
+
+                <div id="inspriationboard" class="sidenav-anchor">
+                    <h4>Make an inspiration board</h4>
+                    <p>Your first step is to find inspiration for the solutions you will be brainstorming. Inspiration can be existing applications, artifacts, products, services, or anything that relates to your concept. Here, web search is your friend (potentially useful sites include Google, Google Scholar, the ACM Digital Library, TechCrunch, Engadget...). Some things you find will be quite related, but it is important to interpret "related" broadly. The relationship could be very concrete or very abstract. It may be that a carrot-peeler or a measuring cup is your inspiration for an elegant and ergonomic software interface design. You may be inspired to improve upon an existing service or go in a totally different direction. Cast the net wide and find as much (i.e., diverse inspirations) as you can.</p><p><b>Your Inspiration Board:</b></p>
+                    <p>a) Start your “inspiration board” by listing 5-10 words that relate to your design idea. These words can be anything -- from similar designs to feelings that the idea evokes.</p><p>b) Once you’ve listed your words, come up with at least five inspirations, and share them by providing links or images to the submission. For each inspiration, give a brief (1-2 sentences) and insightful explanation of why you chose it (What did you take away from it? What did you learn from it?... In other words, why did it inspire you?). Each of these inspirations should offer a different perspective to the design you are working on.</p><p><b>Benefits of Inspiration Boards:</b></p><p>1) Making an inspiration board helps you understand the existing landscape, sort of like a competitive analysis.
+                    </p><p>2) Inspiration boards help inspire you to do things you wouldn’t have otherwise thought of.
+                    </p><p><u>Good example:</u> If you were making a travel app, your words could be: relaxing, paradise, getaway, Europe, blue, etc. Then, some inspirations could be tripadvisor.com, souvenirs, twitter, Bank of America mobile banking app, and so on. You should not be submitting inspirations with tripadvisor.com, travelocity.com, expedia.com, as these websites all offer the same type of services and therefore, do not add anything “diverse” to the set. 
+                    While it’s true that Google has a clean minimal layout and the iPhone has a beautiful design, citing those as inspiration wouldn’t be very specific. 
+                    </p><p>Remember to be creative. Think big, but also stay focused and be specific with your inspirations.
+                    </p>
+                </div>
+
+                <div id="pov" class="sidenav-anchor">
+                    <h4>Point of View</h4>
+                    <p>Your next step is to choose a design brief and write down a point of view (that relates to the brief) in a sentence or two.</p>
+                    <p><b>What's a point of view?</b> It's your take on a high-level design strategy, before actually designing a solution.</p>
+                    <ul>
+                    <p></p><li>For example, if you wanted to improve the check-out experience at the grocery store, your point of view might be: "waiting in line is intrinsic, but the boredom is not". This would lead to design solutions like showing news or playing games while waiting in line.</li><li>Alternatively your point of view might be "with a good scheduling interface, no one should have to wait in line." This might lead to better ways for employees to staff registers and consumers to pick them.</li>
+                    <li>Or, you might have a totally different point of view: let's make grocery stores more like farmers' markets, where payment is distributed across the stands that have the food.</li></ul><p>All of these are valid points of view---they do suggest different possibilities and have different implications/entailments for what constitutes a good design. They do not restrict your thinking to one solution - they are general enough to give scope for multiple solutions.</p><p><b>What makes a good point of view?</b> It should clearly express the problem/opportunity. And it should make clear what a good solution would accomplish. Write yours down.</p><p>Remember that you will work on this project for the rest of the quarter. Thus, coming up with a good point of view that you can successfully tackle in the remaining weeks is crucial.</p>
+                </div>
+
+                <div id="storyboard" class="sidenav-anchor">                
+                    <h4>Storyboard</h4>
+                    <p>Next, come up with two design ideas that address/engage your point of view. Illustrate each of these ideas with a storyboard.</p><p>A storyboard is a comic-strip-like set of drawings about what your interface does and how it is used to accomplish tasks in a real usage scenario. Feeling stumped about how to show your ideas visually? Check out "<a href="http://books.google.com/books?id=tUwqbo48lp4C">Understanding Comics</a>" by Scott McCloud and Amal Dar Aziz's excellent <a href="http://spark-public.s3.amazonaws.com/hci/assignment_ressources/assignment3_storyboard_notes.pdf">Guide to Storyboarding</a>. A good storyboard should clearly demonstrate who the user is, the usage situation, and the user's motivations for using the interface. It should show what the user can accomplish with your interface, but it needn't (and often shouldn't) show a specific user interface design.</p><p>Each storyboard should comprise 5-8 panels and fit on two 8.5" x 11" sheets of paper. Use a thick pen like a Sharpie---ballpoint pen or pencil is not acceptable. A thick pen is a good reminder to focus on the high-level and not sweat the details at this point. (Don't worry, in a few weeks you'll have plenty of time to sweat the details.)</p>
+                </div>
+
+                <div id="downloadtools" class="sidenav-anchor">
+                    <h4>Download Balsamiq &amp; JustInMind</h4>
+                    <p>In assignment 3, you will be developing a wireframe prototype; in assignment 4 and 5, you will be developing an interactive, high fidelity prototype. You may find it useful to download an appropriate tool for this task now, in order to get familiar with it in advance of these assignments. For wireframing, we recommend Balsamiq; for the high fidelity prototype assignments, we recommend JustInMind. Visit <a href="https://class.coursera.org/hci-004/wiki/view?page=DownloadingTools">How to: Download Tools</a> for more information.</p>
+                </div>
+                
+                <div>
+                    <i><h2>What’s this for? A UX agency perspective</h2>
+                    <p>by Mike Davison, Community TA and UX Project Manager</p><p>Agencies use storyboards to convey to clients potential solutions to a given problem....problems discovered during needfinding. Doing it this way allows you to tell a story and explain how a user will interact with your design, without the need to draw a single pixel or code a single line. Storyboards are generally used during the discovery phase of a project, or during pitching activities when we are trying to dazzle a client with our creative thinking!</p></i>
+                </div>
+
+                <div id="submit" class="sidenav-anchor">
+                    <h2>Submit</h2>
+                    <p>Your write-up will contain:
+                    </p>
+                    <ul>
+                        <li>5-10 words that relate to your design idea.</li>
+                        <li>Five existing inspirations that relate to your thinking and explanations of why you chose those designs.</li>
+                        <li>A brief description of the activity you observed last assignment, what brief it falls under, and what point of view you chose.</li>
+                        <li>A comprehensive set of digital photos or scans of both of your storyboards.</li>
+                    </ul>
+                    <p>View former student examples in rubric below.</p>
+                </div>
+
+                <div id="evaluation" class="sidenav-anchor">
+                    <h2>Evaluation criteria &amp; Grading rubric</h2>
+                    <div class="table-responsive">
+                        <table class="table"><tbody><tr><th id="guiding" valign="top">Category</th><th id="unsatisfactory" valign="top">Unsatisfactory</th><th id="minimum" valign="top">Bare minimum</th><th id="satisfactory" valign="top">Satisfactory effort &amp; performance</th><th id="above" valign="top">Above &amp; Beyond</th></tr><tr><td headers="guiding">Inspiration Quantity</td><td headers="unsatisfactory">0: The student did not come up with inspirations or gave an irrelevant answers.</td><td headers="minimum">1: The student found 1 - 2 inspirations.</td><td headers="satisfactory">3: The student found 3 - 4 inspirations. </td><td headers="above">5: The student found 5+ inspirations.</td></tr><tr><td headers="guiding">Inspiration Quality</td><td headers="unsatisfactory">0: The student did not come up with inspirations or gave an irrelevant answers.</td><td headers="minimum">1: The inspirations had no explanations.</td><td headers="satisfactory">3: The inspirations were obvious (didn't require observation) and/or the explanations were vague and confusing (it would be hard to implement a solution based on them). </td><td headers="above">5: Inspirations were diverse and had insightful explanations. <a href="https://spark-public.s3.amazonaws.com/hci/assignment_ressources/Student%20Examples/Assignment%201/A1Example.pdf">Example (scroll to last part)</a></td></tr>
+                        <tr><td>Point of view</td><td>0: No point of view or irrelevant point of view. </td><td>1: The student's point of view does not express a problem or opportunity, does not create requirements for a solution, or does not relate to the design brief.</td><td>3: The point of view relates to the brief and the problem and solution are clearly stated, but the solution requirement is too general (any solution meets the requirement) or is too specific (allows for only one solution).</td><td>5: The problem and solution requirement are clearly stated in the point of view; the requirement allows for focus without being too constraining. <a href="https://spark-public.s3.amazonaws.com/hci/assignment_ressources/assignment_examples_2011/A2Example.pdf">Example (page 1)</a></td></tr><tr><td>Storyboard #1</td><td>0: The student did not submit a storyboard.</td><td>1: The storyboard is hard to follow or does not address the problems and solution requirements identified in the point of view. .</td><td>3: The storyboard reasonably addresses the problems identified in the point of view, but a reader may have lingering questions about the situation depicted.</td><td>5: The storyboard is easy to follow. Someone else could come up with a distinct prototype that would correspond with the point of view just from looking at the storyboard. <a href="https://spark-public.s3.amazonaws.com/hci/assignment_ressources/assignment_examples_2011/A2Example.pdf">Example (page 2)</a></td></tr><tr><td>Storyboard #2</td><td>0: The student did not submit a second storyboard.</td><td>1: The storyboard is hard to follow and does not address the problems and solution requirements identified in the point of view.</td><td>3: The storyboard reasonably addresses the problems identified in the point of view, but a reader may have lingering questions about the situation depicted and/or it does not diverge and represent a different solution from the first storyboard.</td><td>5: The storyboard is easy to follow. Someone else could come up with a distinct prototype that would correspond with the point of view just from looking at the storyboard. It clearly diverges and represents a different solution from the first storyboard. <a href="https://spark-public.s3.amazonaws.com/hci/assignment_ressources/assignment_examples_2011/A2Example.pdf">Example (page 3)</a></td></tr>
+                         </tbody></table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/hci.js"></script>
+  </body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Introduction to Human-Computer Interaction: Assignment">
+    <title>Intro to HCI: Assignment 6</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="../css/hci.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body data-spy="scroll" data-target=".sidenav">
+
+    <!-- 
+    IntroHCI assignment template
+    ------------------
+    To create a new assignment:
+    1) Write all the HTML as you normally would underneath the #assignment-description div.
+    2) Anything that you want to appear in the navbar on the left needs to be enclosed
+        in a <div id="unique-id" class="sidenav-anchor">. On page load, hci.js will look up
+        anything enclosed in .sidenav-anchor, find the first header (h1-h6) inside it, and add
+        it to the navigation pane on the left. Make sure it has a unique div id so that there is something
+        to anchor the hyperlink to.
+    3) I recommend going with Bootstrap's recommendation and putting any <table class="table"> elements enclosed in a
+        <div class="table-responsive">.
+    -->
+
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Intro to HCI</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class=""><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#calendar">Calendar</a></li>
+            <li><a href="../lab/">Lab</a></li>
+            <li class="dropdown active">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Logistics <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="../logistics.html#prereqs">Prerequisites</a></li>
+                  <li><a href="../logistics.html#lab">Lab</a></li>
+                  <li><a href="../logistics.html#grading">Grading</a></li>
+                  <li><a href="../logistics.html#attendance">Attendance</a></li>
+                  <li><a href="../logistics.html#cs77">CS 77</a></li>
+                  <li><a href="../logistics.html#faq">FAQ</a></li>
+                </ul>
+            </li>            
+            <li><a href="http://www.coursera.org">Submit Work</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="staffemailorpiazzaforum@university.edu">Questions</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="sidenav" data-spy="affix">
+                    <ul class="nav nav-stacked" id="sidenav-content">   
+                    </ul>
+                </div> <!-- /sidenav -->
+            </div> <!-- /col-md-3 -->  
+            <div class="col-md-9" id="assignment-description"> 
+                
+                <div>
+                    <h1>Assignment 6: Meat on the bones</h1>
+                </div>
+
+                <div id="assignment" class="sidenav-anchor">
+                    <h2>Assignment</h2>
+                </div>
+
+                <div id="evalchanges" class="sidenav-anchor">
+                    <h4>List Future Changes from HE Results</h4>
+                    <p>Start by taking a look at the feedback you got last week from the Heuristic Evaluations of your prototypes. If you didn't get any feedback at all, either (a) go through the list of heuristics yourself and find any that are violated, or (b) ask a friend for help (we recommend (b): it is easy to overlook your own mistakes). Distill the HE results into a list of concrete changes you want to make to your prototype. Use what worked, and improve what didn't.</p>
+                </div>
+
+                <div id="evalplan" class="sidenav-anchor">                
+                    <h4>Develop a User Evaluation Plan</h4>
+                    <p>Next, develop a user test plan. Things that you will want to think about:</p><ul><li>What are you testing?</li><li>What do you want to learn? What concerns, questions, and goals is the test focusing on?</li><li>Where/when will the test take place?</li><li>What tasks will you ask the user to perform that will help answer your questions?</li><li>How will your participants share their feedback? (Think aloud, questionnaire/survey, post-test interviews...)</li></ul><a href="https://class.coursera.org/hci-004/wiki/view?page=EvaluationPlanTemplate">Here is a template you can use</a>.
+                </div>
+
+                <div id="interactivity" class="sidenav-anchor">
+                    <h4>Complete Interactivity</h4>
+                    <p>You should be spending your time fleshing out your interactive prototype. Focus on getting the flow of your interaction working. By the end of this week your <b>prototypes should be fully interactive</b> and <b>ready to be tested</b>.By fully interactive, we mean that all interface elements should be created (and properly linked to each other if applicable) and a user should be able to navigate through your site to perform specific tasks. If you planned it out right and you have been doing your work, you should be in good shape. If not, it's time to step it up. <b>You will get much less out of user testing if you are still struggling with incomplete interactions and a half finished interface.</b></p>
+                </div>
+
+                <div id="developplan" class="sidenav-anchor">
+                    <h4>Update your Development Plan</h4>
+                    <p>Continue to update your development plan as you complete tasks and/or revise where necessary. If you haven’t yet, add more tasks for the rest of your project.</p>
+                </div>
+                
+                <div>
+                    <i><h2>What’s this for? A UX agency perspective</h2>
+                    <p>by Mike Davison, Community TA and UX Project Manager</p><p>‘Where to stop’ with a prototype can be hard to judge. Lets say you have a flight search application.</p><p>You will probably want to demonstrate the process of searching, selecting and booking ONE flight, and test that this works. When you present your search results screen, only one flight needs to work to prove your point; the others can be static. Just ensure you highlight that to the user, for example a speech bubble stating ‘book this flight’.</p><p>Always ask - is this useful? Do you learn any more from your flight search application if every flight ‘works’? We recently completed a UX design project for a banking software application. To populate every field with data on shares, live information on stock prices, current account balances, and making sure all transfer functions worked would have been incredibly time consuming, so we focussed on one share type, one payment time and importantly, one client type. It told us all we need to know - the rest is a variation on the same theme.</p><p>Remember, the point of a prototype is to demonstrate the ‘idea’ of an application, without the need to code the whole thing as it will stand when it’s finished. Just ensure the user can complete the task!</p></i>
+                </div>
+                
+                <div id="examples" class="sidenav-anchor">
+                    <h2>Student Examples</h2>
+                    <p>Check out an example of this assignment from last year <a href="http://spark-public.s3.amazonaws.com/hci/assignment_ressources/assignment_examples_2011/A4_Example.pdf">here</a>. Keep in mind that the assignment was slightly different last year. </p><p><a href="https://coursera-uploads.s3.amazonaws.com/user-b93185882b2d7cca1d5bd498/18/asst-4/18-4ff3b5300d0ff5.71828924.pdf" download="Evaluation Plan Example 2">Evaluation Plan Example 2</a></p><p><a href="https://coursera-uploads.s3.amazonaws.com/user-5d0ea56b1bdc4db63aa7130a/18/asst-4/18-4ff33e9e0eaf75.75222030.pdf" download="Evaluation Plan Example 3">Evaluation Plan Example 3</a></p>
+                </div>
+
+                <div id="submit" class="sidenav-anchor">
+                    <h2>Submit</h2>
+                    <ul><li>A one-sentence statement about what the goal of your prototype is. What does it let people do?</li><li>Your low-fidelity interactive prototypes from Assignment 3.</li><li>The heuristic evaluation feedback you recieved. </li><li>A list of changes to make based on the HE feedback.</li><li>The URL of the prototype version that you want your peers to see. <em>Note: the URL must work at least until your assignment is reviewed by your peers.</em> <a href="https://class.coursera.org/hci-004/wiki/view?page=PublishingExportingPrototypes">Here's how to publish a project using Justinmind and Dropbox.</a></li><li>Your user evaluation plan. <a href="https://class.coursera.org/hci-004/wiki/view?page=EvaluationPlanTemplate">Here is a template you can use</a>.</li><li>A bulleted list of what you have completed this week. This is for easier reference for yourself and your peers about what you accomplished from your development plan. </li><li>A PDF version of the development plan you submitted last week.</li><li>The URL to the document showing your updated development plan. <b>Don't forget to save a PDF version of it, once again, you will have to submit it next week.</b></li></ul>
+                </div>
+
+                <div id="iwish" class="sidenav-anchor">
+                    <h2>Common Peer Feedback&nbsp;(“I wish…”)</h2>
+                    <p>The following statements are common peer feedback given on this assignment. We call these statements "I wish" feedback because they are a way to express things that graders wish the assignment had contained. You could think of these as common problems to avoid.</p><ul><li>Clarify the concerns, goals, and expectations of the user tests.</li><li>Make the user tests more structured.</li><li> Make the user tests more consistent across participants.</li><li>Make the prototype more interactive so the user test represents a more real-life interaction.</li><li>Determine the implications of the user succeeding (or not) on each task on the prototype. </li><li>Make fewer assumptions about users/Reduce bias in user test.</li></ul>
+                </div>
+
+                <div id="evaluation" class="sidenav-anchor">
+                    <h2>Evaluation criteria &amp; Grading rubric</h2>
+                    <div class="table-responsive">
+                        <table class="table"><tbody><tr><th id="guiding" valign="top">Category</th><th id="unsatisfactory" valign="top">Unsatisfactory</th><th id="minimum" valign="top">Bare minimum</th><th id="satisfactory" valign="top">Satisfactory effort &amp; performance</th><th id="above" valign="top">Above &amp; Beyond</th></tr><tr><td>List of Changes</td><td>0: No changes or completely irrelevant changes.</td><td>1: The student only identified a few changes from the heuristic evaluation feedback and a large amount of feedback is ignored in the new prototype.</td><td> 3: Many of the simpler suggested changes were made, but some of the more complex or difficult issues were not addressed; the new prototype has some HE violations.</td><td> 5: The user made several insightful and specific changes based on the heuristic evaluation feedback. It is hard to find any HE violations at all in the new prototype.</td></tr><tr><td>Interactive Prototype</td><td>0: No prototype or irrelevant prototype.</td><td>1: The prototype is not interactive, lacks many features, and has many bugs; the design does not work with the goal. OR, the student submitted a prototype URL, but the prototype wasn't viewable.</td><td>3: The prototype is mostly interactive, with only a few features missing and only one or two bugs; the design accomplishes the minimum requirements of the goal..</td><td>5: The prototype is completely interactive, reflects the feel of the final prototype, and is ready for user testing; the design accomplishes the entire goal. </td></tr><tr><td>User Evaluation Plan: Completeness</td><td>0: No plan or irrelevant plan.</td><td>1: User testing evaluation plan exists, but is minimal, unclear, and is not well thought out.</td><td>3: The evaluation plan is mostly complete, but does not cover all questions about testing thoroughly (what is tested, what you want to learn, when, where, participants).</td><td>5: The evaluation plan is complete, answers all questions specifically, and shows a clear process for user testing. &nbsp;</td></tr><tr><td>User Evaluation Plan: Appropriateness</td><td>0: No plan or irrelevant plan.</td><td>1: The student's evaluation plan does not choose to evaluate aspects of the design related to the design goals.</td><td>3: The evaluation plan is designed to produce some useful data, but is not justified by the student (e.g. why are you doing what you are doing?-- why 6 participants? Why in a school? etc).</td><td>5: The evaluation plan is very clearly motivated or innovative in a way that will ensure rich and interesting data to address the design goals.</td></tr><tr><td>Development Goals</td><td>0: No goals met that were laid out on the development plan.</td><td>1: The student met a few of the goals laid out in the development plan.</td><td>2: The student met most, but not all, of the goals laid out in the development plan.</td><td>3: The student met all of the goals found in the development. </td></tr></tbody></table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/hci.js"></script>
+  </body>
+</html>

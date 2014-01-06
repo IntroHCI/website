@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Introduction to Human-Computer Interaction: Assignment">
+    <title>Intro to HCI: Assignment 7</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="../css/hci.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body data-spy="scroll" data-target=".sidenav">
+
+    <!-- 
+    IntroHCI assignment template
+    ------------------
+    To create a new assignment:
+    1) Write all the HTML as you normally would underneath the #assignment-description div.
+    2) Anything that you want to appear in the navbar on the left needs to be enclosed
+        in a <div id="unique-id" class="sidenav-anchor">. On page load, hci.js will look up
+        anything enclosed in .sidenav-anchor, find the first header (h1-h6) inside it, and add
+        it to the navigation pane on the left. Make sure it has a unique div id so that there is something
+        to anchor the hyperlink to.
+    3) I recommend going with Bootstrap's recommendation and putting any <table class="table"> elements enclosed in a
+        <div class="table-responsive">.
+    -->
+
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Intro to HCI</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class=""><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#calendar">Calendar</a></li>
+            <li><a href="../lab/">Lab</a></li>
+            <li class="dropdown active">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Logistics <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="../logistics.html#prereqs">Prerequisites</a></li>
+                  <li><a href="../logistics.html#lab">Lab</a></li>
+                  <li><a href="../logistics.html#grading">Grading</a></li>
+                  <li><a href="../logistics.html#attendance">Attendance</a></li>
+                  <li><a href="../logistics.html#cs77">CS 77</a></li>
+                  <li><a href="../logistics.html#faq">FAQ</a></li>
+                </ul>
+            </li>            
+            <li><a href="http://www.coursera.org">Submit Work</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="staffemailorpiazzaforum@university.edu">Questions</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="sidenav" data-spy="affix">
+                    <ul class="nav nav-stacked" id="sidenav-content">   
+                    </ul>
+                </div> <!-- /sidenav -->
+            </div> <!-- /col-md-3 -->  
+            <div class="col-md-9" id="assignment-description"> 
+                
+                <div>
+                    <h1>Assignment 7: Ready for testing</h1>
+                </div>
+
+                <div id="assignment" class="sidenav-anchor">
+                    <h2>Assignment</h2>
+                </div>
+
+                <div id="creatematerials" class="sidenav-anchor">
+                    <h4>Create Test Materials</h4>
+                    <p>Prepare the outline of how the user test will be run, written instructions that you will read to the users, and any other materials (e.g. questionnaires, interview questions) that will be used during the session. This is called your experimental protocol, which is a step-by- step guide on how to run the experiment. It should be detailed enough that someone else could take the protocol and run your experiment without you being there. It ensures that you carry out the experiment in the same way for each participant.</p><p>Some suggestions on what your experimental protocol should cover:</p><ul><li>Set up</li><li>Gaining informed consent (Even if your participants are close friends, you will need to create a consent form. You can use <a href="http://spark-public.s3.amazonaws.com/hci/assignment_ressources/assignment7-sample-consent-form.doc">this template</a> to create one if you find it helpful.)</li><li>Execution of tests</li><li>Debriefing the tester</li></ul>
+                </div>
+
+                <div id="altdesign" class="sidenav-anchor">                
+                    <h4>Create an Alternative Design</h4>
+                    <p>Select <b>ONE</b> component of your prototype and come up with a redesign for that part. The redesigned component needs to be significantly different from the original design and likely to satisfy a real user need either not satisfied or satisfied differently in the original design. This is <b>NOT</b> meant to be a huge redesign of your prototype. We want you to select something small and manageable in scope (similar to the alternative website designs shown in lecture). Designers often go through many many different versions of prototypes before their final design, so we want you to get familiar with the process (given our time constraints for the course).</p><ul><li>Mock up a few screens of your redesign that you will be able to use with a user. You can either use paper (remember to use a dark marker) or Balsamiq. <b>Keep them simple.</b></li><li><b>EXTRA CREDIT</b>: electronically create your redesign (build the interactive screens from your paper prototype). Remember to keep the URL to this redesign separate from your original application (you will need both for testing).</li></ul>
+                </div>
+
+                <div id="usertests" class="sidenav-anchor">
+                    <h4>Run 3 User Tests</h4>
+                    <p>Run user tests on your interactive prototype with at least three different people. First, test your original application according to the plan you drafted up. Then, at the end of your user testing session, introduce your redesigned component and test it out (show only one redesign prototype -- interactive screens if you've done them, or paper prototype if you haven't). You are mainly looking for <b>comparative feedback</b> from the user.</p>
+                    <p>The feedback they provide you will be invaluable for your next iteration. Look for breakdowns and pain points in your interface and try to understand what the problems are and how you might fix them. If possible, try modifying or updating your prototype before continuing to the next user. (Note: These aren't supposed to be drastic iterations, and they won't be graded. What this means is that it's a good idea to take care of small, obvious bugs that any user would point out. For example, say you have a button leading the user to the forums, but the button is labelled "Community", which was confusing the user in your first user test. An update you might make is changing the button to say "Forums", so that the bug doesn't come up in your second or third user tests. This will help you get the most out of your user tests.)</p>
+                    <p>As much as possible, keep things consistent between your user tests: use the same script, follow the same protocol, answer questions in the same way. Immediately after each test, do a quick debrief and write down any reactions or thoughts that came up. You will most likely forget them, so it's important to write them down right after the user test.</p><p>You will have to submit at least three photos or sketches (with captions) of your user testing. As with the needfinding assignment, these photos/sketches and captions should show breakdowns and design opportunities.</p>
+                </div>
+
+                <div id="analyze" class="sidenav-anchor">
+                    <h4>Analyze Findings</h4>
+                    <p>After testing, take some time to reflect on your findings. Go through all the notes and other recordings. Try to be objective, don't write problems off. Try and define some general patterns in user behavior. When you identify some interesting points, think deeply about them: ask yourself questions, recreate the different user tests, analyze user decisions, other paths they could have taken, and so on. Let your insights guide redesigns for your next prototype iteration. The end product of your discussion should be a list of changes that you would implement. </p>
+                </div>
+                
+                <div>
+                    <i><h2>What’s this for? A UX agency perspective</h2>
+                    <p>By Mike Davison, Community TA and UX Project Manager</p><p>Testing your high fidelity prototype with users closes the circle. It is vital to ensure your solution meets the needs identified during the first assignment, and that the agency has not simply spent months drifting further from the problem.</p><p>It also allows you third party reflection and suggestions for tweaks to the design. Everything we learn here and correct is a problem we don’t have to live with because it has already been coded and is too costly to change....it’s a valuable phase of the process.</p><p>Remember this - feedback is not criticism, feedback is not personal. User centred design works best when pride is left aside, and the feedback of others is incorporated into your design thinking!</p></i>
+                </div>
+                
+                <div id="examples" class="sidenav-anchor">
+                    <h2>Student Examples</h2>
+                    <p>Check out an example of this assignment from last year <a href="http://spark-public.s3.amazonaws.com/hci/assignment_ressources/assignment_examples_2011/A5_Example.pdf">here</a>. Keep in mind that the assignment was slightly different last year. </p>
+                </div>
+
+                <div id="submit" class="sidenav-anchor">
+                    <h2>Submit</h2>
+                    <ul><li>The URL of the original prototype you tested.</li><li>A picture or scan of your paper prototype for your redesign. &nbsp;If you've electronically created it as well, also include the URL to those screens.</li><li>The evaluation plan you submitted for Assignment 5. (This won't be graded, but should be provided to peer graders to help them judge whether you accomplished everything in your plan.)</li><li>Any materials you gave to the user as part of your tests (either as text, PDF or a scanned image). Examples may include consent forms, experimental protocols, scripts you read aloud to the user, questionnaires, surveys or other materials you wrote. We just want to see what you gave the user. We do NOT need to see their filled out questionnaires or surveys. </li><li>At least three photos of your user tests in action, with captions.</li><li>A summary of your user test findings.</li><li>A list of changes you would make in your next iteration (for each change, include a brief explanation for why you selected it).</li></ul>
+                </div>
+
+                <div id="ilike" class="sidenav-anchor">
+                    <h2> Common 'I Like' Feedback</h2>
+                    <p>The following statements are common feedback given on this assignment. We call these statements 'I like' feedback because they are a way to express positive aspects of the submission. You could think of these as elements to aim for.</p><ul><li>Redesigned an interesting and useful part of their app</li><li>Was thoughtful about the design breakdowns they found</li><li>Ran well thought-out user tests</li><li>Tested tasks important to users of the app</li><li>Created a thorough set of testing materials (plan, script, etc.)</li><li>Took interesting photographs</li><li>Had prototypes that were well-designed and bug-free</li></ul>
+                </div>
+
+                <div id="evaluation" class="sidenav-anchor">
+                    <h2>Evaluation criteria &amp; Grading rubric</h2>
+                    <div class="table-responsive">
+                        <table class="table"><tbody><tr><th id="guiding" valign="top">Category</th><th id="unsatisfactory" valign="top">Unsatisfactory</th><th id="minimum" valign="top">Bare minimum</th><th id="satisfactory" valign="top">Satisfactory effort &amp; performance</th><th id="above" valign="top">Above &amp; Beyond</th></tr><tr><td>Alternative Design</td><td>0: No redesign or irrelevant redesign. </td><td>1: The student's redesign was not significantly different from the original design and seems unlikely to satisfy a real user need.</td><td>3: The student's redesign is significantly different from the original design, but seems unlikely to satisfy a real user need.</td><td>5: The student's redesign is significantly different from the original design and seems to satisfy a real user need.</td></tr><tr><td>Extra Credit: Electronic Prototype of Redesign</td><td>0: No URL to interactive prototype.</td><td>1: The prototype is incomplete and barely interactive.</td><td>3: The prototype is somewhat interactive, but not ready for user testing.</td><td>5: The alternative prototype is fully interactive and ready for user testing.</td></tr><tr><td>User Tests</td><td>0: No user tests were performed. </td><td>1: The user tests were not designed to not capture useful information and were not carried out in a serious, planned way. User testing materials are not included in the submission.</td><td>3: The user tests were designed to capture some useful information, but are incomplete. Not all user testing materials are included in the submission.</td><td>5: The user tests were designed to capture useful information. All of the tasks in the evaluation plan were completed with uniform protocol for each participant. All user testing materials were provided in the submission.</td></tr><tr><td>Photos/Sketches </td><td>0: No photographs were submitted that showed interesting moments.</td><td>1: 1 photograph was submitted that showed an interesting moment.</td><td>3: 2 photographs were submitted that showed interesting moments.</td><td>5: At least 3 photographs were submitted, and all three photographs showed interesting moments in the user testing process.</td></tr><tr><td>Results Summary</td><td>0: No user testing results summary provided. </td><td>1: The summary suggests the user tests were not done well enough to reveal any problems in the interface.</td><td>3: The summary suggests the user tests found some problems in the interface, but the problems could have been discovered without user tests.</td><td>5: The summary suggests the user tests revealed significant insights into the design that could trigger positive changes for the interface.</td></tr><tr><td>Changes</td><td>0: No changes listed or irrelevant changes.</td><td>1: No useful changes to the interface resulted from the user tests.</td><td>3: The student presented several possible changes derived from the user testing data, although not all of the changes were useful or some important changes were overlooked.</td><td>5: The student suggested several possible changes based on the user testing, all of which were important and directly addressed the problems identified in user testing.</td></tr></tbody></table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/hci.js"></script>
+  </body>
+</html>
