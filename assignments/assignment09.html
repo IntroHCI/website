@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Introduction to Human-Computer Interaction: Assignment">
+    <title>Intro to HCI: Assignment</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="../css/hci.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body data-spy="scroll" data-target=".sidenav">
+
+    <!-- 
+    IntroHCI assignment template
+    ------------------
+    To create a new assignment:
+    1) Write all the HTML as you normally would underneath the #assignment-description div.
+    2) Anything that you want to appear in the navbar on the left needs to be enclosed
+        in a <div id="unique-id" class="sidenav-anchor">. On page load, hci.js will look up
+        anything enclosed in .sidenav-anchor, find the first header (h1-h6) inside it, and add
+        it to the navigation pane on the left. Make sure it has a unique div id so that there is something
+        to anchor the hyperlink to.
+    3) I recommend going with Bootstrap's recommendation and putting any <table class="table"> elements enclosed in a
+        <div class="table-responsive">.
+    -->
+
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Intro to HCI</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class=""><a href="index.html">Home</a></li>
+            <li><a href="index.html#calendar">Calendar</a></li>
+            <li><a href="lab/">Lab</a></li>
+            <li class="dropdown active">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Logistics <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="logistics.html#prereqs">Prerequisites</a></li>
+                  <li><a href="logistics.html#lab">Lab</a></li>
+                  <li><a href="logistics.html#grading">Grading</a></li>
+                  <li><a href="logistics.html#attendance">Attendance</a></li>
+                  <li><a href="logistics.html#cs77">CS 77</a></li>
+                  <li><a href="logistics.html#faq">FAQ</a></li>
+                </ul>
+            </li>            
+            <li><a href="http://www.coursera.org">Submit Work</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="staffemailorpiazzaforum@university.edu">Questions</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="sidenav" data-spy="affix">
+                    <ul class="nav nav-stacked" id="sidenav-content">   
+                    </ul>
+                </div> <!-- /sidenav -->
+            </div> <!-- /col-md-3 -->  
+            <div class="col-md-9" id="assignment-description"> 
+                <div class="assessmentExposition">
+
+                <div id="assignment" class="sidenav-anchor">
+                    <h2>Assignment</h2>
+                    <p>Collect your results from your web-based data gathering. Present your results and discuss your findings. Perform any necessary number-crunching and statistical analysis of your data. Also, assess the strength of your data (for example, using a chi-squared test if applicable). Can you draw solid conclusions or are additional tests needed? What changes would you make based on these results?</p>
+                    <p>For all you designers out there, get ready. &nbsp;It's time to start making it pretty. Concentrate on completing up the list of changes based on the results of your user test. Attention to detail will serve you well. Make sure the app is optimized for the mobile interface. Same drill as the other weeks, keep <strong>updating your development plan.</strong></p>
+                </div>
+
+                <div id="submit" class="sidenav-anchor">
+                    <h2>Submit</h2>
+                    <ul>
+                        <li>The data that you collected. Organize this information so that we can get a sense of the raw data that you gathered. How many users did you find? What feedback (quantitative or qualitative) did you receive? We recommend organizing this information into a table or spreadsheet.</li>
+                        <li>Summary of your findings. You should present any statistical analysis that you performed, and any insights or discoveries that your test helped inform.</li>
+                        <li>List of the changes you would make (as a result of the online tests). We understand that your test may have concluded only recently, and you would have had time to only make small changes. But we would like you to think about additional features or improvements that are motivated by your results. Add these to your development plan if you have time to complete them.</li>
+                        <li>The URL of the prototype version that you want us to see. Do not forget to give us login information. &nbsp;Note: the URL must work at least until your assignment is graded. If it doesn't work, you'll receive no credit.</li>
+                        <li>A bullet list of what you have completed this week and who did what.</li>
+                        <li>Your updated development plan. &nbsp;Also include a copy of last week's plan (Assignment 7) to help us during grading.</li>
+                    </ul>
+                    <p>**Note: since we may grade your assignment up to a few days after submission, per the honor code, we expect that the prototype and google docs show the state of your prototype and plan at the time of submission.  You will very likely be updating your plan and prototype after submission, but please do so on another version.</p>
+                </div>
+
+                <div id="studio" class="sidenav-anchor">
+                    <h2>In Studio</h2>
+                    <p>Be prepared to share your finished prototype with the class. Bring your laptop to studio, you will need it to submit your self-assessment.</p>
+                </div>
+                
+                <div id="extra" class="sidenav-anchor">
+                    <h2>Extra Credit</h2>
+                    <p>This week you will have three opportunities for extra credit. Feel free to do as many as you wish, but they are all group extra credit opportunities.</p>
+                </div>
+                
+                <div id="relatedproj" class="sidenav-anchor">
+                    <h4>Find Related Projects: 3 Points</h4>
+                    <p>Before the implementation of your prototype, you compiled a list of inspirations. Since then, your prototype has probably made so many twists and turns and transformations that it is no longer recognizable as the idea that you started off with. To prepare for your final presentation, update your knowledge of related projects. Related projects can be existing applications, artifacts, products, or services that relate to your concept. Here, web search is your friend (potentially useful sites include Google, Google Scholar, the ACM Digital Library, TechCrunch, Engadget...). Pick the five related projects that a juror is mostly like to ask you "how are you different than blank". In some cases, this might be a similar service like another to-do list, photo-sharing app, or party-finder. In other cases, it might be repurposing general services like Google Docs or Twitter. </p>
+                    <p>Pick out your five favorite related projects. For each one, give a brief explanation (1-2 sentences) of how you would answer the following questions from a juror "How are you different from blank? Why would users use your application instead of blank?".</p>
+                </div>
+                
+                <div id="onlinetest" class="sidenav-anchor">
+                    <h4>Run Another Online User Test: 3 Points</h4>
+                    <p>You launched an A/B test last week to get some valuable user feedback. However, as we discussed there are many ways to evaluate interfaces. For this extra credit, run another test. This does not have to be an A/B test, feel free to choose whatever type of test will best benefit your project. Likewise, you don't have to use Optimizely, but we will not be supporting questions about any other platform. Explore outside of the realm of A/B testing - some of the more popular options from last year are click tests, navigation tests, and page optimization tests (ex. <a href="http://www.fivesecondtest.com">FiveSecondTest</a> or <a href="http://www.navflow.com">NavFlow</a>). Just like Assignment 7 and the first part of this assignment, provide the link to the launched test -- with a brief proposal of question you are answering through this test. Also submit a summary of results from your test, include any assessment of the strength of your data or any conclusions.</p>
+                </div>
+                
+                <div id="launch" class="sidenav-anchor">
+                    <h4>Launch Your App: 4 Points</h4>
+                    <p>You have done an amazing job prototyping and evaluating your application, now it's time to see what the world thinks. Launch your app to the public. For web apps, this means advertising on google, creating a Fan Page on Facebook, posting in the Mozilla Marketplace, or announcing on your app on social networks like Facebook and Twitter. These are all just suggestions for what you might do. The goal of this section to expose your app to the public by any method you wish to use. For native apps, submit your app to the relevant app store. Submit any materials that show that you have successfully launched your application. This can include email receipts, screenshots of the app on a app store, or urls to app listings. Also submit any materials necessary to show that people outside of Stanford and CS147 have started using your application as a direct result of your launch. Since this will differ between groups, we will leave up to you to decide what exactly is necessary to be submitted. The only requirement is to provide sufficient proof to show that you have launched your app to the public and that people have started using it.</p>
+                </div>
+
+                <div id="evaluation" class="sidenav-anchor">
+                    <h2>Evaluation criteria &amp; Grading rubric</h2>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <th id="guiding" valign="top">Category</th>
+                                    <th id="not_present" valign="top">Not Completed</th>
+                                    <th id="unsatisfactory" valign="top">Unsatisfactory</th>
+                                    <th id="minimum" valign="top">Bare minimum</th>
+                                    <th id="satisfactory" valign="top">Satisfactory effort &amp; performance</th>
+                                    <th id="above" valign="top">Above &amp; Beyond</th>
+                                    <th id="box" valign="top">Out of the Box</th>
+                                </tr>
+                                <tr>
+                                    <td>Summary of Your Findings</td>
+                                    <td>0: No conclusions listed. </td>
+                                    <td>2: Either only statistical analysis or insights are given.</td>
+                                    <td>4: Statistical analysis has errors, or conclusions are trivial. </td>
+                                    <td>7: Statistical analysis is solid, but may be lacking some details. Conclusions are clear and straightforward.</td>
+                                    <td>10: Statistical analysis is solid, and includes a clear assessment on the strength of the data. All conclusions are clear and straightforward, but some conclusions are particularly insightful.</td>
+                                    <td>11: Statistical analysis is solid, and includes a clear assessment on the strength of the data. Conclusions are insightful and show new discoveries that were not previously possible.</td>
+                                </tr>
+                                <tr>
+                                    <td>List of Revisions and Potential Revisions</td>
+                                    <td>0: No revisions listed. </td>
+                                    <td>2: The revisions are obvious or trivial. </td>
+                                    <td>4: Revisions are obvious and made without much consideration to the user experience. The revisions are chosen to cater to a lower level of technical difficulty. The major problems are not addressed by the revisions.</td>
+                                    <td>7: Several possible revisions are presented for different portions of the user interface. Most of the revisions are creative and address the major problems. Changes are clearly justified and informed from the data gathered.</td>
+                                    <td>9: Several possible revisions are presented for different portions of the user interface. All the revisions are creative and address the major problems. Changes are clearly justified and informed from the data gathered.</td>
+                                    <td>11: Not only are several possible revisions presented for different portions of the user interface, your revisions are extremely creative and approaches the problems in your interface in an effective and innovative way. An incredible amount of thought and consideration has gone into solving the underlying problems.</td>
+                                </tr>
+                                <tr>
+                                    <td>Development Goals</td>
+                                    <td>0: No goals met that were laid out on the development plan.</td>
+                                    <td>1: The students completed three or less minor goals laid out in the development plan.</td>
+                                    <td>3: The students met a few of the goals laid out in the development plan.</td>
+                                    <td>4: The students met most, but not all, of the goals laid out in the development plan.</td>
+                                    <td>5: The students met all of the goals found in the development. </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>List of Completed Items</td>
+                                    <td>0: No list submitted. </td>
+                                    <td>1: List is mostly incomplete.</td>
+                                    <td>3: List is complete, but not detailed or specific.</td>
+                                    <td></td>
+                                    <td>5: List is complete and details concrete tasks, along with who worked/completed which elements.</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Updated Development Plan</td>
+                                    <td>0: No updates to plan. </td>
+                                    <td>1: Plan reflects a minor change. </td>
+                                    <td>3: Plan reflects some minor changes, but nothing significant.</td>
+                                    <td>5: Plan is mostly updated, but is lacking some detail or deadlines seem unreasonable. </td>
+                                    <td>8: Plan is detailed and reflect progress, new tasks, and any changes to previous tasks.</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><b>Extra Credit:</b> Related Projects</td>
+                                    <td>0: No work submitted or any number of related projects submitted without meaningful explanation </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>1: One or two key relevant projects found and differences explained. (If more than two submitted, the rest are not relevant or not well explained.)</td>
+                                    <td>2: Three or four key relevant projects found and differences explained. (If more than three submitted, the rest are not relevant or not well explained.)</td>
+                                    <td>3: Five relevant projects found and differences explained. A juror will exclaim "Wow, you've really done your homework!" </td>
+                                </tr>
+                                <tr>
+                                    <td><b>Extra Credit:</b> Run Online User Test</td>
+                                    <td>0: Nothing submitted. </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>1: A very basic online test has been launched and ran (ex. wording changes in Optimizely, a basic click through test). The test is obvious and while it provides good data, doesn't answer any key issues. The analysis of an otherwise good test might be weak. </td>
+                                    <td>2: An online test has been launched. The test is appropriately chosen, but the issue being addressed by the test is not a core issue with your app.</td>
+                                    <td>3: You ran a solid test that addresses a core issue with your application. The test is appropriately chosen and has provided really good data. The analysis is thorough.</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Extra Credit:</b> Launch Your App</td>
+                                    <td>0: Nothing submitted</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>2: You've provided evidence that you've taken good effort to launch your app, but you have not given evidence that people are using it.</td>
+                                    <td>3: You've launched your app, but only a few people have started using it.</td>
+                                    <td>4: Wow, a lot of time and effort was put into launching the app. It's now accessible to the general public or you've advertised it to increase awareness of your app. You've shown evidence of it's accessibility and proven that strangers (who are not people you know or in CS147) can find out and use your application. More than a couple people have found your app through your efforts and have started using it.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/hci.js"></script>
+  </body>
+</html>
