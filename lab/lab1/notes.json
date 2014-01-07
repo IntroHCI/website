@@ -1,0 +1,268 @@
+[
+  [
+    {
+      "type": "links",
+      "title": "Get accounts and install software",
+      "list": [
+        "<a href='http://git-scm.com/downloads'>Install Git</a>",
+        "<a href='http://github.com'>Get a GitHub account</a>",
+        "<a href='http://www.sublimetext.com/2'>Install the Sublime Text 2 text editor</a>",
+        "<a href='https://www.virtualbox.org/wiki/Downloads'>Install VirtualBox</a>",
+        "<a href='http://www.vagrantup.com/downloads.html'>Install Vagrant</a>"
+      ]
+    },
+    {
+      "type": "debug",
+      "list": [{
+        "problem":"[appname] can't be opened becuase it is from an unidentified developer.",
+        "fix":"Control-click on the file and choose 'Open', and you'll get an additional 'Open' option when the window pops up."
+      }]
+    }
+  ],
+  [],
+  [],
+  [],
+  [
+    {
+      "comment": "5",
+      "type": "links",
+      "list": ["<a href='http://hci.st/lab'>http://hci.st/lab</a> (though you've probably already figured that out if you're looking at this page)"]
+    }
+  ],
+  [],
+  [],
+  [],
+  [
+    {
+      "comment": "9",
+      "type": "links",
+      "list": ["<a href='http://hci.st/lab-submit'>http://hci.st/lab-submit</a>"]
+    }
+  ],
+  [],
+  [],
+  [
+    {
+      "comment": "12",
+      "type": "links",
+      "list": ["<a href='http://hci.st/vagrant'>http://hci.st/vagrant</a>"]
+    }
+  ],
+  [
+    {
+      "comment": "13",
+      "type": "video",
+      "src": "video/git-fork.mov"
+    },
+    {
+      "type": "debug",
+      "list": [{
+        "problem":"The video's not playing",
+        "fix":"Make sure you're in Google Chrome or Safari. IE and Firefox don't support HTML5 video with .mov files."
+      }]
+    }
+  ],
+  [
+    {
+      "comment": "14",
+      "type": "video",
+      "src": "video/git-clone.mov"
+    }
+  ],
+  [
+    {
+      "comment": "15",
+      "type": "video",
+      "src": "video/cd.mov"
+    },
+    {
+      "type": "code",
+      "text": "➜  Desktop  cd ~/Documents/introHCI \n➜  introHCI  ls\nLICENSE            Vagrantfile\nintroHCI-extras.sh README.md\ncookbooks          lab1\n➜  introHCI"
+    }
+  ],
+  [
+    {
+      "comment": "16",
+      "type": "video",
+      "src": "video/git-clone-2.mov"
+    },
+    {
+      "type": "code",
+      "text": "➜  Desktop  cd ~/Documents/introHCI\n➜  introHCI ✗ git clone https://github.com/yourgithubusername/lab1.git\nCloning into 'lab1'...\nremote: Counting objects: 537, done.\nremote: Compressing objects: 100% (408/408), done.\nremote: Total 537 (delta 92), reused 537 (delta 92)\nReceiving objects: 100% (537/537), 3.66 MiB | 1.76 MiB/s, done.\nResolving deltas: 100% (92/92), done.\nChecking connectivity... done\n➜  introHCI git:(master) ✗"
+    },
+    {
+      "type": "debug",
+      "list": [{
+        "problem":"OS X: <pre><code>xcode-select: note: no developer tools were found at '/Applications/XCode.app', requesting install. Choose an option in the dialog to download the command line developer tools.</code></pre> ",
+        "fix":"Then a popup asks you to choose 'get Xcode', 'Not Now', or 'Install'.  Choose 'Install'.  Once the install is done, try again."
+      },
+      {
+        "problem":"OS X: <pre><code>Agreeing to the XCode/iOS license requires admin priveleges, please re-run as root via sudo.</code></pre>",
+        "fix":"As it suggests, add sudo to the front: <pre><code>sudo git clone https://github.com/yourgithubusername/lab1.git</code></pre> Scroll through the license, and agree at the bottom. Another path would be to open Xcode and agree to the license there."
+      },
+      {
+        "problem":"Windows: how do I paste into Git Bash?",
+        "fix":"Click on the icon in the upper left of the window: Edit, Paste. For a shortcut: Alt-spacebar, then e, then p."
+      }]
+    }
+  ],
+  [],
+  [
+    {
+      "comment": "18",
+      "type": "video",
+      "src": "video/git-edit.mov"
+    },
+    {
+      "type": "code",
+      "text": "&lt;!doctype html&gt;\n\n&lt;html&gt;\n&lt;head&gt;\n  &lt;meta charset=\"utf-8\"&gt;\n  &lt;title&gt;HCI Project Portfolio&lt;/title&gt;\n&lt;/head&gt;\n\n&lt;body&gt;\n  &lt;!-- this is a comment in HTML --&gt;\n  &lt;h1&gt;Scott Klemmer&lt;/h1&gt; &lt;!-- h1 through h5 are headers. The higher the number, the smaller the header --&gt;\n  &lt;h4&gt;Project Portfolio&lt;/h4&gt;\n\n  &lt;!-- p means paragraph --&gt;\n  &lt;p&gt;Scott Klemmer is an associate professor of Cognitive Science and Computer Science &amp; Engineering at UC San Diego.&lt;/p&gt;\n\n  &lt;h4&gt;Projects&lt;/h4&gt;\n  &lt;ol&gt;\n    &lt;li&gt;Waiting in line&lt;/li&gt;\n    &lt;li&gt;Needfinding&lt;/li&gt;\n    &lt;li&gt;Prototyping&lt;/li&gt;\n    &lt;li&gt;...&lt;/li&gt;\n  &lt;/ol&gt;\n&lt;/body&gt;\n&lt;/html&gt;"
+    }
+  ],
+  [],
+  [],
+  [
+    {
+      "comment": "21",
+      "type": "code",
+      "text": "git config --global user.name \"Your Name\"\ngit config --global user.email \"youremail@university.edu\"\ngit config --global push.default simple"
+    }
+  ],
+  [],
+  [
+    {
+      "comment": "23",
+      "type": "video",
+      "src": "video/git-add.mov"
+    },
+    {
+      "type": "code",
+      "text": "➜  lab1 git:(master) ✗ git status\n# On branch master\n# Changes not staged for commit:\n#   (use \"git add <file>...\" to update what will be committed)\n#   (use \"git checkout -- <file>...\" to discard changes in working directory)\n#\n# modified:   static/index.html\n#\nno changes added to commit (use \"git add\" and/or \"git commit -a\")\n➜  lab1 git:(master) ✗ git add static/index.html \n➜  lab1 git:(master) ✗ git status\n# On branch master\n# Changes to be committed:\n#   (use \"git reset HEAD <file>...\" to unstage)\n#\n# modified:   static/index.html\n#\n➜  lab1 git:(master) ✗"
+    },
+    {
+      "type": "debug",
+      "list": [{
+        "problem":"<pre><code>fatal: Not a git repository (or any of the parent directories)</code></pre>",
+        "fix":"Make sure that you're in the lab1 directory --- this command only works within a directory that is a git repository"
+      }]
+    }
+  ],
+  [
+    {
+      "comment": "24",
+      "type": "video",
+      "src": "video/git-commit.mov"
+    },
+    {
+      "type": "code",
+      "text": "➜  lab1 git:(master) ✗ git commit -m \"Replaced default information in web page\"\n[master f283015] Replaced default information in web page\n 1 file changed, 2 insertions(+), 2 deletions(-)\n➜  lab1 git:(master) git pull\nAlready up-to-date.\n➜  lab1 git:(master) git push\nCounting objects: 7, done.\nDelta compression using up to 4 threads.\nCompressing objects: 100% (3/3), done.\nWriting objects: 100% (4/4), 485 bytes | 0 bytes/s, done.\nTotal 4 (delta 2), reused 0 (delta 0)\nTo https://github.com/mbernst/lab1.git\n   1180cca..f283015  master -> master "
+    },
+    {
+      "type": "debug",
+      "list": [{
+        "problem":"Git asks me for my password but it's not showing up",
+        "fix":"Command line terminals typically don't show your password or any ****s while you're typing it. Don't worry, just keep going and press enter at the end. Likewise, if you paste the password into the terminal, you won't see anything. Don't worry, the terminal got the message."
+      },
+      {
+        "problem":"<pre><code>git-credential-osxkeychain died of signal 11</code></pre>",
+        "fix":"If you're willing to enter your password every time you push to git, you can run <code>sudo rm /usr/local/git/etc/gitconfig</code>. That's a pretty huge sledgehammer for this problem, though. <a href=\"http://stackoverflow.com/questions/14272634/error-git-credential-osxkeychain-died-of-signal-11\">StackOverflow has more solutions.</a>"
+      }]
+    }
+  ],
+  [],
+  [],
+  [],
+  [],
+  [
+    {
+      "comment": "29",
+      "type": "video",
+      "src": "video/git-conflict.mov"
+    },
+    {
+      "type": "code",
+      "text": "➜  lab1 git:(master) git remote add upstream https://github.com/IntroHCI/lab1.git\n➜  lab1 git:(master) git pull upstream master\nremote: Counting objects: 18, done.\nremote: Compressing objects: 100% (7/7), done.\nremote: Total 12 (delta 6), reused 8 (delta 2)\nUnpacking objects: 100% (12/12), done.\nFrom https://github.com/IntroHCI/lab1\n * branch            master     -> FETCH_HEAD\nAuto-merging static/index.html\nCONFLICT (content): Merge conflict in static/index.html\nAutomatic merge failed; fix conflicts and then commit the result."
+    }
+  ],
+  [
+    {
+      "comment": "30",
+      "type": "video",
+      "src": "video/git-resolve-conflict.mov"
+    },
+    {
+      "type": "code",
+      "text": "&lt;html&gt;\n&lt;head&gt;\n  &lt;meta charset=\"utf-8\"&gt;\n  &lt;title&gt;HCI Project Portfolio&lt;/title&gt;\n&lt;/head&gt;\n\n&lt;body&gt;\n  &lt;!-- this is a comment in HTML --&gt;\n  &lt;h1&gt;Scott Klemmer and John Hennessy&lt;/h1&gt; &lt;!-- h1 through h5 are headers. The higher the number, the smaller the header --&gt;\n  &lt;h4&gt;Project Portfolio&lt;/h4&gt;\n\n  &lt;!-- p means paragraph --&gt;\n  &lt;p&gt;Scott Klemmer is an associate professor of Cognitive Science and Computer Science &amp; Engineering at UC San Diego. John Hennessy is president of Stanford University and enjoys taking HCI classes in his spare time.&lt;/p&gt;\n\n  &lt;h4&gt;Projects&lt;/h4&gt;\n  &lt;ol&gt;\n    &lt;li&gt;Waiting in line&lt;/li&gt;\n    &lt;li&gt;Needfinding&lt;/li&gt;\n    &lt;li&gt;Prototyping&lt;/li&gt;\n    &lt;li&gt;...&lt;/li&gt;\n  &lt;/ol&gt;\n&lt;/body&gt;\n&lt;/html&gt;"
+    }
+  ],
+  [
+    {
+      "comment": "31",
+      "type": "video",
+      "src": "video/git-resolve.mov"
+    },
+    {
+      "type": "code",
+      "text": "➜  lab1 git:(master) ✗ git add static/index.html \n➜  lab1 git:(master) ✗ git commit -m \"fixing merge conflict\"\n[master 766d49f] fixing merge conflict\n➜  lab1 git:(master) git pull\nAlready up-to-date.\n➜  lab1 git:(master) git push\nCounting objects: 22, done.\nDelta compression using up to 4 threads.\nCompressing objects: 100% (12/12), done.\nWriting objects: 100% (16/16), 1.45 KiB | 0 bytes/s, done.\nTotal 16 (delta 8), reused 0 (delta 0)\nTo https://github.com/mbernst/lab1.git\n   f283015..766d49f  master -> master"
+    }
+  ],
+  [],
+  [],
+  [
+    {
+      "comment": "34",
+      "type": "video",
+      "src": "video/vagrant-vbguest.mov"
+    },
+    {
+      "type": "code",
+      "text": "➜  introHCI   vagrant plugin install vagrant-vbguest\nInstalling the 'vagrant-vbguest' plugin. This can take a few minutes...\nInstalled the plugin 'vagrant-vbguest (0.10.0)'!"
+    }
+  ],
+  [
+    {
+      "comment": "35",
+      "type": "video",
+      "src": "video/vagrant-up.mov"
+    },
+    {
+      "type": "code",
+      "text": "➜  introHCI git:(master) ✗ vagrant up\nBringing machine 'default' up with 'virtualbox' provider...\n[default] Box 'precise32' was not found. Fetching box from specified URL for\nthe provider 'virtualbox'. Note that if the URL does not have\na box for this provider, you should interrupt Vagrant now and add\nthe box yourself. Otherwise Vagrant will attempt to download the\nfull box prior to discovering this error.\nDownloading box from URL: http://files.vagrantup.com/precise32.box\nExtracting box...te: 1361k/s, Estimated time remaining: 0:00:01)\nSuccessfully added box 'precise32' with provider 'virtualbox'!\n[default] Importing base box 'precise32'...\n[default] Matching MAC address for NAT networking...\n[default] Setting the name of the VM...\n[default] Clearing any previously set forwarded ports...\n[default] Clearing any previously set network interfaces...\n[default] Preparing network interfaces based on configuration...\n[default] Forwarding ports...\n[default] -- 22 => 2222 (adapter 1)\n[default] -- 3000 => 3000 (adapter 1)\n[default] Booting VM...\n[default] Waiting for machine to boot. This may take a few minutes...\n[default] Machine booted and ready!\n[default] The guest additions on this VM do not match the installed version of\nVirtualBox! In most cases this is fine, but in rare cases it can\ncause things such as shared folders to not work properly. If you see\nshared folder errors, please make sure the guest additions within the\nvirtual machine match the version of VirtualBox you have installed on\nyour host and reload your VM.\n\nGuest Additions Version: 4.2.0\nVirtualBox Version: 4.3\n[default] Mounting shared folders...\n[default] -- /vagrant\n[default] -- /home/vagrant\n[default] -- /tmp/vagrant-chef-1/chef-solo-1/cookbooks\n[default] Running provisioner: chef_solo...\nGenerating chef JSON and uploading...\nRunning chef-solo...\nstdin: is not a tty\n[2014-01-01T16:03:39+00:00] INFO: *** Chef 10.14.2 ***\n[2014-01-01T16:03:39+00:00] INFO: Setting the run_list to [\"recipe[build-essential]\", \"recipe[apt]\", \"recipe[yum]\", \"recipe[git]\", \"recipe[nodejs]\", \"recipe[emacs]\"] from JSON\n[2014-01-01T16:03:39+00:00] INFO: Run List is [recipe[build-essential], recipe[apt], recipe[yum], recipe[git], recipe[nodejs], recipe[emacs]]\n[2014-01-01T16:03:39+00:00] INFO: Run List expands to [build-essential, apt, yum, git, nodejs, emacs]\n[2014-01-01T16:03:39+00:00] INFO: Starting Chef Run for precise32\n[2014-01-01T16:03:39+00:00] INFO: Running start handlers\n[2014-01-01T16:03:39+00:00] INFO: Start handlers complete.\n[2014-01-01T16:04:00+00:00] INFO: execute[apt-get-update] ran successfully\n[2014-01-01T16:04:02+00:00] INFO: package[update-notifier-common] sending run action to execute[apt-get-update] (immediate)\n[2014-01-01T16:04:05+00:00] INFO: execute[apt-get-update] ran successfully\n[2014-01-01T16:04:05+00:00] INFO: directory[/var/cache/local] created directory /var/cache/local\n[2014-01-01T16:04:05+00:00] INFO: directory[/var/cache/local] owner changed to 0\n[2014-01-01T16:04:05+00:00] INFO: directory[/var/cache/local] group changed to 0\n[2014-01-01T16:04:05+00:00] INFO: directory[/var/cache/local] mode changed to 755\n[2014-01-01T16:04:05+00:00] INFO: directory[/var/cache/local/preseeding] created directory /var/cache/local/preseeding\n[2014-01-01T16:04:05+00:00] INFO: directory[/var/cache/local/preseeding] owner changed to 0\n[2014-01-01T16:04:05+00:00] INFO: directory[/var/cache/local/preseeding] group changed to 0\n[2014-01-01T16:04:05+00:00] INFO: directory[/var/cache/local/preseeding] mode changed to 755\n[2014-01-01T16:04:05+00:00] INFO: template[/etc/yum.conf] updated content\n[2014-01-01T16:04:05+00:00] INFO: template[/etc/yum.conf] mode changed to 644\n[2014-01-01T16:04:15+00:00] INFO: remote_file[/usr/local/src/node-v0.10.24.tar.gz] updated\n[2014-01-01T16:04:15+00:00] INFO: remote_file[/usr/local/src/node-v0.10.24.tar.gz] mode changed to 644\n[2014-01-01T16:04:15+00:00] INFO: execute[tar --no-same-owner -zxf node-v0.10.24.tar.gz] ran successfully\n[2014-01-01T16:08:26+00:00] INFO: bash[compile node.js (on 1 cpu)] ran successfully\n[2014-01-01T16:08:27+00:00] INFO: execute[nodejs make install] ran successfully\n[2014-01-01T16:08:37+00:00] INFO: Chef Run complete in 297.8912 seconds\n[2014-01-01T16:08:37+00:00] INFO: Running report handlers\n[2014-01-01T16:08:37+00:00] INFO: Report handlers complete\n[default] Running provisioner: shell...\n[default] Running: /var/folders/s8/zzmx776n0mj5nf7n7wl9k4bm0000gn/T/vagrant-shell20140101-20828-urraqd\nstdin: is not a tty\nInstalling MongoDB...\nmkdir: cannot create directory `/data/db': No such file or directory\nchown: cannot access `/data/db': No such file or directory\nExecuting: gpg --ignore-time-conflict --no-options --no-default-keyring --secret-keyring /tmp/tmp.CED83pz2a7 --trustdb-name /etc/apt/trustdb.gpg --keyring /etc/apt/trusted.gpg --primary-keyring /etc/apt/trusted.gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10\ngpg: requesting key 7F0CEB10 from hkp server keyserver.ubuntu.com\ngpg: key 7F0CEB10: public key \"Richard Kreuter <richard@10gen.com>\" imported\ngpg: no ultimately trusted keys found\ngpg: Total number processed: 1\ngpg:               imported: 1  (RSA: 1)\ndeb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen\nIgn http://downloads-distro.mongodb.org dist InRelease\nIgn http://security.ubuntu.com precise-security InRelease\nIgn http://us.archive.ubuntu.com precise InRelease\nIgn http://us.archive.ubuntu.com precise-updates InRelease\nIgn http://us.archive.ubuntu.com precise-backports InRelease\nHit http://security.ubuntu.com precise-security Release.gpg\nHit http://us.archive.ubuntu.com precise Release.gpg\nGet:1 http://downloads-distro.mongodb.org dist Release.gpg [490 B]\nHit http://security.ubuntu.com precise-security Release\nHit http://us.archive.ubuntu.com precise-updates Release.gpg\nHit http://us.archive.ubuntu.com precise-backports Release.gpg\nHit http://security.ubuntu.com precise-security/main Sources\nGet:2 http://downloads-distro.mongodb.org dist Release [2,032 B]\nHit http://us.archive.ubuntu.com precise Release\nHit http://security.ubuntu.com precise-security/restricted Sources\nHit http://security.ubuntu.com precise-security/universe Sources\nHit http://security.ubuntu.com precise-security/multiverse Sources\nHit http://security.ubuntu.com precise-security/main i386 Packages\nHit http://security.ubuntu.com precise-security/restricted i386 Packages\nHit http://us.archive.ubuntu.com precise-updates Release\nHit http://security.ubuntu.com precise-security/universe i386 Packages\nHit http://security.ubuntu.com precise-security/multiverse i386 Packages\nHit http://security.ubuntu.com precise-security/main TranslationIndex\nHit http://security.ubuntu.com precise-security/multiverse TranslationIndex\nHit http://security.ubuntu.com precise-security/restricted TranslationIndex\nHit http://security.ubuntu.com precise-security/universe TranslationIndex\nGet:3 http://downloads-distro.mongodb.org dist/10gen i386 Packages [9,044 B]\nHit http://us.archive.ubuntu.com precise-backports Release\nHit http://us.archive.ubuntu.com precise/main Sources\nHit http://us.archive.ubuntu.com precise/restricted Sources\nHit http://us.archive.ubuntu.com precise/universe Sources\nHit http://us.archive.ubuntu.com precise/multiverse Sources\nHit http://us.archive.ubuntu.com precise/main i386 Packages\nHit http://us.archive.ubuntu.com precise/restricted i386 Packages\nHit http://us.archive.ubuntu.com precise/universe i386 Packages\nHit http://us.archive.ubuntu.com precise/multiverse i386 Packages\nHit http://us.archive.ubuntu.com precise/main TranslationIndex\nHit http://us.archive.ubuntu.com precise/multiverse TranslationIndex\nHit http://security.ubuntu.com precise-security/main Translation-en\nHit http://security.ubuntu.com precise-security/multiverse Translation-en\nHit http://security.ubuntu.com precise-security/restricted Translation-en\nHit http://us.archive.ubuntu.com precise/restricted TranslationIndex\nHit http://us.archive.ubuntu.com precise/universe TranslationIndex\nHit http://us.archive.ubuntu.com precise-updates/main Sources\nHit http://us.archive.ubuntu.com precise-updates/restricted Sources\nHit http://us.archive.ubuntu.com precise-updates/universe Sources\nHit http://security.ubuntu.com precise-security/universe Translation-en\nIgn http://downloads-distro.mongodb.org dist/10gen TranslationIndex\nHit http://us.archive.ubuntu.com precise-updates/multiverse Sources\nHit http://us.archive.ubuntu.com precise-updates/main i386 Packages\nHit http://us.archive.ubuntu.com precise-updates/restricted i386 Packages\nHit http://us.archive.ubuntu.com precise-updates/universe i386 Packages\nHit http://us.archive.ubuntu.com precise-updates/multiverse i386 Packages\nHit http://us.archive.ubuntu.com precise-updates/main TranslationIndex\nHit http://us.archive.ubuntu.com precise-updates/multiverse TranslationIndex\nHit http://us.archive.ubuntu.com precise-updates/restricted TranslationIndex\nHit http://us.archive.ubuntu.com precise-updates/universe TranslationIndex\nHit http://us.archive.ubuntu.com precise-backports/main Sources\nHit http://us.archive.ubuntu.com precise-backports/restricted Sources\nHit http://us.archive.ubuntu.com precise-backports/universe Sources\nHit http://us.archive.ubuntu.com precise-backports/multiverse Sources\nHit http://us.archive.ubuntu.com precise-backports/main i386 Packages\nHit http://us.archive.ubuntu.com precise-backports/restricted i386 Packages\nHit http://us.archive.ubuntu.com precise-backports/universe i386 Packages\nHit http://us.archive.ubuntu.com precise-backports/multiverse i386 Packages\nHit http://us.archive.ubuntu.com precise-backports/main TranslationIndex\nHit http://us.archive.ubuntu.com precise-backports/multiverse TranslationIndex\nHit http://us.archive.ubuntu.com precise-backports/restricted TranslationIndex\nHit http://us.archive.ubuntu.com precise-backports/universe TranslationIndex\nHit http://us.archive.ubuntu.com precise/main Translation-en\nHit http://us.archive.ubuntu.com precise/multiverse Translation-en\nHit http://us.archive.ubuntu.com precise/restricted Translation-en\nHit http://us.archive.ubuntu.com precise/universe Translation-en\nHit http://us.archive.ubuntu.com precise-updates/main Translation-en\nHit http://us.archive.ubuntu.com precise-updates/multiverse Translation-en\nHit http://us.archive.ubuntu.com precise-updates/restricted Translation-en\nHit http://us.archive.ubuntu.com precise-updates/universe Translation-en\nHit http://us.archive.ubuntu.com precise-backports/main Translation-en\nHit http://us.archive.ubuntu.com precise-backports/multiverse Translation-en\nHit http://us.archive.ubuntu.com precise-backports/restricted Translation-en\nHit http://us.archive.ubuntu.com precise-backports/universe Translation-en\nIgn http://downloads-distro.mongodb.org dist/10gen Translation-en_US\nIgn http://downloads-distro.mongodb.org dist/10gen Translation-en\nFetched 11.6 kB in 2s (4,635 B/s)\nReading package lists...\nReading package lists...\nBuilding dependency tree...\nReading state information...\nThe following NEW packages will be installed:\n  mongodb-10gen\n0 upgraded, 1 newly installed, 0 to remove and 159 not upgraded.\nNeed to get 87.1 MB of archives.\nAfter this operation, 221 MB of additional disk space will be used.\nGet:1 http://downloads-distro.mongodb.org/repo/ubuntu-upstart/ dist/10gen mongodb-10gen i386 2.4.8 [87.1 MB]\ndpkg-preconfigure: unable to re-open stdin: No such file or directory\nFetched 87.1 MB in 29s (3,003 kB/s)\nSelecting previously unselected package mongodb-10gen.\n(Reading database ... 34308 files and directories currently installed.)\nUnpacking mongodb-10gen (from .../mongodb-10gen_2.4.8_i386.deb) ...\nProcessing triggers for man-db ...\nProcessing triggers for ureadahead ...\nureadahead will be reprofiled on next reboot\nSetting up mongodb-10gen (2.4.8) ...\nAdding system user `mongodb' (UID 106) ...\nAdding new user `mongodb' (UID 106) with group `nogroup' ...\nNot creating home directory `/home/mongodb'.\nAdding group `mongodb' (GID 111) ...\nDone.\nAdding user `mongodb' to group `mongodb' ...\nAdding user mongodb to group mongodb\nDone.\nmongodb start/running, process 26805\nInstalling Heroku Toolbelt...\nThis script requires superuser access to install apt packages.\nYou will be prompted for your password by sudo.\n--2014-01-01 16:09:17--  https://toolbelt.heroku.com/apt/release.key\nResolving toolbelt.heroku.com (toolbelt.heroku.com)... 54.243.82.181, 54.225.184.218, 174.129.247.167\nConnecting to toolbelt.heroku.com (toolbelt.heroku.com)|54.243.82.181|:443... connected.\nHTTP request sent, awaiting response... 200 OK\nLength: 1737 (1.7K) [application/octet-stream]\nSaving to: `STDOUT'\n\n     0K .                                                     100% 2.37M=0.001s\n\n2014-01-01 16:09:18 (2.37 MB/s) - written to stdout [1737/1737]\n\nOK\nIgn http://downloads-distro.mongodb.org dist InRelease\nIgn http://security.ubuntu.com precise-security InRelease\nIgn http://us.archive.ubuntu.com precise InRelease\nIgn http://us.archive.ubuntu.com precise-updates InRelease\nIgn http://us.archive.ubuntu.com precise-backports InRelease\nHit http://security.ubuntu.com precise-security Release.gpg\nHit http://us.archive.ubuntu.com precise Release.gpg\nHit http://downloads-distro.mongodb.org dist Release.gpg\nHit http://us.archive.ubuntu.com precise-updates Release.gpg\nHit http://security.ubuntu.com precise-security Release\nIgn http://toolbelt.heroku.com ./ InRelease\nHit http://us.archive.ubuntu.com precise-backports Release.gpg\nHit http://security.ubuntu.com precise-security/main Sources\nHit http://downloads-distro.mongodb.org dist Release\nHit http://us.archive.ubuntu.com precise Release\nHit http://security.ubuntu.com precise-security/restricted Sources\nHit http://security.ubuntu.com precise-security/universe Sources\nHit http://security.ubuntu.com precise-security/multiverse Sources\nHit http://security.ubuntu.com precise-security/main i386 Packages\nHit http://security.ubuntu.com precise-security/restricted i386 Packages\nHit http://us.archive.ubuntu.com precise-updates Release\nHit http://security.ubuntu.com precise-security/universe i386 Packages\nHit http://security.ubuntu.com precise-security/multiverse i386 Packages\nHit http://security.ubuntu.com precise-security/main TranslationIndex\nHit http://security.ubuntu.com precise-security/multiverse TranslationIndex\nHit http://security.ubuntu.com precise-security/restricted TranslationIndex\nHit http://downloads-distro.mongodb.org dist/10gen i386 Packages\nHit http://us.archive.ubuntu.com precise-backports Release\nHit http://us.archive.ubuntu.com precise/main Sources\nHit http://us.archive.ubuntu.com precise/restricted Sources\nHit http://us.archive.ubuntu.com precise/universe Sources\nHit http://us.archive.ubuntu.com precise/multiverse Sources\nHit http://us.archive.ubuntu.com precise/main i386 Packages\nHit http://security.ubuntu.com precise-security/universe TranslationIndex\nHit http://us.archive.ubuntu.com precise/restricted i386 Packages\nHit http://us.archive.ubuntu.com precise/universe i386 Packages\nHit http://us.archive.ubuntu.com precise/multiverse i386 Packages\nHit http://us.archive.ubuntu.com precise/main TranslationIndex\nHit http://us.archive.ubuntu.com precise/multiverse TranslationIndex\nHit http://security.ubuntu.com precise-security/main Translation-en\nHit http://security.ubuntu.com precise-security/multiverse Translation-en\nIgn http://downloads-distro.mongodb.org dist/10gen TranslationIndex\nHit http://us.archive.ubuntu.com precise/restricted TranslationIndex\nHit http://us.archive.ubuntu.com precise/universe TranslationIndex\nHit http://us.archive.ubuntu.com precise-updates/main Sources\nHit http://us.archive.ubuntu.com precise-updates/restricted Sources\nHit http://us.archive.ubuntu.com precise-updates/universe Sources\nHit http://security.ubuntu.com precise-security/restricted Translation-en\nHit http://us.archive.ubuntu.com precise-updates/multiverse Sources\nHit http://us.archive.ubuntu.com precise-updates/main i386 Packages\nHit http://us.archive.ubuntu.com precise-updates/restricted i386 Packages\nHit http://us.archive.ubuntu.com precise-updates/universe i386 Packages\nHit http://us.archive.ubuntu.com precise-updates/multiverse i386 Packages\nHit http://security.ubuntu.com precise-security/universe Translation-en\nHit http://us.archive.ubuntu.com precise-updates/main TranslationIndex\nHit http://us.archive.ubuntu.com precise-updates/multiverse TranslationIndex\nHit http://us.archive.ubuntu.com precise-updates/restricted TranslationIndex\nHit http://us.archive.ubuntu.com precise-updates/universe TranslationIndex\nHit http://us.archive.ubuntu.com precise-backports/main Sources\nHit http://us.archive.ubuntu.com precise-backports/restricted Sources\nHit http://us.archive.ubuntu.com precise-backports/universe Sources\nHit http://us.archive.ubuntu.com precise-backports/multiverse Sources\nHit http://us.archive.ubuntu.com precise-backports/main i386 Packages\nHit http://us.archive.ubuntu.com precise-backports/restricted i386 Packages\nHit http://us.archive.ubuntu.com precise-backports/universe i386 Packages\nHit http://us.archive.ubuntu.com precise-backports/multiverse i386 Packages\nHit http://us.archive.ubuntu.com precise-backports/main TranslationIndex\nHit http://us.archive.ubuntu.com precise-backports/multiverse TranslationIndex\nHit http://us.archive.ubuntu.com precise-backports/restricted TranslationIndex\nHit http://us.archive.ubuntu.com precise-backports/universe TranslationIndex\nHit http://us.archive.ubuntu.com precise/main Translation-en\nHit http://us.archive.ubuntu.com precise/multiverse Translation-en\nHit http://us.archive.ubuntu.com precise/restricted Translation-en\nHit http://us.archive.ubuntu.com precise/universe Translation-en\nHit http://us.archive.ubuntu.com precise-updates/main Translation-en\nHit http://us.archive.ubuntu.com precise-updates/multiverse Translation-en\nHit http://us.archive.ubuntu.com precise-updates/restricted Translation-en\nHit http://us.archive.ubuntu.com precise-updates/universe Translation-en\nHit http://us.archive.ubuntu.com precise-backports/main Translation-en\nHit http://us.archive.ubuntu.com precise-backports/multiverse Translation-en\nHit http://us.archive.ubuntu.com precise-backports/restricted Translation-en\nHit http://us.archive.ubuntu.com precise-backports/universe Translation-en\nGet:1 http://toolbelt.heroku.com ./ Release.gpg [490 B]\nGet:2 http://toolbelt.heroku.com ./ Release [1,673 B]\nIgn http://downloads-distro.mongodb.org dist/10gen Translation-en_US\nIgn http://downloads-distro.mongodb.org dist/10gen Translation-en\nGet:3 http://toolbelt.heroku.com ./ Packages [1,051 B]\nIgn http://toolbelt.heroku.com ./ Translation-en_US\nIgn http://toolbelt.heroku.com ./ Translation-en\nFetched 3,214 B in 8s (365 B/s)\nReading package lists...\nReading package lists...\nBuilding dependency tree...\nReading state information...\nThe following extra packages will be installed:\n  foreman heroku libruby1.9.1 libyaml-0-2 ruby1.9.1\nSuggested packages:\n  ruby1.9.1-examples ri1.9.1 graphviz ruby1.9.1-dev\nThe following NEW packages will be installed:\n  foreman heroku heroku-toolbelt libruby1.9.1 libyaml-0-2 ruby1.9.1\n0 upgraded, 6 newly installed, 0 to remove and 159 not upgraded.\nNeed to get 5,064 kB of archives.\nAfter this operation, 13.3 MB of additional disk space will be used.\nGet:1 http://us.archive.ubuntu.com/ubuntu/ precise/main libyaml-0-2 i386 0.1.4-2 [56.9 kB]\nGet:2 http://toolbelt.heroku.com/ubuntu/ ./ foreman 0.60.0 [89.5 kB]\nGet:3 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libruby1.9.1 i386 1.9.3.0-1ubuntu2.8 [4,210 kB]\nGet:4 http://toolbelt.heroku.com/ubuntu/ ./ heroku 3.2.0 [670 kB]\nGet:5 http://toolbelt.heroku.com/ubuntu/ ./ heroku-toolbelt 3.2.0 [630 B]\nGet:6 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main ruby1.9.1 i386 1.9.3.0-1ubuntu2.8 [37.0 kB]\ndpkg-preconfigure: unable to re-open stdin: No such file or directory\nFetched 5,064 kB in 5s (862 kB/s)\nSelecting previously unselected package libyaml-0-2.\n(Reading database ... 34343 files and directories currently installed.)\nUnpacking libyaml-0-2 (from .../libyaml-0-2_0.1.4-2_i386.deb) ...\nSelecting previously unselected package libruby1.9.1.\nUnpacking libruby1.9.1 (from .../libruby1.9.1_1.9.3.0-1ubuntu2.8_i386.deb) ...\nSelecting previously unselected package ruby1.9.1.\nUnpacking ruby1.9.1 (from .../ruby1.9.1_1.9.3.0-1ubuntu2.8_i386.deb) ...\nSelecting previously unselected package foreman.\nUnpacking foreman (from .../foreman_0.60.0_all.deb) ...\nSelecting previously unselected package heroku.\nUnpacking heroku (from .../archives/heroku_3.2.0_all.deb) ...\nSelecting previously unselected package heroku-toolbelt.\nUnpacking heroku-toolbelt (from .../heroku-toolbelt_3.2.0_all.deb) ...\nProcessing triggers for man-db ...\nSetting up libyaml-0-2 (0.1.4-2) ...\nSetting up libruby1.9.1 (1.9.3.0-1ubuntu2.8) ...\nSetting up ruby1.9.1 (1.9.3.0-1ubuntu2.8) ...\nupdate-alternatives: using /usr/bin/gem1.9.1 to provide /usr/bin/gem (gem) in auto mode.\nupdate-alternatives: using /usr/bin/ruby1.9.1 to provide /usr/bin/ruby (ruby) in auto mode.\nSetting up foreman (0.60.0) ...\nSetting up heroku (3.2.0) ...\nSetting up heroku-toolbelt (3.2.0) ...\nProcessing triggers for libc-bin ...\nldconfig deferred processing now taking place\nInstalling node packages...\nnpm http GET https://registry.npmjs.org/express\nnpm http 200 https://registry.npmjs.org/express\nnpm http GET https://registry.npmjs.org/express/-/express-3.4.7.tgz\nnpm http 200 https://registry.npmjs.org/express/-/express-3.4.7.tgz\nnpm http GET https://registry.npmjs.org/range-parser/0.0.4\nnpm http GET https://registry.npmjs.org/mkdirp/0.3.5\nnpm http GET https://registry.npmjs.org/cookie/0.1.0\nnpm http GET https://registry.npmjs.org/buffer-crc32/0.2.1\nnpm http GET https://registry.npmjs.org/fresh/0.2.0\nnpm http GET https://registry.npmjs.org/methods/0.1.0\nnpm http GET https://registry.npmjs.org/send/0.1.4\nnpm http GET https://registry.npmjs.org/cookie-signature/1.0.1\nnpm http GET https://registry.npmjs.org/merge-descriptors/0.0.1\nnpm http GET https://registry.npmjs.org/debug\nnpm http GET https://registry.npmjs.org/connect/2.12.0\nnpm http GET https://registry.npmjs.org/commander/1.3.2\nnpm http 200 https://registry.npmjs.org/mkdirp/0.3.5\nnpm http 200 https://registry.npmjs.org/cookie/0.1.0\nnpm http 200 https://registry.npmjs.org/buffer-crc32/0.2.1\nnpm http 200 https://registry.npmjs.org/range-parser/0.0.4\nnpm http GET https://registry.npmjs.org/mkdirp/-/mkdirp-0.3.5.tgz\nnpm http GET https://registry.npmjs.org/cookie/-/cookie-0.1.0.tgz\nnpm http GET https://registry.npmjs.org/buffer-crc32/-/buffer-crc32-0.2.1.tgz\nnpm http GET https://registry.npmjs.org/range-parser/-/range-parser-0.0.4.tgz\nnpm http 200 https://registry.npmjs.org/methods/0.1.0\nnpm http 200 https://registry.npmjs.org/fresh/0.2.0\nnpm http 200 https://registry.npmjs.org/send/0.1.4\nnpm http 200 https://registry.npmjs.org/cookie-signature/1.0.1\nnpm http 200 https://registry.npmjs.org/merge-descriptors/0.0.1\nnpm http GET https://registry.npmjs.org/methods/-/methods-0.1.0.tgz\nnpm http GET https://registry.npmjs.org/fresh/-/fresh-0.2.0.tgz\nnpm http GET https://registry.npmjs.org/send/-/send-0.1.4.tgz\nnpm http GET https://registry.npmjs.org/cookie-signature/-/cookie-signature-1.0.1.tgz\nnpm http GET https://registry.npmjs.org/merge-descriptors/-/merge-descriptors-0.0.1.tgz\nnpm http 200 https://registry.npmjs.org/connect/2.12.0\nnpm http 200 https://registry.npmjs.org/commander/1.3.2\nnpm http 200 https://registry.npmjs.org/debug\nnpm http GET https://registry.npmjs.org/connect/-/connect-2.12.0.tgz\nnpm http GET https://registry.npmjs.org/commander/-/commander-1.3.2.tgz\nnpm http GET https://registry.npmjs.org/debug/-/debug-0.7.4.tgz\nnpm http 200 https://registry.npmjs.org/range-parser/-/range-parser-0.0.4.tgz\nnpm http 200 https://registry.npmjs.org/cookie/-/cookie-0.1.0.tgz\nnpm http 200 https://registry.npmjs.org/mkdirp/-/mkdirp-0.3.5.tgz\nnpm http 200 https://registry.npmjs.org/buffer-crc32/-/buffer-crc32-0.2.1.tgz\nnpm http 200 https://registry.npmjs.org/cookie-signature/-/cookie-signature-1.0.1.tgz\nnpm http 200 https://registry.npmjs.org/fresh/-/fresh-0.2.0.tgz\nnpm http 200 https://registry.npmjs.org/merge-descriptors/-/merge-descriptors-0.0.1.tgz\nnpm http 200 https://registry.npmjs.org/send/-/send-0.1.4.tgz\nnpm http 200 https://registry.npmjs.org/connect/-/connect-2.12.0.tgz\nnpm http 200 https://registry.npmjs.org/commander/-/commander-1.3.2.tgz\nnpm http 200 https://registry.npmjs.org/debug/-/debug-0.7.4.tgz\nnpm http 200 https://registry.npmjs.org/methods/-/methods-0.1.0.tgz\nnpm http GET https://registry.npmjs.org/mime\nnpm http GET https://registry.npmjs.org/keypress\nnpm http GET https://registry.npmjs.org/batch/0.5.0\nnpm http GET https://registry.npmjs.org/qs/0.6.6\nnpm http GET https://registry.npmjs.org/bytes/0.2.1\nnpm http GET https://registry.npmjs.org/pause/0.0.1\nnpm http GET https://registry.npmjs.org/uid2/0.0.3\nnpm http GET https://registry.npmjs.org/raw-body/1.1.2\nnpm http GET https://registry.npmjs.org/negotiator/0.3.0\nnpm http GET https://registry.npmjs.org/multiparty/2.2.0\nnpm http 200 https://registry.npmjs.org/mime\nnpm http GET https://registry.npmjs.org/mime/-/mime-1.2.11.tgz\nnpm http 200 https://registry.npmjs.org/qs/0.6.6\nnpm http GET https://registry.npmjs.org/qs/-/qs-0.6.6.tgz\nnpm http 200 https://registry.npmjs.org/batch/0.5.0\nnpm http GET https://registry.npmjs.org/batch/-/batch-0.5.0.tgz\nnpm http 200 https://registry.npmjs.org/keypress\nnpm http GET https://registry.npmjs.org/keypress/-/keypress-0.1.0.tgz\nnpm http 200 https://registry.npmjs.org/pause/0.0.1\nnpm http GET https://registry.npmjs.org/pause/-/pause-0.0.1.tgz\nnpm http 200 https://registry.npmjs.org/bytes/0.2.1\nnpm http 200 https://registry.npmjs.org/uid2/0.0.3\nnpm http 200 https://registry.npmjs.org/raw-body/1.1.2\nnpm http 200 https://registry.npmjs.org/negotiator/0.3.0\nnpm http GET https://registry.npmjs.org/bytes/-/bytes-0.2.1.tgz\nnpm http GET https://registry.npmjs.org/uid2/-/uid2-0.0.3.tgz\nnpm http GET https://registry.npmjs.org/raw-body/-/raw-body-1.1.2.tgz\nnpm http GET https://registry.npmjs.org/negotiator/-/negotiator-0.3.0.tgz\nnpm http 200 https://registry.npmjs.org/multiparty/2.2.0\nnpm http GET https://registry.npmjs.org/multiparty/-/multiparty-2.2.0.tgz\nnpm http 200 https://registry.npmjs.org/mime/-/mime-1.2.11.tgz\nnpm http 200 https://registry.npmjs.org/batch/-/batch-0.5.0.tgz\nnpm http 200 https://registry.npmjs.org/qs/-/qs-0.6.6.tgz\nnpm http 200 https://registry.npmjs.org/pause/-/pause-0.0.1.tgz\nnpm http 200 https://registry.npmjs.org/keypress/-/keypress-0.1.0.tgz\nnpm http 200 https://registry.npmjs.org/uid2/-/uid2-0.0.3.tgz\nnpm http 200 https://registry.npmjs.org/bytes/-/bytes-0.2.1.tgz\nnpm http 200 https://registry.npmjs.org/negotiator/-/negotiator-0.3.0.tgz\nnpm http 200 https://registry.npmjs.org/multiparty/-/multiparty-2.2.0.tgz\nnpm http 200 https://registry.npmjs.org/raw-body/-/raw-body-1.1.2.tgz\nnpm http GET https://registry.npmjs.org/stream-counter\nnpm http GET https://registry.npmjs.org/readable-stream\nnpm http 200 https://registry.npmjs.org/stream-counter\nnpm http GET https://registry.npmjs.org/stream-counter/-/stream-counter-0.2.0.tgz\nnpm http 200 https://registry.npmjs.org/readable-stream\nnpm http GET https://registry.npmjs.org/readable-stream/-/readable-stream-1.1.9.tgz\nnpm http 200 https://registry.npmjs.org/stream-counter/-/stream-counter-0.2.0.tgz\nnpm http 200 https://registry.npmjs.org/readable-stream/-/readable-stream-1.1.9.tgz\nnpm http GET https://registry.npmjs.org/core-util-is\nnpm http GET https://registry.npmjs.org/debuglog/0.0.2\nnpm http 200 https://registry.npmjs.org/core-util-is\nnpm http GET https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.0.tgz\nnpm http 200 https://registry.npmjs.org/debuglog/0.0.2\nnpm http GET https://registry.npmjs.org/debuglog/-/debuglog-0.0.2.tgz\nnpm http 200 https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.0.tgz\nnpm http 200 https://registry.npmjs.org/debuglog/-/debuglog-0.0.2.tgz\nexpress@3.4.7 /usr/local/lib/node_modules/express\n├── methods@0.1.0\n├── merge-descriptors@0.0.1\n├── cookie-signature@1.0.1\n├── range-parser@0.0.4\n├── fresh@0.2.0\n├── debug@0.7.4\n├── buffer-crc32@0.2.1\n├── cookie@0.1.0\n├── mkdirp@0.3.5\n├── commander@1.3.2 (keypress@0.1.0)\n├── send@0.1.4 (mime@1.2.11)\n└── connect@2.12.0 (uid2@0.0.3, pause@0.0.1, qs@0.6.6, bytes@0.2.1, raw-body@1.1.2, batch@0.5.0, negotiator@0.3.0, multiparty@2.2.0)\nnpm http GET https://registry.npmjs.org/mongoose\nnpm http 200 https://registry.npmjs.org/mongoose\nnpm http GET https://registry.npmjs.org/mongoose/-/mongoose-3.8.3.tgz\nnpm http 200 https://registry.npmjs.org/mongoose/-/mongoose-3.8.3.tgz\nnpm http GET https://registry.npmjs.org/ms/0.1.0\nnpm http GET https://registry.npmjs.org/hooks/0.2.1\nnpm http GET https://registry.npmjs.org/mongodb/1.3.19\nnpm http GET https://registry.npmjs.org/sliced/0.0.5\nnpm http GET https://registry.npmjs.org/muri/0.3.1\nnpm http GET https://registry.npmjs.org/mpromise/0.3.0\nnpm http GET https://registry.npmjs.org/regexp-clone/0.0.1\nnpm http GET https://registry.npmjs.org/mpath/0.1.1\nnpm http GET https://registry.npmjs.org/mquery/0.3.2\nnpm http 200 https://registry.npmjs.org/ms/0.1.0\nnpm http GET https://registry.npmjs.org/ms/-/ms-0.1.0.tgz\nnpm http 200 https://registry.npmjs.org/sliced/0.0.5\nnpm http 200 https://registry.npmjs.org/hooks/0.2.1\nnpm http 200 https://registry.npmjs.org/mongodb/1.3.19\nnpm http GET https://registry.npmjs.org/sliced/-/sliced-0.0.5.tgz\nnpm http GET https://registry.npmjs.org/hooks/-/hooks-0.2.1.tgz\nnpm http GET https://registry.npmjs.org/mongodb/-/mongodb-1.3.19.tgz\nnpm http 200 https://registry.npmjs.org/regexp-clone/0.0.1\nnpm http GET https://registry.npmjs.org/regexp-clone/-/regexp-clone-0.0.1.tgz\nnpm http 200 https://registry.npmjs.org/mpath/0.1.1\nnpm http 200 https://registry.npmjs.org/muri/0.3.1\nnpm http 200 https://registry.npmjs.org/mpromise/0.3.0\nnpm http GET https://registry.npmjs.org/mpath/-/mpath-0.1.1.tgz\nnpm http GET https://registry.npmjs.org/muri/-/muri-0.3.1.tgz\nnpm http GET https://registry.npmjs.org/mpromise/-/mpromise-0.3.0.tgz\nnpm http 200 https://registry.npmjs.org/ms/-/ms-0.1.0.tgz\nnpm http 200 https://registry.npmjs.org/mquery/0.3.2\nnpm http GET https://registry.npmjs.org/mquery/-/mquery-0.3.2.tgz\nnpm http 200 https://registry.npmjs.org/hooks/-/hooks-0.2.1.tgz\nnpm http 200 https://registry.npmjs.org/mongodb/-/mongodb-1.3.19.tgz\nnpm http 200 https://registry.npmjs.org/sliced/-/sliced-0.0.5.tgz\nnpm http 200 https://registry.npmjs.org/mpath/-/mpath-0.1.1.tgz\nnpm http 200 https://registry.npmjs.org/muri/-/muri-0.3.1.tgz\nnpm http 200 https://registry.npmjs.org/regexp-clone/-/regexp-clone-0.0.1.tgz\nnpm http 200 https://registry.npmjs.org/mpromise/-/mpromise-0.3.0.tgz\nnpm http 200 https://registry.npmjs.org/mquery/-/mquery-0.3.2.tgz\nnpm http GET https://registry.npmjs.org/debug/0.7.0\nnpm http GET https://registry.npmjs.org/bson/0.2.2\nnpm http GET https://registry.npmjs.org/kerberos/0.0.3\nnpm http 200 https://registry.npmjs.org/kerberos/0.0.3\nnpm http GET https://registry.npmjs.org/kerberos/-/kerberos-0.0.3.tgz\nnpm http 200 https://registry.npmjs.org/bson/0.2.2\nnpm http 200 https://registry.npmjs.org/debug/0.7.0\nnpm http GET https://registry.npmjs.org/debug/-/debug-0.7.0.tgz\nnpm http GET https://registry.npmjs.org/bson/-/bson-0.2.2.tgz\nnpm http 200 https://registry.npmjs.org/kerberos/-/kerberos-0.0.3.tgz\nnpm http 200 https://registry.npmjs.org/debug/-/debug-0.7.0.tgz\nnpm http 200 https://registry.npmjs.org/bson/-/bson-0.2.2.tgz\n\n> kerberos@0.0.3 install /usr/local/lib/node_modules/mongoose/node_modules/mongodb/node_modules/kerberos\n> (node-gyp rebuild 2> builderror.log) || (exit 0)\n\nmake: Entering directory `/usr/local/lib/node_modules/mongoose/node_modules/mongodb/node_modules/kerberos/build'\n  SOLINK_MODULE(target) Release/obj.target/kerberos.node\n  SOLINK_MODULE(target) Release/obj.target/kerberos.node: Finished\n  COPY Release/kerberos.node\nmake: Leaving directory `/usr/local/lib/node_modules/mongoose/node_modules/mongodb/node_modules/kerberos/build'\n\n> bson@0.2.2 install /usr/local/lib/node_modules/mongoose/node_modules/mongodb/node_modules/bson\n> (node-gyp rebuild 2> builderror.log) || (exit 0)\n\nmake: Entering directory `/usr/local/lib/node_modules/mongoose/node_modules/mongodb/node_modules/bson/build'\n  CXX(target) Release/obj.target/bson/ext/bson.o\n  SOLINK_MODULE(target) Release/obj.target/bson.node\n  SOLINK_MODULE(target) Release/obj.target/bson.node: Finished\n  COPY Release/bson.node\nmake: Leaving directory `/usr/local/lib/node_modules/mongoose/node_modules/mongodb/node_modules/bson/build'\nmongoose@3.8.3 /usr/local/lib/node_modules/mongoose\n├── regexp-clone@0.0.1\n├── sliced@0.0.5\n├── muri@0.3.1\n├── mpromise@0.3.0\n├── hooks@0.2.1\n├── mpath@0.1.1\n├── ms@0.1.0\n├── mquery@0.3.2 (debug@0.7.0)\n└── mongodb@1.3.19 (kerberos@0.0.3, bson@0.2.2)\nDone!\n➜  introHCI git:(master) ✗ "
+    },
+    {
+      "type": "debug",
+      "list": [{
+        "problem":"<pre><code>GuestAdditions versions […] do not match</code></pre>",
+        "fix":"Don't worry: vbguest fixes this for you."
+      },
+      {
+        "problem":"<pre><code>An error occurred during installation of  VirtualBox Guest Additions</code></pre>",
+        "fix":"Don't worry; this is for XWindows; we don’t use it."
+      },
+      {
+        "problem":"<pre><code>dpkg-preconfigure: unable to re-open stdin</code></pre>",
+        "fix":"Don't worry, this is because it's running as a script and thus has no stdin."
+      },
+      {
+        "problem":"There is a long wait after <pre><code>execute[tar --no-same-owner -zxf node-v0.10.24.tar.gz]</code></pre>",
+        "fix":"That's fine; it's compiling node.js, and that can take some time."
+      },
+      {
+        "problem":"<pre><code>SSH connection was refused!</code></pre>",
+        "fix":"Do what it suggests and try <code>vagrant reload</code>, or if that doesn't work, <code>vagrant destroy</code> followed by <code>vagrant up</code>."
+      },
+      {
+        "problem":"<pre><code>Vagrant cannot forward the specified ports on this VM, since they would collide with some other application that is already listening on these ports. The forwarded port to 3000 is already in use on the host machine.</code></pre> ",
+        "fix":"You might have another application open that's using port 3000. The command <code>lsof -i | grep LISTEN</code> might tell you which one, and you can kill it. A restart might clear the port too. In the worst case, you can go into the Vagrantfile and change the line <code>config.vm.forward_port 3000, 3000</code> to <code>config.vm.forward_port 3000, 3001</code> and load the page at http://localhost:3001 instead."
+      }]
+    }
+  ],
+  [],
+  [],
+  [
+    {
+      "comment":"38",
+      "type":"links",
+      "list":["<a href='http://hci.st/lab-submit'>http://hci.st/lab-submit</a>"]
+    }
+  ]
+]

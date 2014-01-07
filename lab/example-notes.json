@@ -1,0 +1,28 @@
+[
+  [
+    {
+      "type": "video",
+      "title": "This Replaces 'Video' (works for all types)",
+      "src": ""
+    },
+    {
+      "type": "links",
+      "list": [ "<a href='www.example.com'>Example Link</a>" ]
+    },
+    {
+      "type": "code",
+      "text": "[example] cd something_here"
+    }
+  ],
+  [
+    {
+      "type": "debug",
+      "list": [{
+        "problem":
+        "I don't understand how to generate a lab from the keynote.",
+        "fix":
+        "Read the 'Readme.md' file and look at the 'example-notes.json'"
+      }]
+    }
+  ]
+]
