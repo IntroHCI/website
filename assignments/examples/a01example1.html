@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Introduction to Human-Computer Interaction: Assignment">
+    <title>Intro to HCI: Assignment 1, Example 1</title>
+
+    <!-- Bootstrap -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="../../css/hci.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body data-spy="scroll" data-target=".sidenav">
+
+    <!-- 
+    IntroHCI assignment template
+    ------------------
+    To create a new assignment:
+    1) Write all the HTML as you normally would underneath the #assignment-description div.
+    2) Anything that you want to appear in the navbar on the left needs to be enclosed
+        in a <div id="unique-id" class="sidenav-anchor">. On page load, hci.js will look up
+        anything enclosed in .sidenav-anchor, find the first header (h1-h6) inside it, and add
+        it to the navigation pane on the left. Make sure it has a unique div id so that there is something
+        to anchor the hyperlink to.
+    3) I recommend going with Bootstrap's recommendation and putting any <table class="table"> elements enclosed in a
+        <div class="table-responsive">.
+    -->
+
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Intro to HCI</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class=""><a href="../../index.html">Home</a></li>
+            <li><a href="../../index.html#calendar">Calendar</a></li>
+            <li><a href="../../lab/">Lab</a></li>
+            <li class="dropdown active">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Logistics <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="../logistics.html#prereqs">Prerequisites</a></li>
+                  <li><a href="../../logistics.html#lab">Lab</a></li>
+                  <li><a href="../../logistics.html#grading">Grading</a></li>
+                  <li><a href="../logistics.html#attendance">Attendance</a></li>
+                  <li><a href="../../logistics.html#cs77">CS 77</a></li>
+                  <li><a href="../../logistics.html#faq">FAQ</a></li>
+                </ul>
+            </li>            
+            <li><a href="http://www.coursera.org">Submit Work</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="staffemailorpiazzaforum@university.edu">Questions</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="sidenav" data-spy="affix">
+                    <ul class="nav nav-stacked" id="sidenav-content">   
+                    </ul>
+                </div> <!-- /sidenav -->
+            </div> <!-- /col-md-3 -->  
+            <div class="col-md-9" id="assignment-description"> 
+                    
+                    <div>
+                        <h1>Assignment 1, Example 1</h1>
+                    </div>
+
+                <div id="brainstormlist" class="sidenav-anchor">
+                    <h2>Brainstorming</h2>
+                    <ol>
+                        <li>(POV/NEED: Entertainment) A countdown timer app that tells you how much time you have to get to the front</li>
+                        <li>(POV/NEED: Opportunity to Connect) An app that compares your facebook likes with your fellow linemates and tells you about similarities between the people around you to try and spark conversation</li>
+                        <li>(POV/NEED: Opportunity to Connect) Conversation application that pushes random topic suggestions to you based on your preferences</li>
+                        <li>(POV/NEED: Productivity) An email service that brings up various Stanford surveys/psychology tests to take while waiting - offer money/prizes as usual for the more you take</li>
+                        <li>(POV/NEED: Productivity) An app that brings up calls/texts you have to return with reminder topics so you can be productive while in line</li>
+                        <li>(POV/NEED: Comfort) Put pictures of leg &amp; back stretches on the side of the line so people can refresh themselves</li>
+                        <li>(POV/NEED: Avoid Lines) A bidding system app that allows people to sell their spot to the people behind them in line</li>
+                        <li>(POV/NEED: Productivity) An app where you can enter your current shopping cart and receive discounts based on the combinations of items you buy</li>
+                        <li>(POV/NEED: Entertainment) A simple "pass the ball" game (could be a literal ball or a virtual ball) to kill time while in line</li>
+                        <li>(POV/NEED: Entertainment) A ”where’s waldo” game but instead of finding waldo you have to find where items near the line are located</li>
+                        <li>(POV/NEED: Productivity) An app that analyzes your recently listened iPod songs and pushes song suggestions + youtube videos so you can explore new music</li>
+                        <li>(POV/NEED: Avoid Lines) A system of stand ins that wait beside the line and allow you to hire them so you can do other stuff while your stand in waits in line</li>
+                        <li>(POV/NEED: Avoid Lines) A barcode scanner so you can pay for your items and check out while in line</li>
+                        <li>(POV/NEED: Avoid Lines) An app that bundles surrounding carts so you can all go to register at once</li>
+                        <li>(POV/NEED: Entertainment) Put TVs/touchscreens/video games on the side of the line so people can entertain themselves while moving through the line</li>
+                        <li>(POV/NEED: Entertainment) An app that shows you the person whose profile on facebook you have seen least recently</li>
+                        <li>(POV/NEED: Entertainment) Put comic strips on the floor (one box every few meters) so that people can read them while they move through line</li>
+                        <li>(POV/NEED: Entertainment) Have people suggest songs through an app and when enough people upvote a song, it gets played in the store immediately</li>
+                        <li>(POV/NEED: Productivity/Entertainment) A game where people have to collect items near the line on their way through; if they collect all of them, they get a discount and it benefits the store because they get to highlight certain items and people may decide by physically touching them that they want those items.</li>
+                        <li>(POV/NEED: Avoid Lines) When you get to line you get a number and you can do whatever you want in the meantime. When they call your number, you pay.</li>
+                        <li>(POV/NEED: Entertainment) Pay a dance instructor to teach dancing lessons in line</li>
+                        <li>(POV/NEED: Comfort) Make a conveyer belt with chairs that people can sit on to rest while in line</li>
+                        <li>(POV/NEED: Comfort) Make a circular "lazy river" style waiting area with rolling chairs and when their number is called, their chair goes forward so they can pay.</li>
+                        <li>(POV/NEED: Productivity) An app that makes suggestions of other items to buy next time based on your cart while in line</li>
+                        <li>(POV/NEED: Entertainment) An app that allows people in line to challenge each other to a rapid fire game of chess, draw something, or scrabble</li>
+                    </ol>
+                </div>
+
+                <div id="prototypes" class="sidenav-anchor">
+                    <h2>Prototypes</h2>
+                    <p>Idea 1: Make a conveyer belt with chairs that people can sit on to rest while in line<br />How to prototype: Bring rolling office chairs and have people sit on them to roll through line. Manually bring the front chair to the back at the end of the line for now.<br />Why: This idea addresses the fact that most people in line look/feel incredibly uncomfortable and attempts to turn the otherwise physically and mentally stressful aspects of waiting in line into a time for relaxation and reflection.</p>
+                    <p><a href="./images/a01e1p1.jpg"><img src="./images/a01e1p1.jpg" class="img-responsive" alt="image" style="border: 0px none; "></a></p>
+                    <p>Idea 2: An app that brings up calls/texts you have to return with reminder topics so you can be productive and reconnect with people while in line<br />How to prototype: A series of index cards demonstrating various application screens/features<br />Why: This idea connects with people's want to be productive while in line and makes it easier to get work done by effectively scheduling previous "dead" time in line as people-oriented work, networking, and relaxation time.</p>
+                    <p><a href="./images/a01e1p2.png"><img src="./images/a01e1p2.png" class="img-responsive" alt="image" style="border: 0px none; "></a></p>
+                </div>
+                
+                <div id="testing" class="sidenav-anchor">
+                    <h2>Testing</h2>
+                    <p>Idea 1 User Testing: In the Stanford Bookstore line. 50+ Different Users.</p>
+                    <p><a href="./images/a01e1p3.jpg"><img src="./images/a01e1p3.jpg" class="img-responsive" alt="image" style="border: 0px none; "></a></p>
+                    <p>Idea 2 User Testing: In Safeway line. 2 Different Users.</p>
+                    <p><a href="./images/a01e1p4.jpg"><img src="./images/a01e1p4.jpg" class="img-responsive" alt="image" style="border: 0px none; "></a></p>
+                </div>
+                
+                <div id="insights" class="sidenav-anchor">
+                    <h2>Insights</h2>
+                    <p>Idea 1 User Insights:</p>
+                    <ul>
+                        <li>The majority of people reported that they loved how comfortable it was to roll through the line instead of standing up. Many thought it changed the experience from stressful to relaxing</li>
+                        <li>Some suggested that I add a bin or bag to each chair that people can place their items in while they wait so that people can have their hands free when they sit</li>
+                        <li>The prototype was especially popular with disabled/pregnant people because of ease of use and physical accommodations. One pregnant lady user told me with tears in her eyes that I "made her day"</li>
+                        <li>One potential problem is that if the flooring of the store is carpet or if they hold items that drag on the floor, it can interfere with the wheels and make the experience of waiting in line even worse.</li>
+                        <li>Many of the younger users tried to turn the rolling office chairs into entertainment, playing games like "bumper chairs" while in line.</li>
+                        <li>Most of the elderly users that tried the office chair conveyer belt used the time for relaxation, preferring only to move when necessary to go forward. These users found the most value in the chairs and expressed the most sincere appreciation.</li>
+                        <li>Some people in line chose not to participate because they preferred standing in line, especially if they had just been sitting all day in class. In a real conveyer belt, there would also be the option to stand.</li>
+                        <li>Everyone who I exit surveyed said they loved the simplicity of the idea. Without any explanation, everyone that came to the line knew how to use the office chair conveyer belt</li>
+                        <li>Some appreciated that being at a lower vantage point caused them to notice items that were placed on lower shelfs in the store and made them more likely to pick up those items while moving through line. Could lead to a novel system of product placement in stores that use this system.</li>
+                    </ul>
+                    <p>Idea 2 User Insights:</p>
+                    <ul>
+                        <li>The convenience of the app was the main advantage. Users enjoyed the idea of "detecting when you are waiting in line" based off movement.</li>
+                        <li>People enjoyed that most of the app was customizable, such as being able to change the people who you need to call and the reminder topics instead of it just being based on missed calls.</li>
+                        <li>Some complained that the interfacing for adding customizations was clunky. They suggested a simpler system with a contact list. Some were confused about the reminder topics and didn't realize that they had the power to change them on the fly</li>
+                        <li>Both users loved that it made them more productive in line. One even remembered to call her parents after using the app and said that it helped her reconnect.</li>
+                        <li>Both thought that having suggested topics in advance, even if one of the suggestions is just to be grateful, was a useful feature because it can often be hard to come up with reasons to call.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/hci.js"></script>
+  </body>
+</html>
