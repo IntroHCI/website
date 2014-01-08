@@ -1,5 +1,13 @@
 $(document).ready(function() {
     initializeSideNav();
+    var offset = 60;
+
+    $('#sidenav-content li a').click(function(event) {
+        event.preventDefault();
+        $($(this).attr('href'))[0].scrollIntoView();
+        scrollBy(0, -offset);
+    });
+
 });
 
 function initializeSideNav() {
