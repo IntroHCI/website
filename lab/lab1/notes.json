@@ -31,10 +31,11 @@
   ],
   [],
   [],
+  [],  
   [],
   [
     {
-      "comment": "9",
+      "comment": "10",
       "type": "links",
       "list": ["<a href='http://hci.st/lab-submit'>http://hci.st/lab-submit</a>"]
     }
@@ -43,7 +44,7 @@
   [],
   [
     {
-      "comment": "12",
+      "comment": "13",
       "type": "links",
       "list": ["<a href='http://hci.st/vagrant'>http://hci.st/vagrant</a>"]
     },
