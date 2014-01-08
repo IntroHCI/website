@@ -24,7 +24,7 @@
   [],
   [
     {
-      "comment": "5",
+      "comment": "hci.st/lab intro",
       "type": "links",
       "list": ["<a href='http://hci.st/lab'>http://hci.st/lab</a> (though you've probably already figured that out if you're looking at this page)"]
     }
@@ -35,7 +35,7 @@
   [],
   [
     {
-      "comment": "10",
+      "comment": "submit link",
       "type": "links",
       "list": ["<a href='http://hci.st/lab-submit'>http://hci.st/lab-submit</a>"]
     }
@@ -44,7 +44,7 @@
   [],
   [
     {
-      "comment": "13",
+      "comment": "download configuration files",
       "type": "links",
       "list": ["<a href='http://hci.st/vagrant'>http://hci.st/vagrant</a>"]
     },
@@ -59,7 +59,7 @@
   ],
   [
     {
-      "comment": "13",
+      "comment": "fork your first github repo",
       "type": "links",
       "list": ["<a href='https://github.com/IntroHCI/lab1'>https://github.com/IntroHCI/lab1</a>"]
     },
@@ -77,14 +77,14 @@
   ],
   [
     {
-      "comment": "14",
+      "comment": "copy the git clone url",
       "type": "video",
       "src": "video/git-clone.mov"
     }
   ],
   [
     {
-      "comment": "15",
+      "comment": "open your terminal",
       "type": "video",
       "src": "video/cd.mov"
     },
@@ -95,7 +95,7 @@
   ],
   [
     {
-      "comment": "16",
+      "comment": "git clone the repo inside of introHCI",
       "type": "video",
       "src": "video/git-clone-2.mov"
     },
@@ -122,7 +122,7 @@
   [],
   [
     {
-      "comment": "18",
+      "comment": "add your info into [file]",
       "type": "video",
       "src": "video/git-edit.mov"
     },
@@ -132,18 +132,22 @@
     }
   ],
   [],
-  [],
   [
     {
-      "comment": "21",
+      "comment": "set up git so we can commit",
       "type": "code",
       "text": "git config --global user.name \"Your Name\"\ngit config --global user.email \"youremail@university.edu\"\ngit config --global push.default simple"
-    }
+    },
+    {
+      "comment": "set up git so we can commit",
+      "type": "video",
+      "src": "video/git-config.mov"
+    },    
   ],
   [],
   [
     {
-      "comment": "23",
+      "comment": "git status and git add",
       "type": "video",
       "src": "video/git-add.mov"
     },
@@ -161,7 +165,7 @@
   ],
   [
     {
-      "comment": "24",
+      "comment": "commit, pull, and then push",
       "type": "video",
       "src": "video/git-commit.mov"
     },
@@ -187,7 +191,7 @@
   [],
   [
     {
-      "comment": "29",
+      "comment": "merging and conflicts",
       "type": "video",
       "src": "video/git-conflict.mov"
     },
@@ -198,7 +202,7 @@
   ],
   [
     {
-      "comment": "30",
+      "comment": "resolving merge conflicts",
       "type": "video",
       "src": "video/git-resolve-conflict.mov"
     },
@@ -209,7 +213,7 @@
   ],
   [
     {
-      "comment": "31",
+      "comment": "resolving merge conflicts (2)",
       "type": "video",
       "src": "video/git-resolve.mov"
     },
@@ -222,7 +226,7 @@
   [],
   [
     {
-      "comment": "34",
+      "comment": "autoupgrade the virtualbox guest tools",
       "type": "video",
       "src": "video/vagrant-vbguest.mov"
     },
@@ -233,7 +237,7 @@
   ],
   [
     {
-      "comment": "35",
+      "comment": "ran vagrant up in the introHCI directory",
       "type": "video",
       "src": "video/vagrant-up.mov"
     },
@@ -273,7 +277,7 @@
   [],
   [
     {
-      "comment":"38",
+      "comment":"last slide",
       "type":"links",
       "list":["<a href='http://hci.st/lab-submit'>http://hci.st/lab-submit</a>"]
     }
