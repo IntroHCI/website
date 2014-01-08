@@ -142,7 +142,7 @@
       "comment": "set up git so we can commit",
       "type": "video",
       "src": "video/git-config.mov"
-    },    
+    }    
   ],
   [],
   [
@@ -188,7 +188,6 @@
   [],
   [],
   [],
-  [],
   [
     {
       "comment": "merging and conflicts",
@@ -197,7 +196,7 @@
     },
     {
       "type": "code",
-      "text": "➜  lab1 git:(master) git remote add upstream https://github.com/IntroHCI/lab1.git\n➜  lab1 git:(master) git pull upstream master\nremote: Counting objects: 18, done.\nremote: Compressing objects: 100% (7/7), done.\nremote: Total 12 (delta 6), reused 8 (delta 2)\nUnpacking objects: 100% (12/12), done.\nFrom https://github.com/IntroHCI/lab1\n * branch            master     -> FETCH_HEAD\nAuto-merging static/index.html\nCONFLICT (content): Merge conflict in static/index.html\nAutomatic merge failed; fix conflicts and then commit the result."
+      "text": "➜  lab1 git:(master) git remote add conflict https://github.com/IntroHCI/lab1conflict.git\n➜  lab1 git:(master) git pull conflict master\n remote: Counting objects: 11, done.\n remote: Compressing objects: 100% (6/6), done.\n remote: Total 8 (delta 4), reused 0 (delta 0)\n Unpacking objects: 100% (8/8), done.\n From https://github.com/IntroHCI/lab1conflict\n  * branch            master     -> FETCH_HEAD\n Auto-merging static/index.html\n CONFLICT (content): Merge conflict in static/index.html\n Automatic merge failed; fix conflicts and then commit the result."
     }
   ],
   [
