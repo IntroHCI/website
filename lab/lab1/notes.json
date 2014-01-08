@@ -46,11 +46,23 @@
       "comment": "12",
       "type": "links",
       "list": ["<a href='http://hci.st/vagrant'>http://hci.st/vagrant</a>"]
+    },
+    {
+      "type": "debug",
+      "title": "Hints",
+      "list": [{
+        "problem": "What is <code>~/</code>?",
+        "fix": "In Unix, <code>~/</code> is your home directory."
+      }]
     }
   ],
   [
     {
       "comment": "13",
+      "type": "links",
+      "list": ["<a href='https://github.com/IntroHCI/lab1'>https://github.com/IntroHCI/lab1</a>"]
+    },
+    {
       "type": "video",
       "src": "video/git-fork.mov"
     },
