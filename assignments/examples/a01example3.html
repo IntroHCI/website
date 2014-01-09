@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Introduction to Human-Computer Interaction: Assignment">
+    <title>Intro to HCI: Assignment 1, Evaluation Training</title>
+
+    <!-- Bootstrap -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="../../css/hci.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body data-spy="scroll" data-target=".sidenav">
+
+    <!-- 
+    IntroHCI assignment template
+    ------------------
+    To create a new assignment:
+    1) Write all the HTML as you normally would underneath the #assignment-description div.
+    2) Anything that you want to appear in the navbar on the left needs to be enclosed
+        in a <div id="unique-id" class="sidenav-anchor">. On page load, hci.js will look up
+        anything enclosed in .sidenav-anchor, find the first header (h1-h6) inside it, and add
+        it to the navigation pane on the left. Make sure it has a unique div id so that there is something
+        to anchor the hyperlink to.
+    3) I recommend going with Bootstrap's recommendation and putting any <table class="table"> elements enclosed in a
+        <div class="table-responsive">.
+    -->
+
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Intro to HCI</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class=""><a href="../../index.html">Home</a></li>
+            <li><a href="../../index.html#calendar">Calendar</a></li>
+            <li><a href="../../lab/">Lab</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Logistics <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="../logistics.html#prereqs">Prerequisites</a></li>
+                  <li><a href="../../logistics.html#lab">Lab</a></li>
+                  <li><a href="../../logistics.html#grading">Grading</a></li>
+                  <li><a href="../logistics.html#attendance">Attendance</a></li>
+                  <li><a href="../../logistics.html#cs77">CS 77</a></li>
+                  <li><a href="../../logistics.html#faq">FAQ</a></li>
+                </ul>
+            </li>            
+            <li><a href="http://www.coursera.org">Submit Work</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="staffemailorpiazzaforum@university.edu">Questions</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="sidenav" data-spy="affix">
+                    <ul class="nav nav-stacked" id="sidenav-content">   
+                    </ul>
+                </div> <!-- /sidenav -->
+            </div> <!-- /col-md-3 -->  
+            <div class="col-md-9" id="assignment-description"> 
+                    
+                    <div>
+                        <h1>Assignment 1, Evaluation Training</h1>
+                    </div>
+
+                <div id="brainstormlist" class="sidenav-anchor">
+                    <h2>Brainstorming</h2>
+                    <ol>
+                        <li>Mobile app, which shows all you friends who are idling similar as you. You can chat with them.</li>
+                        <li>Big TV playing sports events.</li>
+                        <li>Register phone number at the front door. Receive SMS reminder when it's your turn. People don't need to wait in line actually.</li>
+                        <li>People pick up magazines at front door and return/buy it when leaving.</li>
+                        <li>Get waiting number card/name at front door, and wait for the call. People don't need to wait in line.</li>
+                        <li>Mobile app, shake for new things/new people</li>
+                        <li>Awards for lucky position in line</li>
+                        <li>Put attractive items along side the line so that customers browse or even buy.</li>
+                        <li>Time killing games: Tetris, PacMan</li>
+                        <li>Bump app to change contact information with people around you.</li>
+                        <li>Story-telling apps, read short news or check personal emails on app.</li>
+                        <li>Check in location by four-square-like app and shared on facebook-like app.</li>
+                        <li>Use a place holder to hold the place, during which time customer can relax a little bit, restroom...</li>
+                        <li>Online-appointment to remove the line.</li>
+                        <li>Time to do nothing and relax</li>
+                        <li>Hire people for standing in the line, for example, people paid for the IPHONE5 queues.</li>
+                        <li>Give them some free snack to enjoy!</li>
+                        <li>Share you comments on yelp-like app</li>
+                        <li>Give a surprise call to friends</li>
+                        <li>Listen to music on pandora-like app</li>
+                        <li>Play a multiplayer game with nearby users</li>
+                        <li>Use phone as controller for the game, which is displayed on the tv-screen.</li>
+                    </ol>
+                </div>
+
+                <div id="prototypes" class="sidenav-anchor">
+                    <h2>Prototypes</h2>
+                    <p>Prototype A: Mobile App "Hi"<br />It allows people to catch up with existing friends or say hi to strangers who are also available to chat.</p>
+                    <p><a href="./images/a01e3p1.jpg"><img src="./images/a01e3p1.jpg" class="img-responsive" alt="image" style="border: 0px none; "></a></p>
+                    <p>Prototype B: TV-Mobile Interactive Game<br />Play interactive game on TV using your iPhone with others when waiting in line.</p>
+                    <p><a href="./images/a01e3p2.jpg"><img src="./images/a01e3p2.jpg" class="img-responsive" alt="image" style="border: 0px none; "></a></p>
+                </div>
+                
+                <div id="testing" class="sidenav-anchor">
+                    <h2>Testing</h2>
+                    <p><a href="./images/a01e3p3.jpg"><img src="./images/a01e3p3.jpg" class="img-responsive" alt="image" style="border: 0px none; "></a></p>
+                </div>
+                
+                <div id="insights" class="sidenav-anchor">
+                    <h2>Insights</h2>
+                    <ol>
+                        <li>A large portion of people like to browse their cell phones when waiting in line.</li>
+                        <li>People are happy to chat with friends when waiting in line.</li>
+                        <li>People like to the idea to catch up with friends who are also waiting in line or doing nothing in this app.</li>
+                        <li>People like the idea to chat nearby strangers.</li>
+                        <li>People like the idea to rank people by distance.</li>
+                        <li>Most interviewees are willing to use this app.</li>
+                        <li>This app should have a more attractive name, like "catch up", "talk".</li>
+                        <li>It's sometimes odd to talk to strangers.</li>
+                        <li>It might not have so many people available to talk.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/hci.js"></script>
+  </body>
+</html>
