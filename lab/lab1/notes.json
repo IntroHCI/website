@@ -24,17 +24,18 @@
   [],
   [
     {
-      "comment": "5",
+      "comment": "hci.st/lab intro",
       "type": "links",
       "list": ["<a href='http://hci.st/lab'>http://hci.st/lab</a> (though you've probably already figured that out if you're looking at this page)"]
     }
   ],
   [],
   [],
+  [],  
   [],
   [
     {
-      "comment": "9",
+      "comment": "submit link",
       "type": "links",
       "list": ["<a href='http://hci.st/lab-submit'>http://hci.st/lab-submit</a>"]
     }
@@ -43,14 +44,26 @@
   [],
   [
     {
-      "comment": "12",
+      "comment": "download configuration files",
       "type": "links",
       "list": ["<a href='http://hci.st/vagrant'>http://hci.st/vagrant</a>"]
+    },
+    {
+      "type": "debug",
+      "title": "Hints",
+      "list": [{
+        "problem": "What is <code>~/</code>?",
+        "fix": "In Unix, <code>~/</code> is your home directory."
+      }]
     }
   ],
   [
     {
-      "comment": "13",
+      "comment": "fork your first github repo",
+      "type": "links",
+      "list": ["<a href='https://github.com/IntroHCI/lab1'>https://github.com/IntroHCI/lab1</a>"]
+    },
+    {
       "type": "video",
       "src": "video/git-fork.mov"
     },
@@ -64,14 +77,14 @@
   ],
   [
     {
-      "comment": "14",
+      "comment": "copy the git clone url",
       "type": "video",
       "src": "video/git-clone.mov"
     }
   ],
   [
     {
-      "comment": "15",
+      "comment": "open your terminal",
       "type": "video",
       "src": "video/cd.mov"
     },
@@ -82,7 +95,7 @@
   ],
   [
     {
-      "comment": "16",
+      "comment": "git clone the repo inside of introHCI",
       "type": "video",
       "src": "video/git-clone-2.mov"
     },
@@ -109,7 +122,7 @@
   [],
   [
     {
-      "comment": "18",
+      "comment": "add your info into [file]",
       "type": "video",
       "src": "video/git-edit.mov"
     },
@@ -119,18 +132,22 @@
     }
   ],
   [],
-  [],
   [
     {
-      "comment": "21",
+      "comment": "set up git so we can commit",
       "type": "code",
       "text": "git config --global user.name \"Your Name\"\ngit config --global user.email \"youremail@university.edu\"\ngit config --global push.default simple"
-    }
+    },
+    {
+      "comment": "set up git so we can commit",
+      "type": "video",
+      "src": "video/git-config.mov"
+    }    
   ],
   [],
   [
     {
-      "comment": "23",
+      "comment": "git status and git add",
       "type": "video",
       "src": "video/git-add.mov"
     },
@@ -148,7 +165,7 @@
   ],
   [
     {
-      "comment": "24",
+      "comment": "commit, pull, and then push",
       "type": "video",
       "src": "video/git-commit.mov"
     },
@@ -171,21 +188,20 @@
   [],
   [],
   [],
-  [],
   [
     {
-      "comment": "29",
+      "comment": "merging and conflicts",
       "type": "video",
       "src": "video/git-conflict.mov"
     },
     {
       "type": "code",
-      "text": "➜  lab1 git:(master) git remote add upstream https://github.com/IntroHCI/lab1.git\n➜  lab1 git:(master) git pull upstream master\nremote: Counting objects: 18, done.\nremote: Compressing objects: 100% (7/7), done.\nremote: Total 12 (delta 6), reused 8 (delta 2)\nUnpacking objects: 100% (12/12), done.\nFrom https://github.com/IntroHCI/lab1\n * branch            master     -> FETCH_HEAD\nAuto-merging static/index.html\nCONFLICT (content): Merge conflict in static/index.html\nAutomatic merge failed; fix conflicts and then commit the result."
+      "text": "➜  lab1 git:(master) git remote add conflict https://github.com/IntroHCI/lab1conflict.git\n➜  lab1 git:(master) git pull conflict master\n remote: Counting objects: 11, done.\n remote: Compressing objects: 100% (6/6), done.\n remote: Total 8 (delta 4), reused 0 (delta 0)\n Unpacking objects: 100% (8/8), done.\n From https://github.com/IntroHCI/lab1conflict\n  * branch            master     -> FETCH_HEAD\n Auto-merging static/index.html\n CONFLICT (content): Merge conflict in static/index.html\n Automatic merge failed; fix conflicts and then commit the result."
     }
   ],
   [
     {
-      "comment": "30",
+      "comment": "resolving merge conflicts",
       "type": "video",
       "src": "video/git-resolve-conflict.mov"
     },
@@ -196,7 +212,7 @@
   ],
   [
     {
-      "comment": "31",
+      "comment": "resolving merge conflicts (2)",
       "type": "video",
       "src": "video/git-resolve.mov"
     },
@@ -209,7 +225,7 @@
   [],
   [
     {
-      "comment": "34",
+      "comment": "autoupgrade the virtualbox guest tools",
       "type": "video",
       "src": "video/vagrant-vbguest.mov"
     },
@@ -220,7 +236,7 @@
   ],
   [
     {
-      "comment": "35",
+      "comment": "ran vagrant up in the introHCI directory",
       "type": "video",
       "src": "video/vagrant-up.mov"
     },
@@ -260,7 +276,7 @@
   [],
   [
     {
-      "comment":"38",
+      "comment":"last slide",
       "type":"links",
       "list":["<a href='http://hci.st/lab-submit'>http://hci.st/lab-submit</a>"]
     }

@@ -39,7 +39,7 @@ def writeSlideNotes(notes_list):
       gen_html += u"""
       <div class="video">
         <h4>"""+title+u"""</h4>
-        <video src='"""+n['src']+u"""' style='width:100%' controls></video>
+        <video src='"""+n['src']+u"""' style='width:100%' controls preload="none" poster="../video-poster.jpg"></video>
       </div>
       """
     elif typ == 'links':
@@ -82,10 +82,6 @@ def writeSlideNotes(notes_list):
     else:
       raise Exception('Unsupported Note Type: '+str(typ))
 
-  # ensure good visual separation between notes for one slide and the next
-  # when in two-column layout
-  gen_html+=u"<hr></hr>"
-
   return gen_html
 
 def writeLabPage(directory, slide_images, slide_notes):
@@ -111,6 +107,10 @@ def writeLabPage(directory, slide_images, slide_notes):
     slide_template = string.replace(slide_template,
                                     "SLIDE_NOTES_STUB",
                                     note_html)
+    # ensure good visual separation between notes for one slide and the next
+    # when in two-column layout
+    slide_template += u"<hr></hr>"
+
     slides.append(slide_template)
 
 
@@ -134,7 +134,7 @@ if __name__ == "__main__":
 
   slide_images = [
     f for f in listdir(directory)
-      if isfile(join(directory,f)) and f.lower().endswith('.png') ]
+      if isfile(join(directory,f)) and f.lower().endswith('.png') or f.lower().endswith('.jpg') ]
   print(str(len(slide_images)) + ' slides to process')
 
   print('Trying to load notes from: '+directory+'/notes.json')
