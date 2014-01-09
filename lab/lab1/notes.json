@@ -197,6 +197,13 @@
     {
       "type": "code",
       "text": "➜  lab1 git:(master) git remote add conflict https://github.com/IntroHCI/lab1conflict.git\n➜  lab1 git:(master) git pull conflict master\n remote: Counting objects: 11, done.\n remote: Compressing objects: 100% (6/6), done.\n remote: Total 8 (delta 4), reused 0 (delta 0)\n Unpacking objects: 100% (8/8), done.\n From https://github.com/IntroHCI/lab1conflict\n  * branch            master     -> FETCH_HEAD\n Auto-merging static/index.html\n CONFLICT (content): Merge conflict in static/index.html\n Automatic merge failed; fix conflicts and then commit the result."
+    },
+    {
+      "type": "debug",
+      "list": [{
+        "problem": "I made a mistake typing in the address for <pre><code>git remote add conflict https://github.com/IntroHCI/lab1conflict.git</code></pre>  Now it says <pre><code>fatal: remote conflict already exists</code></pre> if I try to <code>git remote add conflict</code> again",
+        "fix": "run <code>git remote rm conflict</code> to remove the bad address"
+      }]
     }
   ],
   [
@@ -273,7 +280,16 @@
     }
   ],
   [],
-  [],
+  [
+    {
+      "comment":"hw: finish running vagrant up",
+      "type": "debug",
+      "list": [{
+        "problem": "How do I verify that Vagrant is up and running?",
+        "fix": "type <code>vagrant ssh</code> to log into the virtual machine.  If that doesn't work, then try <code>vagrant halt</code> followed by <code>vagrant up</code> again, and then retry <code>vagrant ssh</code>.  If that all doesn't work, then try to restart your machine. (Did you restart after installing Vagrant and Virtual Box?)"
+      }]
+    }
+  ],
   [
     {
       "comment":"last slide",

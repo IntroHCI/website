@@ -73,7 +73,7 @@ def writeSlideNotes(notes_list):
       for issue in n['list']:
         gen_html += u"""
         <div class="well well-sm">
-          <p class="lead">"""+issue['problem']+u"""</p>
+          <span class="lead"><p>"""+issue['problem']+u"""</p></span>
           <p>"""+issue['fix']+u"""</p>
         </div>"""
       gen_html += u"""
