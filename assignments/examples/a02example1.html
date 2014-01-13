@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Introduction to Human-Computer Interaction: Assignment">
+    <title>Intro to HCI: Assignment 2, Example 1</title>
+
+    <!-- Bootstrap -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="../../css/hci.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body data-spy="scroll" data-target=".sidenav">
+
+    <!-- 
+    IntroHCI assignment template
+    ------------------
+    To create a new assignment:
+    1) Write all the HTML as you normally would underneath the #assignment-description div.
+    2) Anything that you want to appear in the navbar on the left needs to be enclosed
+        in a <div id="unique-id" class="sidenav-anchor">. On page load, hci.js will look up
+        anything enclosed in .sidenav-anchor, find the first header (h1-h6) inside it, and add
+        it to the navigation pane on the left. Make sure it has a unique div id so that there is something
+        to anchor the hyperlink to.
+    3) I recommend going with Bootstrap's recommendation and putting any <table class="table"> elements enclosed in a
+        <div class="table-responsive">.
+    -->
+
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Intro to HCI</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class=""><a href="../../index.html">Home</a></li>
+            <li><a href="../../index.html#calendar">Calendar</a></li>
+            <li><a href="../../lab/">Lab</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Logistics <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="../logistics.html#prereqs">Prerequisites</a></li>
+                  <li><a href="../../logistics.html#lab">Lab</a></li>
+                  <li><a href="../../logistics.html#grading">Grading</a></li>
+                  <li><a href="../logistics.html#attendance">Attendance</a></li>
+                  <li><a href="../../logistics.html#cs77">CS 77</a></li>
+                  <li><a href="../../logistics.html#faq">FAQ</a></li>
+                </ul>
+            </li>            
+            <li><a href="http://www.coursera.org">Submit Work</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="staffemailorpiazzaforum@university.edu">Questions</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="sidenav" data-spy="affix">
+                    <ul class="nav nav-stacked" id="sidenav-content">   
+                    </ul>
+                </div> <!-- /sidenav -->
+            </div> <!-- /col-md-3 -->  
+            <div class="col-md-9" id="assignment-description"> 
+                    
+                    <div>
+                        <h1>Assignment 2, Example 1</h1>
+                    </div>
+
+                <div id="activitydescription" class="sidenav-anchor">
+                    <h2>Activity and Design Brief</h2>
+                    <p>The design brief for my studio is storytelling.</p>
+                    <p>We've all seen it: rows of tables, piles of company-branded swag, wandering students on the hunt, and company representatives with nametags cheerfully beckoning. The job recruiting process, as embodied in the campus career fair, is a two-way street of storytelling. Company representatives and students tell each other stories meant to intrigue and convince, but the process can be tiring and chaotic. With crowds of students swarming a table, the risk of a communications breakdown (e.g. loss of student interest while waiting, misdirected focus of recruiter efforts, uncaptured data, etc.) is substantial. I chose to observe the storytelling involved at a career fair booth from the perspective of a user on the company side of the table, choosing two users from a management consulting firm and one user from a fast-growing software startup. My particular focus was on the means by which the users communicated their stories to students and then received information from students.</p>
+                </div>
+
+                <div id="observations" class="sidenav-anchor">
+                    <h2>Observations</h2>
+                    <p>Students consider the swag available at the table staffed by User 1 (pictured) and User 2:</p>
+                    <p><a href="./images/a02e1p1.jpg"><img src="./images/a02e1p1.jpg" class="img-responsive" alt="image" style="border: 0px none; "></a></p>
+                    <p>User 1 (right), a management consultant, explains to a student why the firm he works for is different from other consulting firms. He quickly grows tired repeating the same story over and over, and comes up with modified versions for different students based on a quick mental assessment of their potential as recruiting candidates. He has limited time and energy, and needs to conserve it to last through a multi-hour career fair. However, he fears that his mental grading may not be accurate, and that there are no recorded metrics by which he can improve his snap assessments of students – that is, whether his initial impression of a student corresponds well with their success in the recruiting process. He wishes for more data on the recruiting "funnel."</p>
+                    <p><a href="./images/a02e1p2.jpg"><img src="./images/a02e1p2.jpg" class="img-responsive" alt="image" style="border: 0px none; "></a></p>
+                    <p>User 1 gives a student a stack of hard-copy recruiting materials in the hopes that the student will read them after leaving the table. He regrets that by the time he reviews the stack of resumes, he has forgotten which person corresponds to which resume, what they might have talked about, and what thoughts he may have had about any given student during the conversation ("why were they important to me?"). Upon receiving their resume, he makes a few notes if he has time, but points out that "it's hard to secretly write notes on a resume as it comes in, and we're bombarded with people throughout the day."</p>
+                    <p><a href="./images/a02e1p3.jpg"><img src="./images/a02e1p3.jpg" class="img-responsive" alt="image" style="border: 0px none; "></a></p>
+                    <p>User 2, a campus recruiter for the consulting firm, attempts to use an iPad to record student contact information, but runs into technical difficulties with setting up the general-purpose Numbers app to handle recruiting. The student data is collected with the intent of sending a reminder email about the resume drop deadline, but not for any further storytelling. The recruiter normally doesn't use an iPad for recruiting, but "wanted to look cool and tech-y at Stanford." She notes that it can be very hard to read names and emails on signup sheets, which creates a significant amount of data entry work, especially since the data lives in different systems throughout the recruiting process.</p>
+                    <p><a href="./images/a02e1p4.jpg"><img src="./images/a02e1p4.jpg" class="img-responsive" alt="image" style="border: 0px none; "></a></p>
+                    <p>Towards the end of the career fair, User 2 goes through a list of student names scrawled onto a paper sign-up sheet to decipher illegible names and re-write the name if necessary. At the moment of the photo, she's puzzling over two student names which differ by only one letter.  A single career fair can bring in nearly 200 sign-ups for a boutique firm looking to hire a handful of new graduates. With only two employees staffing the booth, User 2 likes that the printed materials can be a quick "takeaway" for students to grab while on the move – she's not sure that people would want to stand around and watch a screen while waiting to talk to someone in person. Her primary goal in the career fair is to get the word out about the firm, which has recently opened a San Francisco office, and catch the attention of talented Stanford students, and she hopes that the wiffle-ball swag will help with that (but also wishes there was some way to know what swag worked best for students).</p>
+                    <p><a href="./images/a02e1p5.jpg"><img src="./images/a02e1p5.jpg" class="img-responsive" alt="image" style="border: 0px none; "></a></p>
+                    <p>Two part-time software engineer/students at a fast-growing startup, including User 3, scan resumes and annotate them quickly while talking to the flood of students drawn to their table (possibly because of the students' frequent interactions with the startup's product).</p>
+                    <p><a href="./images/a02e1p6.jpg"><img src="./images/a02e1p6.jpg" class="img-responsive" alt="image" style="border: 0px none; "></a></p>
+                    <p>User 3 demonstrates his shorthand cues that he writes onto resumes – the star indicates a resume (in this case, a full-time software engineer) for special consideration. User 3 notes that career fairs can easily generate an information overload, so he limits his questions to a standard limited set that he can remember easily and annotate onto a resume. With less than a minute to review each individual resume after the career fair, he is wary of taking in too much unstructured data.</p>
+                    <p><a href="./images/a02e1p7.jpg"><img src="./images/a02e1p7.jpg" class="img-responsive" alt="image" style="border: 0px none; "></a></p>
+                    <p>All users noted the importance of the face-to-face, in-person interaction in the recruiting process, and were wary of any technological tool that would distract from that human connection.</p>
+                </div>
+                
+                <div id="userneeds" class="sidenav-anchor">
+                    <h2>User Needs</h2>
+                    <ol>
+                        <li>Company recruiter needs an iPad app for campus recruiting because she wants the company's image to be cool and tech-y</li>
+                        <li>Company recruiter needs a way to continue storytelling with students after they leave the booth because their time at the booth is limited, and her firm is not yet well-known</li>
+                        <li>Company recruiter needs a specialized app for campus recruiting because general-purpose spreadsheets have quirks and are less efficient for recruiting purposes</li>
+                        <li>Company recruiter needs a way to communicate information to students who are waiting in line to talk to a company representative because standing-around time is a wasted recruiting opportunity and students may leave</li>
+                        <li>Company recruiter needs a way to attract student attention to the company, because the firm is new to the area and does not have an established name among the student body</li>
+                        <li>Company recruiter needs a way to measure the effectiveness of different swag in drawing students because swag plays an important role in attracting students to a booth and she wants to provide unique, distinctive items that are appropriate to the campus culture</li>
+                        <li>Company recruiter needs a way to know whether snap judgments of students are accurate because company representatives make these judgments when meeting students and adjust the attention they give to specific students based on their estimate of "employability"</li>
+                        <li>Company recruiter needs a convenient way to manage the recruiting pipeline all in one solution because the recruiting process is fragmented and data exists within many different tools</li>
+                        <li>Company recruiter needs more metrics on candidates at all stages of the pipeline because she wants to optimize the pipeline and to know where to focus more recruiting energy</li>
+                        <li>Busy employee (doing recruiting for the day) needs a convenient way to process incoming student data because he doesn't want to add any extra non-billable work to his day</li>
+                        <li>Busy employee (doing recruiting for the day) needs a way to remember the people he's met during the day because by the end of the day, he can't connect any of them to their resumes</li>
+                        <li>Busy employee (doing recruiting for the day) needs a way to remember his post-conversation judgments about students he meets because it's difficult to remember why a student was important to remember after a long day and he wants to know which students to call back</li>
+                        <li>Busy employee (doing recruiting for the day) needs a way to tell which students to focus on in conversation, because he has limited time to talk to any individual student and limited data on which to make that time-allocation judgment</li>
+                        <li>Busy employee (doing recruiting for the day) needs a way to digitize his shorthand notes on resumes because he wants to increase the efficiency of the resume review process</li>
+                        <li>Busy employee (doing recruiting for the day) needs a way to record the answers that students provide to questions because he can't remember anything beyond answers to a limited subset of questions without a memory aid</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/hci.js"></script>
+  </body>
+</html>
