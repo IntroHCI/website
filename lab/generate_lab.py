@@ -36,10 +36,18 @@ def writeSlideNotes(notes_list):
 
     if   typ == 'video':
       if not title: title = 'Video'
+      srcs = n['src']
+      if isinstance(srcs, basestring):
+        srcs = [srcs]
       gen_html += u"""
       <div class="video">
-        <h4>"""+title+u"""</h4>
-        <video src='"""+n['src']+u"""' style='width:100%' controls preload="none" poster="../video-poster.jpg"></video>
+        <h4>"""+title+u"""</h4>"""
+      
+      for vsrc in srcs:
+        gen_html += u"""
+        <video src='"""+ vsrc +u"""' style='width:100%' controls preload="none" poster="../video-poster.jpg"></video>"""
+
+      gen_html += u"""
       </div>
       """
     elif typ == 'links':
