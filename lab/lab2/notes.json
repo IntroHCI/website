@@ -32,7 +32,7 @@
       },
       {
         "problem": "Hadouken!",
-        "fix": "(ok, git can't do that)"
+        "fix": "↓↘→ X"
       }]
     }
   ],
@@ -203,7 +203,7 @@
     {
       "type": "debug",
       "list": [{
-        "problem": "Wait, what did I agreed to?",
+        "problem": "Wait, what did I agree to?",
         "fix": "shhhhhhh, the NSA is listening!  <a href='http://superuser.com/questions/421074/ssh-the-authenticity-of-host-host-cant-be-established'>a detailed explanation</a>"
         }]
     }
