@@ -1,0 +1,70 @@
+[
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+    {
+      "type": "code",
+      "text": "function projectClick(e) { \n  console.log(\"Project clicked\");\n    // prevent the page from reloading      \n    e.preventDefault();\n  // In an event handler, $(this) refers to       \n  // the object that triggered the event      \n  $(this).css(\"background-color\", \"#e9e9e9\");\n}"
+    }
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+    {
+      "type": "code",
+      "text": "/*\n * Listener function when a project is clicked on.\n */\nfunction projectClick(e) {\n  // Cancel the default action, which prevents the page from reloading\n    e.preventDefault();\n\n    // Get the div id, e.g., \"project1\"\n    var project = $(this).closest(\".project\").attr(\"id\");\n    // Write it to the console\n    announceProject(project);\n\n  projectDivID = \"#\" + project;\n    // Look up the project div with that id and change its color\n    // Remember that to look up something by id, you have to put # before its id\n    // e.g., $(\"#foo\") will locate &lt;div id=\"foo\"&gt;\n  // Finally, set the background color to gray\n  $(projectDivID).css(\"background-color\", \"#e9e9e9\");\n}\n\n/*\n * Prints to the console when a project is clicked on.\n */\nfunction announceProject(toAnnounce) {\n  // Remove the 'project' part of the string, leaving just the number (e.g., 3)\n  var project = toAnnounce.substring(7);\n  console.log(\"Project \" + project + \" clicked on.\");\n}"
+    }
+  ],  
+  [],  
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+    {
+      "type": "code",
+      "text": "$(projectDivID).append(“&lt;div class=“project-description”&gt;&lt;p&gt;Description of the project.&lt;/p&gt;&lt;/div&gt;”);"
+    }
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],  
+  [],
+  [],
+  [],
+  [
+    {
+      "type": "code",
+      "text": " &lt;form id=\"projectForm\" role=\"form\"&gt;\n     &lt;div class=\"form-group\"&gt;\n        &lt;label for=\"project\"&gt;Please change the project:&lt;/label&gt;\n       &lt;select class=\"form-control\" id=\"project\"&gt;\n          &lt;option value=\"#project1\"&gt;Waiting in line&lt;/option&gt;\n          &lt;option value=\"#project2\"&gt;Needfinding&lt;/option&gt;\n          &lt;option value=\"#project3\"&gt;Prototyping&lt;/option&gt;\n          &lt;option value=\"#project4\"&gt;Heuristic evaluation&lt;/option&gt;\n         &lt;option value=\"#project5\"&gt;Visualization&lt;/option&gt;\n          &lt;option value=\"#project6\"&gt;Social design&lt;/option&gt;\n          &lt;option value=\"#project7\"&gt;Gestural interaction&lt;/option&gt;\n         &lt;option value=\"#project8\"&gt;Design tools&lt;/option&gt;\n     &lt;/select&gt;\n     &lt;/div&gt;\n    &lt;div class=\"form-group\"&gt;\n      &lt;label for=\"width\"&gt;To width (in pixels):&lt;/label&gt;\n      &lt;input type=\"number\" class=\"form-control\" id=\"width\" placeholder=\"Width\"&gt;\n   &lt;/div&gt;\n    &lt;div class=\"form-group\"&gt;\n      &lt;label for=\"description\"&gt;And to description:&lt;/label&gt;\n      &lt;input type=\"text\" class=\"form-control\" id=\"description\" placeholder=\"Project desicription\"&gt;\n    &lt;/div&gt;\n    &lt;button id=\"submitBtn\" type=\"button\" class=\"btn btn-default\"&gt;Submit&lt;/button&gt;\n  &lt;/form&gt;\n\n"
+    }
+  ],  
+  [],
+  [],
+  []        
+]
