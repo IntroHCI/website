@@ -1,4 +1,221 @@
 [
+  [
+    {
+      "comment": "first slide",
+      "type": "links",
+      "title": "Get a Heroku Account",
+      "list": ["go to <a href='https://www.heroku.com/'>https://www.heroku.com/</a> and get an account"]
+    }
+  ],
+  [],
+  [
+    {
+      "comment": "command review cheat sheet",
+      "type": "code",
+      "title": "Common Commands",
+      "text": "ls\ncd &ltdir&gt\ngit clone &lturl&gt\ngit pull\ngit status\ngit add &ltfile&gt\ngit commit -m \"message\"\ngit push"
+    },
+    {
+      "type": "debug",
+      "title": "Git Combos",
+      "list": [{
+        "problem": "Get Updates",
+        "fix": "<pre><code>git pull</code></pre>"
+      },
+      {
+        "problem": "Commit Changes (locally)",
+        "fix": "<pre><code>git status\ngit add &ltfile(s)&gt\ngit status\ngit commit -m \"message\"</code></pre> Run <code>git status</code> to remind yourself which changes you're actually committing."
+      },
+      {
+        "problem": "Save Changes to Github",
+        "fix": "<pre><code>git pull\ngit status\ngit push</code></pre> Run <code>git pull</code> to make sure you're up to date.  Run <code>git status</code> to double-check that you've committed all of the changes you want to save."
+      },
+      {
+        "problem": "Hadouken!",
+        "fix": "↓↘→ X"
+      }]
+    }
+  ],
+  [],
+  [],
+  [],
+  [],
+  [
+    {
+      "slide no": 8,
+      "comment": "summon ye command line",
+      "type": "video",
+      "src": "video/cd.mov"
+    },
+    {
+      "type": "code",
+      "title": "Terminal",
+      "text": "$ cd ~/Documents/IntroHCI\n$ ls\nLICENSE             Vagrantfile         introHCI-extras.sh\nREADME.md           cookbooks           lab1"
+    },
+    {
+      "type": "debug",
+      "list": [{
+        "problem": "I typed in <code>$ cd</code> and ...",
+        "fix": "Don't type the <code>$</code>.  We are using the <code>$</code> surrogate prompt to indicate lines which are commands to input.  Then, we display lines of expected/example output without any <code>$</code> prompt."
+        }]
+    }
+  ],
+  [
+    {
+      "slide": 9,
+      "comment": "fork lab2",
+      "type": "video",
+      "src": "video/git-fork-lab2.mov"
+    },
+    {
+      "type": "links",
+      "list": ["<a href='http://github.com/IntroHCI/lab2'>http://github.com/IntroHCI/lab2</a>"]
+    }
+  ],
+  [
+    {
+      "comment": "copy-paste git clone",
+      "type": "video",
+      "src": ["video/git-clone-copy-lab2.mov",
+              "video/git-clone-paste-lab2.mov"]
+    }
+  ],
+  [],
+  [
+    {
+      "slide": 12,
+      "comment": "Last time, we...",
+      "type": "links",
+      "list": ["If you haven't done this, you should do <a href='../lab1/index.html'>Lab 1</a> before continuing."]
+    }
+  ],
+  [
+    {
+      "slide": 13,
+      "comment": "Launch the VM: vagrant up",
+      "type": "video",
+      "src": ["video/vagrant-up-resume.mov",
+              "video/vagrant-up-resume-restarted.mov"]
+    },
+    {
+      "type": "code",
+      "title": "Terminal",
+      "text": "$ vagrant up"
+    },
+    {
+      "type": "debug",
+      "list": [{
+        "problem": "I'm stuck at <pre><code>Waiting for machine to boot.</code></pre>",
+        "fix": "If you've been waiting over a minute, something likely went wrong.  Let's abort the <code>vagrant up</code> command and then try running it again.  To abort in Unix, we push CTRL+C in our terminal."
+      },
+      {
+        "problem": "I got the message <pre><code>VM already provisioned.  Run `vagrant provision` or use `--provision` to force it</code></pre>",
+        "fix": "<b>Don't run</b> <code>vagrant provision</code>! If you do this, the virtual machine will get setup from scratch.  (remember how long that took?)"
+      }]
+    }
+  ],
+  [
+    {
+      "slide": 14,
+      "comment": "Connecting to Vagrant",
+      "type": "video",
+      "src": "video/vagrant-ssh.mov"
+    },
+    {
+      "type": "code",
+      "title": "Terminal",
+      "text": "$ vagrant ssh\nvagrant@127.0.0.1's password:\n...\nvagrant@precise32:~$"
+    },
+    {
+      "type": "debug",
+      "list": [{
+        "problem": "What's the password?",
+        "fix": "vagrant"
+      }]
+    }
+  ],
+  [
+    {
+      "slide": 15,
+      "comment": "Synced folder in your home directory",
+      "type": "video",
+      "src": "video/vagrant-synced.mov"
+    },
+    {
+      "type": "code",
+      "title": "Terminal",
+      "text": "$ ls\ncookbooks  intorHCI-extras.sh  lab1  lab2  LICENSE  README.md  Vagrantfile\n$ cd lab2\n$ ls\nLICENSE  node_modules  package.json  Procfile  README.md  server.js  static"
+    }
+  ],
+  [],
+  [
+    {
+      "slide": 17,
+      "comment": "Heroku: free hosting in the cloud",
+      "type": "video",
+      "src": "video/heroku-create3.mov"
+    },
+    {
+      "type": "code",
+      "title": "Terminal",
+      "text": "$ heroku login\nEnter your Heroku credentials\nEmail:\nPassword:\nCould not find an existing public key.\nWould you like to generate one? [Yn]  Y\nGenerating new SSH public key.\nUploading SSH public key /home/vagrant/.ssh/id_rsa.pub... done\nAuthentication successful.\n\n$ heroku create\nCreating ...\n...\nGit remote heroku added"
+    },
+    {
+      "type": "debug",
+      "list": [{
+        "problem": "I didn't see <code>Git remote heroku added</code> after running <code>heroku create</code>",
+        "fix": "Did you run the create command inside of the <code>lab2</code> directory?"
+      }]
+    }
+  ],
+  [
+    {
+      "slide": 18,
+      "comment": "Name your heroku application",
+      "type": "video",
+      "src": "video/heroku-rename.mov"
+    },
+    {
+      "type": "code",
+      "title": "Terminal",
+      "text": "$ heroku apps:rename msb-lab2\nRenaming ...\n...\nGit remote heroku updated"
+    },
+    {
+      "type": "debug",
+      "list": [{
+        "problem": "I got the error <code>No app specified.</code>",
+        "fix": "Did you run <code>heroku create</code> inside the <code>lab2</code> directory?"
+      }]
+    }
+  ],
+  [
+    {
+      "slide": 19,
+      "comment": "git push heroku master",
+      "type": "video",
+      "src": "video/heroku-push2.mov"
+    },
+    {
+      "type": "code",
+      "title": "Terminal",
+      "text": "$ git push heroku master\nThe authenticity of host 'heroku.com (xxx.xxx.xxx.xxx)' can't be established.\nRSA key fingerprint is xx:xx:xx:xx...xx:xx.\nAre you sure you want to continue connecting (yes/no)? yes\nWarning: Permanently added 'heroku.com (xxx.xxx.xxx.xxx)' (RSA) to the list of known hosts.\n..."
+    },
+    {
+      "type": "debug",
+      "list": [{
+        "problem": "Wait, what did I agree to?",
+        "fix": "shhhhhhh, the NSA is listening!  <a href='http://superuser.com/questions/421074/ssh-the-authenticity-of-host-host-cant-be-established'>a detailed explanation</a>"
+        }]
+    }
+  ],
+  [
+    {
+      "slide": 20,
+      "comment": "Pushed!",
+      "type": "links",
+      "list": ["Go to <i>&ltyourappname&gt</i>.herokuapp.com to verify that everything is working."]
+    }
+  ],
   [],
   [],
   [],
@@ -6,56 +223,177 @@
   [],
   [],
   [],
+  [
+    {
+      "slide": 28,
+      "comment": "Open static/index.html in Sublime",
+      "type": "video",
+      "src": "video/css-include.mov"
+    },
+    {
+      "type": "code",
+      "text": "...\n&ltlink href=\"css/introHCI.css\" rel=\"stylesheet\"&gt\n..."
+    }
+  ],
+  [],
+  [
+    {
+      "slide": 30,
+      "comment": "Add class=project to the project divs",
+      "type": "video",
+      "src": "video/css-add-class2.mov"
+    },
+    {
+      "type": "code",
+      "text": "...\n&ltdiv class=\"project\" id=\"project1\"&gt\n...\n&ltdiv class=\"project\" id=\"project2\"&gt\n..."
+    }
+  ],
+  [
+    {
+      "slide": 31,
+      "comment": "Add project selector",
+      "type": "video",
+      "src": "video/css-add-selector.mov"
+    },
+    {
+      "type": "code",
+      "text": "...\n\n.project {\n    margin-left: 20px;\n}"
+    }
+  ],
+  [
+    {
+      "comment": "Reload lab2/static/index.html",
+      "type": "links",
+      "title": "Hint",
+      "list": ["CTRL+R (or CMD+R on Mac) is the browser reload shortcut.  It is <i>very</i> useful when doing web dev."]
+    }
+  ],
+  [],
+  [],
+  [
+    {
+      "slide": 35,
+      "comment": "Add project selector",
+      "type": "video",
+      "src": "video/chrome-debugger.mov"
+    }
+  ],
   [],
   [],
   [],
   [],
   [],
+  [
+    {
+      "type": "code",
+      "text": "p {\n    font-variant: small-caps;\n}"
+    }
+  ],
+  [
+    {
+      "type": "code",
+      "text": ".project p {\n    font-variant: small-caps;\n}"
+    }
+  ],
+  [
+    {
+      "type": "code",
+      "text": "#project1 {\n    font-variant: small-caps;\n}"
+    }
+  ],
+  [
+    {
+      "slide": 44,
+      "comment": "Try it: match this look",
+      "type": "code",
+      "text": "margin-left: 1px;\nbackground-color: #ab1234;\npadding: 1px;\nwidth: 1px;"
+    },
+    {
+      "type": "links",
+      "list": ["<a href='https://kuler.adobe.com/create/color-wheel/'>https://kuler.adobe.com/create/color-wheel/</a>"]
+    }
+  ],
+  [],
+  [
+    {
+      "type": "code",
+      "text": ".project {\n    margin-left: 20px;\n    background-color: #deebf7;\n    padding: 20px;\n    width: 525px;\n}"
+    }
+  ],
+  [
+    {
+      "slide": 47,
+      "comment": "Delete the old .project CSS",
+      "type": "video",
+      "src": "video/bootstrap-clear-old-css.mov"
+    }
+  ],
   [],
   [],
   [],
+  [
+    {
+      "slide": 51,
+      "comment": "Add Bootstrap to your HTML",
+      "type": "code",
+      "text": "...\n&lt!-- Bootstrap --&gt\n&ltlink href=\"css/bootstrap.min.css\" rel=\"stylesheet\"&gt\n&ltlink href=\"css/bootstrap-theme.min.css\" rel=\"stylesheet\"&gt\n&ltlink href=\"css/introHCI.css\" rel=\"stylesheet\"&gt\n...\n&lt!-- jQuery (necessary for Bootstrap's JavaScript plugins) --&gt\n&ltscript src=\"https://code.jquery.com/jquery.js\"&gt&lt/script&gt\n&lt!-- Include all compiled plugins (blelow), or include individual files as needed --&gt\n&ltscript src=\"js/bootstrap.min.js\"&gt&lt/script&gt\n..."
+    }
+  ],
+  [
+    {
+      "slide": 52,
+      "comment": "Add Bootstrap's styles to your HTML",
+      "type": "video",
+      "src": "video/bootstrap-thumbnail2.mov"
+    },
+    {
+      "type": "code",
+      "text": "...\n&lta href=\"project.html\" class=\"thumbnail\"&gt\n    &ltimg src=\"...\" alt=\"...\" class=\"img\"&gt\n    &ltp&gt...&lt/p&gt\n&lt/a&gt\n..."
+    }
+  ],
+  [
+    {
+      "slide": 53,
+      "comment": "Add Bootstrap's styles to your HTML",
+      "type": "video",
+      "src": "video/bootstrap-container.mov"
+    },
+    {
+      "type": "code",
+      "text": "&ltbody&gt\n    &ltdiv class=\"container\"&gt\n        ..."
+    }
+  ],
   [],
+  [
+    {
+      "comment": "lookin good (adding the jumbotron)",
+      "type": "code",
+      "text": "&ltdiv class=\"jumbotron\"&gt\n    &lth1&gtMichael Bernstein&lt/h1&gt\n    &ltp&gthuman-computer interaction &amp;middot; social computing &amp;middot; crowdsourcing&lt/p&gt\n&lt/div&gt"
+    }
+  ],
   [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
+  [
+    {
+      "comment": "Return to your Vagrant command line",
+      "type": "code",
+      "title": "Terminal",
+      "text": "$ git add static/index.html\n$ git add static/css/introHCI.css\n$ git commit -m\"added CSS and Bootstrap\"\n\n$ git push origin master\n\n$ git push heroku master"
+    }
+  ],
+  [
+    {
+      "TODODODODODODOD": "this is brokeass toooooo long ",
+      "slide": 58,
+      "comment": "Cleaning up",
+      "type": "video",
+      "src": "video/vagrant-suspend.mov"
+    },
+    {
+      "type": "code",
+      "title": "Terminal",
+      "text": "$ exit\nlogout\nConnection to 127.0.0.1 closed.\n\n$ vagrant suspend\n[default] Saving VM state and suspending execution...\n\n$ vagrant up\nBringing machine 'default' up with 'virtualbox' provider...\n[default] Resuming suspended VM...\n[default] Booting VM...\n[default] Waiting for machine to boot.  This may take a few minutes..."
+    }
+  ],
   [],
   [],
   [],
