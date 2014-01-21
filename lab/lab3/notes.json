@@ -1,0 +1,295 @@
+[
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+    {
+      "type":"debug",
+      "title":"Stretch Goals",
+      "list":[{"problem":"What are the stretch goals?", "fix":"Toggle project descriptoions when you click on a project."}]
+    }
+  ],
+  [],
+  [],
+  [
+    {
+      "type":"video",
+      "src":"video/js-click.mov"
+    }
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+    {
+      "title":"Facebook Like",
+      "type":"video",
+      "src":"video/css-like.mov"
+    },
+    {
+      "title":"CS147 Highlight",
+      "type":"video",
+      "src":"video/css-nav.mov"
+    },
+    {
+      "title":"Reddit Highlight",
+      "type":"video",
+      "src":"video/css-reddit.mov"
+    }
+  ],
+  [],
+  [],
+  [],
+  [],
+  [
+    {
+      "type":"video",
+      "src":"video/css-animate.mov",
+      "comment":"Read from a form"
+    }
+  ],
+  [],
+  [
+    {
+      "type":"links",
+      "title":"Github Link",
+      "list":["<a href='https://github.com/IntroHCI/lab3'>https://github.com/IntroHCI/lab3</a>"]
+    }
+  ],
+  [
+    {
+      "type":"video",
+      "src":"video/js-include.mov"
+    },
+    {
+      "type": "code",
+      "text": "...\n\n\t&lt;script src=\"https://code.jquery.com/jquery.js\"&gt;&lt;/script&gt;\n\t&lt;script src=\"js/bootstrap.min.js\"&gt;&lt;/script&gt;\n\t&lt;script src=\"js/introHCI.js\"&gt;&lt;/script&gt;\n&lt;/body&gt;\n&lt;/html&gt;&gt;"
+    }
+  ],
+  [],
+  [
+    {
+      "type":"video",
+      "src":"video/js-test.mov"
+    }
+  ],
+  [
+    {
+      "type":"code",
+      "text":"$(“a.thumbnail”).click(projectClick);"
+    }
+  ],
+  [
+    {
+      "type": "code",
+      "text": "function projectClick(e) { \n  console.log(\"Project clicked\");\n    // prevent the page from reloading      \n    e.preventDefault();\n  // In an event handler, $(this) refers to      \n  // the object that triggered the event      \n  $(this).css(\"background-color\", \"#e9e9e9\");\n}"
+    }
+  ],
+  [
+    {
+      "type":"video",
+      "src":"video/js-listener.mov"
+    }
+  ],
+  [],
+  [],
+  [
+    {
+      "type":"video",
+      "src":"video/console-log.mov"
+    },
+    {
+      "type":"code",
+      "text":"console.log(\"Project clicked\");"
+    }
+  ],
+  [
+   {
+      "title":"Opening Debug Console",
+      "type":"video",
+      "src":"video/console-open.mov"
+    }
+  ],
+  [
+    {
+      "title":"Reading Console Output",
+      "type":"video",
+      "src":"video/console-print.mov"
+    }
+  ],
+  [
+    {
+      "title":"Set Breakpoint",
+      "type":"video",
+      "src":"video/console-breakpoint.mov"
+    }
+  ],
+  [
+    {
+      "title":"Trigger Breakpoint",
+      "type":"video",
+      "src":"video/console-breakpoint2.mov"
+    }
+  ],
+  [
+    {
+      "title":"Remove Breakpoint",
+      "type":"video",
+      "src":"video/console-breakpoint3.mov"
+    }
+  ],
+  [
+    {
+      "type": "code",
+      "text": "/*\n * Listener function when a project is clicked on.\n */\nfunction projectClick(e) {\n  // Cancel the default action, which prevents the page from reloading\n    e.preventDefault();\n\n    // Get the div id, e.g., \"project1\"\n    var project = $(this).closest(\".project\").attr(\"id\");\n    // Write it to the console\n    announceProject(project);\n\n  projectDivID = \"#\" + project;\n    // Look up the project div with that id and change its color\n    // Remember that to look up something by id, you have to put # before its id\n    // e.g., $(\"#foo\") will locate &lt;div id=\"foo\"&gt;\n  // Finally, set the background color to gray\n  $(projectDivID).css(\"background-color\", \"#e9e9e9\");\n}\n\n/*\n * Prints to the console when a project is clicked on.\n */\nfunction announceProject(toAnnounce) {\n  // Remove the 'project' part of the string, leaving just the number (e.g., 3)\n  var project = toAnnounce.substring(7);\n  console.log(\"Project \" + project + \" clicked on.\");\n}"
+    }
+  ],
+  [],
+  [
+    {
+      "title":"Solution",
+      "type":"video",
+      "src":"video/console-debugging.mov"
+    }
+  ],
+  [
+    {
+      "type":"code",
+      "text":"var jumbotronHeader = $(\".jumbotron h1\");"
+    }
+  ],
+  [],
+  [
+    {
+      "type":"code",
+      "text":"var containingProject = $(this).closest(\".project\");\ncontainingProject.append(\"&lt;div class='project-description'&gt;&lt;p&gt;Description of the project.&lt;/p&gt;&lt;/div&gt;\");"
+    }
+  ],
+  [
+    {
+      "type":"video",
+      "src":"video/content-append.mov"
+    }
+  ],
+  [
+    {
+      "type":"code",
+      "text":"var containingProject = $(this).closest(\".project\"); \nvar description = $(containingProject).find(\".project-description\");\nif (description.length == 0) { \n   $(containingProject).append(\"&lt;div class='project-description'&gt;&lt;p&gt;Description of the project.&lt;/p&gt;&lt;/div&gt;\"); \n} else { \n   description.html(\"&lt;p&gt;Stop clicking on me! You just did it at \" + (new Date()) + “&lt;/p&gt;\");\n}"
+    }
+  ],
+  [
+    {
+      "type": "code",
+      "text": "$(\".jumbotron h1\").text(\"Javascript is connected\");"
+    }
+  ],
+  [],
+  [
+    {
+      "type":"code",
+      "text":"$(\"#testjs\").text(\"Please wait...\");"
+    }
+  ],
+  [
+    {
+      "type":"code",
+      "text":"$(\".jumbotron p\").addClass(\"active\");"
+    }
+  ],
+  [
+    {
+      "type":"video",
+      "src":"video/js-addclass.mov"
+    },
+    {
+      "type":"code",
+      "text":".jumbotron p.active { \n   color: #1f6daa;\n }"
+    }
+  ],
+  [
+    {
+      "type":"video",
+      "src":"video/js-toggleclass.mov"
+    },
+    {
+      "type":"code",
+      "text":"$(“.jumbotron p”).toggleClass(\"active\");"
+    }
+  ],
+  [],
+  [],
+  [],
+  [
+    {
+      "type":"video",
+      "src":"video/js-finaltask.mov",
+      "comment":"Read from a form"
+    },
+    {
+      "title":"Hint - Selectors from index.html",
+      "type": "code",
+      "text": " &lt;form id=\"projectForm\" role=\"form\"&gt;\n     &lt;div class=\"form-group\"&gt;\n        &lt;label for=\"project\"&gt;Please change the project:&lt;/label&gt;\n       &lt;select class=\"form-control\" id=\"project\"&gt;\n          &lt;option value=\"#project1\"&gt;Waiting in line&lt;/option&gt;\n          &lt;option value=\"#project2\"&gt;Needfinding&lt;/option&gt;\n          &lt;option value=\"#project3\"&gt;Prototyping&lt;/option&gt;\n          &lt;option value=\"#project4\"&gt;Heuristic evaluation&lt;/option&gt;\n         &lt;option value=\"#project5\"&gt;Visualization&lt;/option&gt;\n          &lt;option value=\"#project6\"&gt;Social design&lt;/option&gt;\n          &lt;option value=\"#project7\"&gt;Gestural interaction&lt;/option&gt;\n         &lt;option value=\"#project8\"&gt;Design tools&lt;/option&gt;\n     &lt;/select&gt;\n     &lt;/div&gt;\n    &lt;div class=\"form-group\"&gt;\n      &lt;label for=\"width\"&gt;To width (in pixels):&lt;/label&gt;\n      &lt;input type=\"number\" class=\"form-control\" id=\"width\" placeholder=\"Width\"&gt;\n   &lt;/div&gt;\n    &lt;div class=\"form-group\"&gt;\n      &lt;label for=\"description\"&gt;And to description:&lt;/label&gt;\n      &lt;input type=\"text\" class=\"form-control\" id=\"description\" placeholder=\"Project desicription\"&gt;\n    &lt;/div&gt;\n    &lt;button id=\"submitBtn\" type=\"button\" class=\"btn btn-default\"&gt;Submit&lt;/button&gt;\n  &lt;/form&gt;\n\n"
+    }
+  ],
+  [],
+  [
+    {
+      "type":"video",
+      "src":"video/js-finaltask.mov",
+      "comment":"Read from a form"
+    },
+    {
+      "type":"code",
+      "text":"function initializePage() {\n   ...\n    $(\"#submitBtn\").click(updateProject); } \n\nfunction updateProject(e) {\n   var projectID = $('#project').val();\n   $(projectID).animate({\n      width: $('#width').val()\n   });\n\n   var newText = $('#description').val();\n   $(projectID + \" .project-description\").text(newText);\n}"
+    }
+  ],
+  [],
+  [],
+  [
+    {
+      "type":"code",
+      "title":"GitHub - Commit",
+      "text":"git add static/index.html \ngit add static/js/introHCI.js \ngit add static/css/introHCI.css \ngit commit -m “javascript lab”"
+    },
+    {
+      "type":"code",
+      "title":"Github - Push",
+      "text":"git push"
+    },
+    {
+      "type":"code",
+      "title":"Heroku - Create",
+      "text":"heroku create\nheroku apps:rename <i>newapplicationname</i>"
+    },
+    {
+      "type":"code",
+      "title":"Heroku - Push",
+      "text":"git push heroku master"
+    }
+  ],
+  [
+    {
+      "title":"Submit",
+      "type":"links",
+      "list":["<a href='http://hci.st/lab-submit'>http://hci.st/lab-submit</a>"]
+    }
+  ]
+]
