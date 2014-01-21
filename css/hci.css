@@ -102,3 +102,7 @@ body {
 .lab-slide video {
   border: 1px solid gray;
 }
+
+#evaluation th {
+  min-width: 150px;
+}
