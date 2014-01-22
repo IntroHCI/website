@@ -197,8 +197,8 @@
       <div class="debug">
         <h4>Stretch Goals</h4>
         <div class="well well-sm">
-          <span class="lead"><p>What are the stretch goals?</p></span>
-          <p>Toggle project descriptoions when you click on a project.</p>
+          <span class="lead"><p>Toggle project descriptions when you click on a project.</p></span>
+          <p></p>
         </div>
       </div>
       
@@ -559,7 +559,7 @@
 	&lt;script src="js/bootstrap.min.js"&gt;&lt;/script&gt;
 	&lt;script src="js/introHCI.js"&gt;&lt;/script&gt;
 &lt;/body&gt;
-&lt;/html&gt;&gt;</code></pre>
+&lt;/html&gt;</code></pre>
       </div>
       
     </div>
@@ -605,7 +605,7 @@
       
       <div class="code">
         <h4>Code</h4>
-        <pre class='pre-scrollable'><code>$(“a.thumbnail”).click(projectClick);</code></pre>
+        <pre class='pre-scrollable'><code>$("a.thumbnail").click(projectClick);</code></pre>
       </div>
       
     </div>
@@ -623,12 +623,11 @@
       <div class="code">
         <h4>Code</h4>
         <pre class='pre-scrollable'><code>function projectClick(e) { 
-  console.log("Project clicked");
     // prevent the page from reloading      
     e.preventDefault();
-  // In an event handler, $(this) refers to      
-  // the object that triggered the event      
-  $(this).css("background-color", "#e9e9e9");
+    // In an event handler, $(this) refers to      
+    // the object that triggered the event      
+    $(this).css("background-color", "#7fff00");
 }</code></pre>
       </div>
       
@@ -685,14 +684,13 @@
       title="45" />
     <div class="col-md-5">
       
-      <div class="video">
-        <h4>Video</h4>
-        <video src='video/console-log.mov' style='width:100%' controls preload="none" poster="../video-poster.jpg"></video>
-      </div>
-      
       <div class="code">
         <h4>Code</h4>
-        <pre class='pre-scrollable'><code>console.log("Project clicked");</code></pre>
+        <pre class='pre-scrollable'><code>function projectClick(e) { 
+    console.log("Project clicked");
+    e.preventDefault();
+    $(this).css("background-color", "#7fff00");
+}</code></pre>
       </div>
       
     </div>
@@ -729,6 +727,14 @@
         <video src='video/console-print.mov' style='width:100%' controls preload="none" poster="../video-poster.jpg"></video>
       </div>
       
+      <div class="debug">
+        <h4>Debug</h4>
+        <div class="well well-sm">
+          <span class="lead"><p>Why does the console say <pre><code>event.returnValue is deprecated. Please use the standard event.preventDefault() instead.</code></pre></p></span>
+          <p>Don't worry about this.  It isn't our fault.  We can safely ignore this warning.</p>
+        </div>
+      </div>
+      
     </div>
   </div>
 <hr></hr>
@@ -744,6 +750,14 @@
       <div class="video">
         <h4>Set Breakpoint</h4>
         <video src='video/console-breakpoint.mov' style='width:100%' controls preload="none" poster="../video-poster.jpg"></video>
+      </div>
+      
+      <div class="debug">
+        <h4>Debug</h4>
+        <div class="well well-sm">
+          <span class="lead"><p>When I click the 'Sources' tab, I don't see the tree-view on the left, with the 'js' folder in it.</p></span>
+          <p>Look for the box with the triangle in it just below the magnifying glass in the upper left hand corner of the dev tools panel.  Click on that to expand out the tree-view.</p>
+        </div>
       </div>
       
     </div>
@@ -794,33 +808,14 @@
       
       <div class="code">
         <h4>Code</h4>
-        <pre class='pre-scrollable'><code>/*
- * Listener function when a project is clicked on.
- */
-function projectClick(e) {
+        <pre class='pre-scrollable'><code>function projectClick(e) {
   // Cancel the default action, which prevents the page from reloading
     e.preventDefault();
 
-    // Get the div id, e.g., "project1"
-    var project = $(this).closest(".project").attr("id");
-    // Write it to the console
-    announceProject(project);
-
-  projectDivID = "#" + project;
-    // Look up the project div with that id and change its color
-    // Remember that to look up something by id, you have to put # before its id
-    // e.g., $("#foo") will locate &lt;div id="foo"&gt;
-  // Finally, set the background color to gray
-  $(projectDivID).css("background-color", "#e9e9e9");
-}
-
-/*
- * Prints to the console when a project is clicked on.
- */
-function announceProject(toAnnounce) {
-  // Remove the 'project' part of the string, leaving just the number (e.g., 3)
-  var project = toAnnounce.substring(7);
-  console.log("Project " + project + " clicked on.");
+    // In an event listener, $(this) is the leement that fired the event
+    var projectTitle = $(this).find("p").text();
+    var jumbotronHeader = $("#jumbotron h1");
+    jumbotronHeader.text(projectTitle);
 }</code></pre>
       </div>
       
@@ -850,7 +845,7 @@ function announceProject(toAnnounce) {
       
       <div class="video">
         <h4>Solution</h4>
-        <video src='video/console-debugging.mov' style='width:100%' controls preload="none" poster="../video-poster.jpg"></video>
+        <video src='video/js-debugging.mov' style='width:100%' controls preload="none" poster="../video-poster.jpg"></video>
       </div>
       
     </div>
@@ -896,8 +891,10 @@ function announceProject(toAnnounce) {
       
       <div class="code">
         <h4>Code</h4>
-        <pre class='pre-scrollable'><code>var containingProject = $(this).closest(".project");
-containingProject.append("&lt;div class='project-description'&gt;&lt;p&gt;Description of the project.&lt;/p&gt;&lt;/div&gt;");</code></pre>
+        <pre class='pre-scrollable'><code>...
+    var containingProject = $(this).closest(".project");
+    containingProject.append("&lt;div class='project-description'&gt;&lt;p&gt;Description of the project.&lt;/p&gt;&lt;/div&gt;");
+}</code></pre>
       </div>
       
     </div>
@@ -931,12 +928,14 @@ containingProject.append("&lt;div class='project-description'&gt;&lt;p&gt;Descri
       
       <div class="code">
         <h4>Code</h4>
-        <pre class='pre-scrollable'><code>var containingProject = $(this).closest(".project"); 
-var description = $(containingProject).find(".project-description");
-if (description.length == 0) { 
-   $(containingProject).append("&lt;div class='project-description'&gt;&lt;p&gt;Description of the project.&lt;/p&gt;&lt;/div&gt;"); 
-} else { 
-   description.html("&lt;p&gt;Stop clicking on me! You just did it at " + (new Date()) + “&lt;/p&gt;");
+        <pre class='pre-scrollable'><code>...
+    var containingProject = $(this).closest(".project"); 
+    var description = $(containingProject).find(".project-description");
+    if (description.length == 0) { 
+       $(containingProject).append("&lt;div class='project-description'&gt;&lt;p&gt;Description of the project.&lt;/p&gt;&lt;/div&gt;"); 
+    } else { 
+       description.html("&lt;p&gt;Stop clicking on me! You just did it at " + (new Date()) + "&lt;/p&gt;");
+    }
 }</code></pre>
       </div>
       
@@ -952,9 +951,16 @@ if (description.length == 0) { 
       title="59" />
     <div class="col-md-5">
       
-      <div class="code">
-        <h4>Code</h4>
-        <pre class='pre-scrollable'><code>$(".jumbotron h1").text("Javascript is connected");</code></pre>
+      <div class="debug">
+        <h4>Debug</h4>
+        <div class="well well-sm">
+          <span class="lead"><p>Wait, what am I doing on this slide?</p></span>
+          <p>The big blue button that says "Test Javascript".  See it?  When you click it, it's text should change to something else.</p>
+        </div>
+        <div class="well well-sm">
+          <span class="lead"><p>What should I change the text to?</p></span>
+          <p>Experience Chan! It's not a lot of questions.<br>Too many questions is the Chan disease.<br>The best way is just to observe the noise of the world.<br>The answer to your questions?<br>Ask your own heart.</p>
+        </div>
       </div>
       
     </div>
@@ -1022,9 +1028,9 @@ if (description.length == 0) { 
       
       <div class="code">
         <h4>Code</h4>
-        <pre class='pre-scrollable'><code>.jumbotron p.active { 
-   color: #1f6daa;
- }</code></pre>
+        <pre class='pre-scrollable'><code>.jumbotron p.active {
+     color: #1f6ddd;
+}</code></pre>
       </div>
       
     </div>
@@ -1046,7 +1052,7 @@ if (description.length == 0) { 
       
       <div class="code">
         <h4>Code</h4>
-        <pre class='pre-scrollable'><code>$(“.jumbotron p”).toggleClass("active");</code></pre>
+        <pre class='pre-scrollable'><code>$(".jumbotron p").toggleClass("active");</code></pre>
       </div>
       
     </div>
@@ -1104,24 +1110,25 @@ if (description.length == 0) { 
       
       <div class="code">
         <h4>Hint - Selectors from index.html</h4>
-        <pre class='pre-scrollable'><code> &lt;form id="projectForm" role="form"&gt;
-     &lt;div class="form-group"&gt;
-        &lt;label for="project"&gt;Please change the project:&lt;/label&gt;
-       &lt;select class="form-control" id="project"&gt;
-          &lt;option value="#project1"&gt;Waiting in line&lt;/option&gt;
-          &lt;option value="#project2"&gt;Needfinding&lt;/option&gt;
-          &lt;option value="#project3"&gt;Prototyping&lt;/option&gt;
-          &lt;option value="#project4"&gt;Heuristic evaluation&lt;/option&gt;
-         &lt;option value="#project5"&gt;Visualization&lt;/option&gt;
-          &lt;option value="#project6"&gt;Social design&lt;/option&gt;
-          &lt;option value="#project7"&gt;Gestural interaction&lt;/option&gt;
-         &lt;option value="#project8"&gt;Design tools&lt;/option&gt;
-     &lt;/select&gt;
-     &lt;/div&gt;
+        <pre class='pre-scrollable'><code>...
+  &lt;form id="projectForm" role="form"&gt;
+    &lt;div class="form-group"&gt;
+      &lt;label for="project"&gt;Please change the project:&lt;/label&gt;
+      &lt;select class="form-control" id="project"&gt;
+        &lt;option value="#project1"&gt;Waiting in line&lt;/option&gt;
+        &lt;option value="#project2"&gt;Needfinding&lt;/option&gt;
+        &lt;option value="#project3"&gt;Prototyping&lt;/option&gt;
+        &lt;option value="#project4"&gt;Heuristic evaluation&lt;/option&gt;
+        &lt;option value="#project5"&gt;Visualization&lt;/option&gt;
+        &lt;option value="#project6"&gt;Social design&lt;/option&gt;
+        &lt;option value="#project7"&gt;Gestural interaction&lt;/option&gt;
+        &lt;option value="#project8"&gt;Design tools&lt;/option&gt;
+      &lt;/select&gt;
+    &lt;/div&gt;
     &lt;div class="form-group"&gt;
       &lt;label for="width"&gt;To width (in pixels):&lt;/label&gt;
       &lt;input type="number" class="form-control" id="width" placeholder="Width"&gt;
-   &lt;/div&gt;
+    &lt;/div&gt;
     &lt;div class="form-group"&gt;
       &lt;label for="description"&gt;And to description:&lt;/label&gt;
       &lt;input type="text" class="form-control" id="description" placeholder="Project desicription"&gt;
@@ -1129,7 +1136,8 @@ if (description.length == 0) { 
     &lt;button id="submitBtn" type="button" class="btn btn-default"&gt;Submit&lt;/button&gt;
   &lt;/form&gt;
 
-</code></pre>
+  &lt;script src="https://code.jquery.com/jquery.js"&gt;&lt;/script&gt
+...</code></pre>
       </div>
       
     </div>
@@ -1165,7 +1173,8 @@ if (description.length == 0) { 
         <h4>Code</h4>
         <pre class='pre-scrollable'><code>function initializePage() {
    ...
-    $("#submitBtn").click(updateProject); } 
+    $("#submitBtn").click(updateProject); 
+} 
 
 function updateProject(e) {
    var projectID = $('#project').val();
@@ -1249,13 +1258,6 @@ heroku apps:rename <i>newapplicationname</i></code></pre>
     <img src="2014-lab-03-client-side-interactivity-beta.074.jpg" class="img-responsive col-md-6"
       title="74" />
     <div class="col-md-5">
-      
-      <div class="links">
-        <h4>Submit</h4>
-        <ul>
-          <li><a href='http://hci.st/lab-submit'>http://hci.st/lab-submit</a></li>
-        </ul>
-      </div>
       
     </div>
   </div>
