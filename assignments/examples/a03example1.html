@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Introduction to Human-Computer Interaction: Assignment">
+    <title>Intro to HCI: Assignment 3, Example 1</title>
+
+    <!-- Bootstrap -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="../../css/hci.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body data-spy="scroll" data-target=".sidenav">
+
+    <!-- 
+    IntroHCI assignment template
+    ------------------
+    To create a new assignment:
+    1) Write all the HTML as you normally would underneath the #assignment-description div.
+    2) Anything that you want to appear in the navbar on the left needs to be enclosed
+        in a <div id="unique-id" class="sidenav-anchor">. On page load, hci.js will look up
+        anything enclosed in .sidenav-anchor, find the first header (h1-h6) inside it, and add
+        it to the navigation pane on the left. Make sure it has a unique div id so that there is something
+        to anchor the hyperlink to.
+    3) I recommend going with Bootstrap's recommendation and putting any <table class="table"> elements enclosed in a
+        <div class="table-responsive">.
+    -->
+
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Intro to HCI</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class=""><a href="../../index.html">Home</a></li>
+            <li><a href="../../index.html#calendar">Calendar</a></li>
+            <li><a href="../../lab/">Lab</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Logistics <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="../logistics.html#prereqs">Prerequisites</a></li>
+                  <li><a href="../../logistics.html#lab">Lab</a></li>
+                  <li><a href="../../logistics.html#grading">Grading</a></li>
+                  <li><a href="../logistics.html#attendance">Attendance</a></li>
+                  <li><a href="../../logistics.html#cs77">CS 77</a></li>
+                  <li><a href="../../logistics.html#faq">FAQ</a></li>
+                </ul>
+            </li>            
+            <li><a href="http://www.coursera.org">Submit Work</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="staffemailorpiazzaforum@university.edu">Questions</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="sidenav" data-spy="affix">
+                    <ul class="nav nav-stacked" id="sidenav-content">   
+                    </ul>
+                </div> <!-- /sidenav -->
+            </div> <!-- /col-md-3 -->  
+            <div class="col-md-9" id="assignment-description"> 
+                    
+                    <div>
+                        <h1>Assignment 3, Example 1</h1>
+                    </div>
+
+                <div id="pov" class="sidenav-anchor">
+                    <h2>Point of View</h2>
+                    <p>We allow ourselves to clutter our lives with our immediate to-dos and goals, often neglecting to remember the moments of happiness that we can be grateful for. Keeping track of these moments can help us appreciate them, grow in self-awareness and be happier. Everyone being happier makes the world a happier place.</p>
+                </div>
+
+                <div id="storyboard1" class="sidenav-anchor">
+                    <h2>Storyboard 1</h2>
+                    <p>Clarity</p>
+                    <p><a href="./images/a03e1p1.jpg"><img src="./images/a03e1p1.jpg" class="img-responsive" alt="image" style="border: 0px none; "></a></p>
+                    <p><a href="./images/a03e1p2.jpg"><img src="./images/a03e1p2.jpg" class="img-responsive" alt="image" style="border: 0px none; "></a></p>
+                </div>
+                
+                <div id="storyboard2" class="sidenav-anchor">
+                    <h2>Storyboard 2</h2>
+                    <p>ClarifyWe</p>
+                    <p><a href="./images/a03e1p3.jpg"><img src="./images/a03e1p3.jpg" class="img-responsive" alt="image" style="border: 0px none; "></a></p>
+                    <p><a href="./images/a03e1p4.jpg"><img src="./images/a03e1p4.jpg" class="img-responsive" alt="image" style="border: 0px none; "></a></p>
+                </div>
+                
+                <div id="prototype1" class="sidenav-anchor">
+                    <h2>Prototype 1</h2>
+                    <p><a href="./images/a03e1p5.jpg"><img src="./images/a03e1p5.jpg" class="img-responsive" alt="image" style="border: 0px none; "></a></p>
+                    <p>Home page for Clarity app.</p>
+                    <p><a href="./images/a03e1p6.jpg"><img src="./images/a03e1p6.jpg" class="img-responsive" alt="image" style="border: 0px none; "></a></p>
+                    <p>Profile picture and current happiness level of user. A higher level indicates more happiness.</p>
+                    <p><a href="./images/a03e1p7.jpg"><img src="./images/a03e1p7.jpg" class="img-responsive" alt="image" style="border: 0px none; "></a></p>
+                    <p>The "Log Activity" screen allows a user to add a recent activity.</p>
+                    <p><a href="./images/a03e1p8.jpg"><img src="./images/a03e1p8.jpg" class="img-responsive" alt="image" style="border: 0px none; "></a></p>
+                    <p><a href="./images/a03e1p9.jpg"><img src="./images/a03e1p9.jpg" class="img-responsive" alt="image" style="border: 0px none; "></a></p>
+                    <p>Drop down menus help the user choose an activity and rate how it changed the user's happiness level.</p>
+                    <p><a href="./images/a03e1p10.jpg"><img src="./images/a03e1p10.jpg" class="img-responsive" alt="image" style="border: 0px none; "></a></p>
+                    <p>The "Recommendations" screen keeps track of the activities that made the user happy, and uses the user's happiness level to find similar users and make recommendations using the activities that made the other users happy.</p>
+                    <p><a href="./images/a03e1p11.jpg"><img src="./images/a03e1p11.jpg" class="img-responsive" alt="image" style="border: 0px none; "></a></p>
+                    <p>A connection to social media allows the user to filter friends that the recommender system uses in order to make suggestions.</p>
+                </div>
+                
+                <div id="prototype2" class="sidenav-anchor">
+                    <h2>Prototype 2</h2>
+                    <p><a href="./images/a03e1p12.jpg"><img src="./images/a03e1p12.jpg" class="img-responsive" alt="image" style="border: 0px none; "></a></p>
+                    <p>Welcome page to Clarity app.</p>
+                    <p><a href="./images/a03e1p13.jpg"><img src="./images/a03e1p13.jpg" class="img-responsive" alt="image" style="border: 0px none; "></a></p>
+                    <p>Menu page.</p>
+                    <p><a href="./images/a03e1p14.jpg"><img src="./images/a03e1p14.jpg" class="img-responsive" alt="image" style="border: 0px none; "></a></p>
+                    <p>"Share a Story" leads to a page of 4 lenses.</p>
+                    <p><a href="./images/a03e1p15.jpg"><img src="./images/a03e1p15.jpg" class="img-responsive" alt="image" style="border: 0px none; "></a></p>
+                    <p>A pop up appears when a user's finger clicks over "journal", as quick-display.</p>
+                    <p><a href="./images/a03e1p16.jpg"><img src="./images/a03e1p16.jpg" class="img-responsive" alt="image" style="border: 0px none; "></a></p>
+                    <p>Update screen helps the user self-log heuristics of well-being and goals.</p>
+                    <p><a href="./images/a03e1p17.jpg"><img src="./images/a03e1p17.jpg" class="img-responsive" alt="image" style="border: 0px none; "></a></p>
+                    <p>A wizard can "scroll" up and down.</p>
+                    <p><a href="./images/a03e1p18.jpg"><img src="./images/a03e1p18.jpg" class="img-responsive" alt="image" style="border: 0px none; "></a></p>
+                    <p>"Activity" takes us to boxes of categories and actions.</p>
+                    <p><a href="./images/a03e1p19.jpg"><img src="./images/a03e1p19.jpg" class="img-responsive" alt="image" style="border: 0px none; "></a></p>
+                    <p>A pop up appears when a user's finger clicks over "Faith", as quick-display.</p>
+                    <p><a href="./images/a03e1p20.jpg"><img src="./images/a03e1p20.jpg" class="img-responsive" alt="image" style="border: 0px none; "></a></p>
+                    <p>"Log Your Feelings" brings user to a gradated mood wheel.</p>
+                    <p><a href="./images/a03e1p21.jpg"><img src="./images/a03e1p21.jpg" class="img-responsive" alt="image" style="border: 0px none; "></a></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/hci.js"></script>
+  </body>
+</html>
