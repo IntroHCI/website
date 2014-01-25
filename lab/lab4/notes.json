@@ -1,0 +1,266 @@
+[
+  [],
+  [],
+  [
+    {
+      "type":"debug",
+      "title":"Stretch Goals",
+      "comment":"Stretch Goals",
+      "list":[{"problem":"Learn about partials and use them to implement the project thumbnail and jumbotron HTML in index.handlebars and project.handlebars", "fix":""}]
+    }
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+    {
+      "comment":"Fork lab 4",
+      "type":"links",
+      "list":["<a href='https://github.com/IntroHCI/lab4'>https://github.com/IntroHCI/lab4</a>"]
+    }
+  ],
+  [],
+  [
+    {
+      "comment":"Start node.js",
+      "type":"code",
+      "text":"vagrant up\nvagrant ssh\ncd lab4\nnode app.js"
+    },
+    {
+      "type":"debug",
+      "list":[{"problem":"What's the vagrant password?", "fix":"vagrant"}]
+    }
+  ],
+  [
+    {
+      "comment":"Test that it's working on localhost",
+      "type":"links",
+      "list":["<a href='http://localhost:3000' target=\"_blank\">http://localhost:3000</a>"]
+    },
+    {
+      "type":"debug",
+      "list":[{"problem":"I get a blank page!", "fix":"Make sure node is running (see previous slide)."}]
+    }
+  ],
+  [],
+  [
+    {
+      "comment":"Add template variables",
+      "type":"code",
+      "text":"&lt;div class=\"project\" id=\"{{id}}\"&gt;\n   &lt;a href=\"project.html\" class=\"thumbnail\"&gt;\n      &lt;img src=\"images/{{image}}\" class=\"img\"&gt;\n      &lt;p&gt;{{name}}&lt;/p&gt;\n   &lt;/a&gt;\n&lt;/div&gt;"
+    }
+  ],
+  [
+    {
+      "comment":"Clicking on a project loads that page.",
+      "type":"video",
+      "src":"video/node-restart.mov"
+    }
+  ],
+  [],
+  [
+    {
+      "comment":"Add project JSON to reoutes/index.js",
+      "type":"code",
+      "text":"exports.index = function(req, res){\n  res.render('index', {\n    'name': 'Waiting in Line',\n    'image': 'lorempixel.people.1.jpeg',\n    'id': 'project1'\n  });\n};"
+    }
+  ],
+  [
+    {
+      "comment":"Test that it's working on localhost",
+      "type":"links",
+      "list":["<a href='http://localhost:3000' target=\"_blank\">http://localhost:3000</a>"]
+    },
+    {
+      "type":"debug",
+      "list":[{"problem":"My images didn't load!", "fix":"Restart node, see slide 31."}]
+    }
+  ],
+  [
+    {
+      "comment":"In controller, create a project list",
+      "type":"code",
+      "text":", {\n'projects': [\n  {   'name': 'Waiting in Line',\n      'image': 'lorempixel.people.1.jpeg',\n      'id': 'project1'\n  },\n  {   'name': 'Needfinding',\n    'image': 'lorempixel.city.1.jpeg',\n    'id': 'project2'\n  },\n  {   'name': 'Prototyping',\n    'image': 'lorempixel.technics.1.jpeg',\n    'id': 'project3'\n  },\n  {   'name': 'Heuristic Evaluation',\n    'image': 'lorempixel.abstract.1.jpeg',\n    'id': 'project4'\n  },\n  {   'name': 'Visualization',\n    'image': 'lorempixel.abstract.8.jpeg',\n    'id': 'project5'\n  },\n  {   'name': 'Social design',\n    'image': 'lorempixel.people.2.jpeg',\n    'id': 'project6'\n  },\n  {   'name': 'Gestural interaction',\n    'image': 'lorempixel.technics.2.jpeg',\n    'id': 'project7'\n  },\n  {   'name': 'Design tools',\n    'image': 'lorempixel.city.2.jpeg',\n    'id': 'project8'\n  }\n]\n}"
+    }
+  ],
+  [],
+  [
+    {
+      "comment":"Solution: encolose your project template in each block",
+      "title":"Solution",
+      "type":"code",
+      "text":"{{#each projects}}\n  &lt;div class=\"project\" id=\"{{id}}\"&gt;\n    &lt;a href=\"project.html\" class=\"thumbnail\"&gt;\n      &lt;img src=\"images/{{image}}\" ... /&gt;\n      &lt;p&gt;{{name}}&lt;/p&gt;\n    &lt;/a&gt;\n  &lt;/div&gt;\n{{/each}}\n"
+    }
+  ],
+  [
+    {
+      "comment":"Restart node.js and test",
+      "type":"links",
+      "list":["<a href='http://localhost:3000' target=\"_blank\">http://localhost:3000</a>"]
+    },
+    {
+      "type":"debug",
+      "list":[{"problem":"My page didn't change!", "fix":"Restart node, see slide 31."}]
+    }
+  ],
+  [],
+  [
+    {
+      "comment":"Add a table of contents",
+      "type":"code",
+      "title":"Add a table of contents",
+      "text":"&lt;ol&gt;\n{{#each projects}}\n   &lt;li&gt;&lt;a href=\"#{{id}}\"&gt;{{name}}&lt;/a&gt;&lt;/li&gt;\n{{/each}}\n&lt;/ol&gt;\n"
+    }
+  ],
+  [
+    {
+      "comment":"Two lists rendering from same dataset",
+      "type":"links",
+      "list":["<a href='http://localhost:3000' target=\"_blank\">http://localhost:3000</a>"]
+    },
+    {
+      "type":"debug",
+      "list":[{"problem":"The list doesn't appear.", "fix":"Restart node, see slide 31."}]
+    }
+  ],
+  [],
+  [],
+  [
+    {
+      "comment":"Add the route to app.js",
+      "title":"Add app.js route",
+      "type":"code",
+      "text":"var index = require('./routes/index');\nvar project = require('./routes/project');"
+    }
+  ],
+  [
+    {
+      "comment":"Route the URL to the controller",
+      "title":"Route URL to controller",
+      "type":"code",
+      "text":"app.get('/', index.view);\napp.get('/project', project.viewProject);"
+    }
+  ],
+  [
+    {
+      "comment":"Add a new controller for project pages.",
+      "type":"code",
+      "text":"exports.viewProject = function(req, res) { \n  // controller code goes here \n};"
+    }
+  ],
+  [
+    {
+      "comment":"Tell it to render our project page template.",
+      "type":"code",
+      "text":"  res.render('project');"
+    }
+  ],
+  [
+    {
+      "comment":"Restart node.js and go to project",
+      "type":"links",
+      "list":["<a href='http://localhost:3000' target=\"_blank\">http://localhost:3000/project</a>"]
+    },
+    {
+      "comment":"copy and paste from the slides",
+      "type":"debug",
+      "list":[{"problem":"“Error: .get() requires callback functions but got a [object Undefined]”", "fix":"It couldn’t find the right controller function. The route is wrong or project.js is named incorrectly."}]
+    }
+  ],
+  [],
+  [],
+  [
+    {
+      "comment":"Add an argument to the URL",
+      "title":"Route URL to controller",
+      "type":"code",
+      "text":"app.get('/project/:name', project.viewProject);"
+    }
+  ],
+  [
+    {
+      "comment":"routes/project.js receives the name variable",
+      "type":"code",
+      "text":"  var name = req.params.name; \n  console.log(\"The project name is: \" + name);"
+    },
+    {
+      "type":"links",
+       "list":["<a href='http://localhost:3000/project/foo' target=\"_blank\">http://localhost:3000/project/foo</a>"]
+    }
+  ],
+  [
+    {
+      "comment":"Pass the name to the template",
+      "type":"code",
+      "text":", {\n  'projectName': name\n}"
+    }
+  ],
+  [
+    {
+      "comment":"Add the name to the template",
+      "type":"code",
+      "text":"&lt;div class=\"jumbotron\"&gt;\n  &lt;h1&gt;{{projectName}}&lt;/h1&gt;\n  &lt;p&gt;one-sentence description of project&lt;/p&gt;\n&lt;/div&gt;"
+    }
+  ],
+  [
+    {
+      "comment":"Hompage: embed titles in the <a> links",
+      "type":"code",
+      "text":"{{#each projects}}\n  &lt;div class=\"project\" id=\"{{id}}\"&gt;\n    &lt;a href=\"project/{{name}}\" class=\"thumbnail\"&gt;\n      &lt;img src=\"images/{{image}}\" ... /&gt;\n      &lt;p&gt;{{name}}&lt;/p&gt;\n    &lt;/a&gt;\n  &lt;/div&gt;\n{{/each}}"
+    }
+  ],
+  [
+    {
+      "comment":"Clicking on a project loads that page.",
+      "type":"video",
+      "src":"video/handlebars-urlparam.mov"
+    }
+  ],
+  [],
+  [
+    {
+      "type":"code",
+      "title":"GitHub - Commit",
+      "text":"git status\ngit add ... \ngit commit -m \"node.js lab\""
+    },
+    {
+      "type":"code",
+      "title":"Github - Push",
+      "text":"git push"
+    },
+    {
+      "type":"code",
+      "title":"Heroku - Create",
+      "text":"heroku create <i>newapplicationname</i>"
+    },
+    {
+      "type":"code",
+      "title":"Heroku - Push",
+      "text":"git push heroku master"
+    }
+  ],
+  [
+    {
+      "type":"links",
+      "list":["<a href='http://hci.st/lab-submit' target=\"_blank\">http://hci.st/lab-submit</a>"]
+    }
+  ]
+]
