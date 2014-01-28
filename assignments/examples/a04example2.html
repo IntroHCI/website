@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Introduction to Human-Computer Interaction: Assignment">
+    <title>Intro to HCI: Assignment 4, Example 2</title>
+
+    <!-- Bootstrap -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="../../css/hci.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body data-spy="scroll" data-target=".sidenav">
+
+    <!-- 
+    IntroHCI assignment template
+    ------------------
+    To create a new assignment:
+    1) Write all the HTML as you normally would underneath the #assignment-description div.
+    2) Anything that you want to appear in the navbar on the left needs to be enclosed
+        in a <div id="unique-id" class="sidenav-anchor">. On page load, hci.js will look up
+        anything enclosed in .sidenav-anchor, find the first header (h1-h6) inside it, and add
+        it to the navigation pane on the left. Make sure it has a unique div id so that there is something
+        to anchor the hyperlink to.
+    3) I recommend going with Bootstrap's recommendation and putting any <table class="table"> elements enclosed in a
+        <div class="table-responsive">.
+    -->
+
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Intro to HCI</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class=""><a href="../../index.html">Home</a></li>
+            <li><a href="../../index.html#calendar">Calendar</a></li>
+            <li><a href="../../lab/">Lab</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Logistics <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="../logistics.html#prereqs">Prerequisites</a></li>
+                  <li><a href="../../logistics.html#lab">Lab</a></li>
+                  <li><a href="../../logistics.html#grading">Grading</a></li>
+                  <li><a href="../logistics.html#attendance">Attendance</a></li>
+                  <li><a href="../../logistics.html#cs77">CS 77</a></li>
+                  <li><a href="../../logistics.html#faq">FAQ</a></li>
+                </ul>
+            </li>            
+            <li><a href="http://www.coursera.org">Submit Work</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="staffemailorpiazzaforum@university.edu">Questions</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="sidenav" data-spy="affix">
+                    <ul class="nav nav-stacked" id="sidenav-content">   
+                    </ul>
+                </div> <!-- /sidenav -->
+            </div> <!-- /col-md-3 -->  
+            <div class="col-md-9" id="assignment-description"> 
+                    
+                    <div>
+                        <h1>Assignment 4, Example 2</h1>
+                    </div>
+
+                <div id="heuristiceval" class="sidenav-anchor">
+                    <h2>Heuristic Evaluation</h2>
+                    <p>Prototype 1:</p>
+                    <ol>
+                        <li>There is a lack of back buttons on the pages, you can't go back to the mission statement.  This violates user control and freedom by not supporting back buttons.  This is of a low severity 2.</li>
+                        <li>For the survey which asks, "what are the timesteps you would like to take?" there are a series of checkboxes for the user to choose from, but the user does not know how many boxes they can check or if they have to check them.  This violates Flexibility and efficiency of use with severity 2 or 3.</li>
+                        <li>Under the "Mind" tab, there are two buttons which direct off the page which say that you are done.  There is the "done" button and the "add a milestone" button which is apparently redundant.  This violates consistency and standards.  Severity 2.</li>
+                        <li>The front page is a little misleading.  There is a button that says "Do you" which, as the user I have no idea where it goes. This violates consistency and standards.  Severity 3.</li>
+                    </ol>
+                    <p>Prototype 2:</p>
+                    <ol>
+                        <li>For "week 1 subgoals" after a person chooses three options they care about on the dropdown list, the user should be able to see the ones they have chosen.  Violates Recognition rather than recall.  Severity 2.</li>
+                        <li>No limit on the number of goals a user can make.  This is a violation of Error prevention as a user can not have an infinite number of goals.  Severity 2.</li>
+                    </ol>
+                    <p>Advantages of Prototype 1:</p>
+                    <ol>
+                        <li>Simplistic</li>
+                        <li>More user input and interaction</li>
+                    </ol>
+                    <p>Advantages of Prototype 2:</p>
+                    <ol>
+                        <li>Less user input, but easier interaction with the prototype (it will take less time for the user to use)</li>
+                        <li>Connects with social elements.</li>
+                    </ol>
+                    <p>I would prefer prototype two as it seemed to have all of the features of prototype one, but incorporated a social element and is much simplier and time-effective to use.</p>
+                </div>
+
+                <div id="reflection" class="sidenav-anchor">
+                    <h2>Reflection</h2>
+                    <p>Paper prototyping was exceptionally useful for figuring out the interaction with our site, whether it's from page to page or how a user interacts with the features on a particular page.  It's so easy to just replace elements by putting another piece of paper over it.  For prototyping any kind of visual code, I would definitely use paper prototyping or something similar.  HE is useful for keeping in mind what rules each feature of your design should follow.  If the design does not follow the design rules, the user will not enjoy the experience and it will not be a well-designed product.  HE is not valuable for starting a design, rather to edit the design after coming up with ideas.  Paper prototyping is not concerned with values of feasibility, you can create a very simplistic site but have no way to implement it.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/hci.js"></script>
+  </body>
+</html>
