@@ -36,6 +36,8 @@ else {
 	die('Project id ' . $project_id . ' not known');
 }
 
+$data['id'] = $project_id;
+
 header("Access-Control-Allow-Origin: *");
 header('Content-Type: application/json');
 print(json_encode($data));
