@@ -37,16 +37,50 @@
       "list":["<a href='https://github.com/IntroHCI/lab4'>https://github.com/IntroHCI/lab4</a>"]
     }
   ],
-  [],
+  [
+    {
+      "comment": "check-setup.sh",
+      "type": "code",
+      "title": "Terminal",
+      "text": "$ bash lab4/check-setup.sh"
+    },
+    {
+      "type": "debug",
+      "list": [{
+        "problem": "I got the error <pre><code>bash: lab4/check-setup.sh: No such file or directory</code></pre>",
+        "fix": "Make sure you're in your 'introHCI' directory and that you've cloned lab4 here."
+      }]
+    }
+  ],
+  [
+    {
+      "comment": "check-setup.sh",
+      "type": "code",
+      "title": "Terminal",
+      "text": "$ bash lab4/check-setup.sh"
+    },
+    {
+      "type": "debug",
+      "list": [{
+        "problem":"What's the vagrant password?",
+        "fix":"vagrant"
+      }]
+    }
+  ],
   [
     {
       "comment":"Start node.js",
       "type":"code",
-      "text":"vagrant up\nvagrant ssh\ncd lab4\nnode app.js"
+      "title": "Terminal",
+      "text":"$ node app.js\nExpress server listening on port 3000"
     },
     {
       "type":"debug",
-      "list":[{"problem":"What's the vagrant password?", "fix":"vagrant"}]
+      "list":[
+      {
+        "problem": "When I try to run <code>node app.js</code> I get a bunch of error messages, including the line <pre><code>Error: listen EADDRINUSE</code></pre>",
+        "fix": "This probably happened because Node crashed.  For instance, Vagrant might have disconnected you all of a sudden.<br /> To fix this problem, tell your browser to refresh http://localhost:3000 until you get \"No data received\" or a similar message.  Now try starting Node again.  Everything should be fine. <br /><br />Explanation: The message <code>EADDRINUSE</code> means that Node can't start listening on port 3000 because it's already in use.  The problem is that the last instance of Node failed to properly release port 3000 when it crashed.  By refreshing the webpage, we're getting the OS to realize 'Oh, the Node server isn't using port 3000 anymore' and consequently release it."
+      }]
     }
   ],
   [
@@ -65,12 +99,12 @@
     {
       "comment":"Add template variables",
       "type":"code",
-      "text":"&lt;div class=\"project\" id=\"{{id}}\"&gt;\n   &lt;a href=\"project.html\" class=\"thumbnail\"&gt;\n      &lt;img src=\"images/{{image}}\" class=\"img\"&gt;\n      &lt;p&gt;{{name}}&lt;/p&gt;\n   &lt;/a&gt;\n&lt;/div&gt;"
+      "text":"    &lt;div class=\"project\" id=\"{{id}}\"&gt;\n      &lt;a href=\"project\" class=\"thumbnail\"&gt;\n        &lt;img src=\"images/{{image}}\" class=\"img\"&gt;\n        &lt;p&gt;{{name}}&lt;/p&gt;\n      &lt;/a&gt;\n    &lt;/div&gt;"
     }
   ],
   [
     {
-      "comment":"Clicking on a project loads that page.",
+      "comment":"Restart Node.js to Load the Changes.",
       "type":"video",
       "src":"video/node-restart.mov"
     }
@@ -78,9 +112,9 @@
   [],
   [
     {
-      "comment":"Add project JSON to reoutes/index.js",
+      "comment":"Add project JSON to routes/index.js",
       "type":"code",
-      "text":"exports.index = function(req, res){\n  res.render('index', {\n    'name': 'Waiting in Line',\n    'image': 'lorempixel.people.1.jpeg',\n    'id': 'project1'\n  });\n};"
+      "text":"exports.view = function(req, res){\n  res.render('index', {\n    'name': 'Waiting in Line',\n    'image': 'lorempixel.people.1.jpeg',\n    'id': 'project1'\n  });\n};"
     }
   ],
   [
@@ -98,7 +132,7 @@
     {
       "comment":"In controller, create a project list",
       "type":"code",
-      "text":", {\n'projects': [\n  {   'name': 'Waiting in Line',\n      'image': 'lorempixel.people.1.jpeg',\n      'id': 'project1'\n  },\n  {   'name': 'Needfinding',\n    'image': 'lorempixel.city.1.jpeg',\n    'id': 'project2'\n  },\n  {   'name': 'Prototyping',\n    'image': 'lorempixel.technics.1.jpeg',\n    'id': 'project3'\n  },\n  {   'name': 'Heuristic Evaluation',\n    'image': 'lorempixel.abstract.1.jpeg',\n    'id': 'project4'\n  },\n  {   'name': 'Visualization',\n    'image': 'lorempixel.abstract.8.jpeg',\n    'id': 'project5'\n  },\n  {   'name': 'Social design',\n    'image': 'lorempixel.people.2.jpeg',\n    'id': 'project6'\n  },\n  {   'name': 'Gestural interaction',\n    'image': 'lorempixel.technics.2.jpeg',\n    'id': 'project7'\n  },\n  {   'name': 'Design tools',\n    'image': 'lorempixel.city.2.jpeg',\n    'id': 'project8'\n  }\n]\n}"
+      "text":"  res.render('index', {\n    'projects': [\n      { 'name': 'Waiting in Line',\n        'image': 'lorempixel.people.1.jpeg',\n        'id': 'project1'\n      },\n      { 'name': 'Needfinding',\n        'image': 'lorempixel.city.1.jpeg',\n        'id': 'project2'\n      },\n      { 'name': 'Prototyping',\n        'image': 'lorempixel.technics.1.jpeg',\n        'id': 'project3'\n      },\n      { 'name': 'Heuristic Evaluation',\n        'image': 'lorempixel.abstract.1.jpeg',\n        'id': 'project4'\n      },\n      { 'name': 'Visualization',\n        'image': 'lorempixel.abstract.8.jpeg',\n        'id': 'project5'\n      },\n      { 'name': 'Social design',\n        'image': 'lorempixel.people.2.jpeg',\n        'id': 'project6'\n      },\n      { 'name': 'Gestural interaction',\n        'image': 'lorempixel.technics.2.jpeg',\n        'id': 'project7'\n      },\n      { 'name': 'Design tools',\n        'image': 'lorempixel.city.2.jpeg',\n        'id': 'project8'\n      }\n    ]  \n  });"
     }
   ],
   [],
@@ -107,7 +141,7 @@
       "comment":"Solution: encolose your project template in each block",
       "title":"Solution",
       "type":"code",
-      "text":"{{#each projects}}\n  &lt;div class=\"project\" id=\"{{id}}\"&gt;\n    &lt;a href=\"project.html\" class=\"thumbnail\"&gt;\n      &lt;img src=\"images/{{image}}\" ... /&gt;\n      &lt;p&gt;{{name}}&lt;/p&gt;\n    &lt;/a&gt;\n  &lt;/div&gt;\n{{/each}}\n"
+      "text":"    {{#each projects}}\n      &lt;div class=\"project\" id=\"{{id}}\"&gt;\n        &lt;a href=\"project\" class=\"thumbnail\"&gt;\n          &lt;img src=\"images/{{image}}\" ... /&gt;\n          &lt;p&gt;{{name}}&lt;/p&gt;\n        &lt;/a&gt;\n      &lt;/div&gt;\n    {{/each}}"
     }
   ],
   [
@@ -127,7 +161,7 @@
       "comment":"Add a table of contents",
       "type":"code",
       "title":"Add a table of contents",
-      "text":"&lt;ol&gt;\n{{#each projects}}\n   &lt;li&gt;&lt;a href=\"#{{id}}\"&gt;{{name}}&lt;/a&gt;&lt;/li&gt;\n{{/each}}\n&lt;/ol&gt;\n"
+      "text":"    &lt;ol&gt;\n    {{#each projects}}\n      &lt;li&gt;&lt;a href=\"#{{id}}\"&gt;{{name}}&lt;/a&gt;&lt;/li&gt;\n    {{/each}}\n    &lt;/ol&gt;"
     }
   ],
   [
@@ -148,7 +182,7 @@
       "comment":"Add the route to app.js",
       "title":"Add app.js route",
       "type":"code",
-      "text":"var index = require('./routes/index');\nvar project = require('./routes/project');"
+      "text":"...\n\nvar index = require('./routes/index');\nvar project = require('./routes/project');\n// Example route\n..."
     }
   ],
   [
@@ -156,7 +190,7 @@
       "comment":"Route the URL to the controller",
       "title":"Route URL to controller",
       "type":"code",
-      "text":"app.get('/', index.view);\napp.get('/project', project.viewProject);"
+      "text":"...\n// Add routes here\napp.get('/', index.view);\napp.get('/project', project.viewProject);\n// Example route\n..."
     }
   ],
   [
@@ -182,7 +216,14 @@
     {
       "comment":"copy and paste from the slides",
       "type":"debug",
-      "list":[{"problem":"“Error: .get() requires callback functions but got a [object Undefined]”", "fix":"It couldn’t find the right controller function. The route is wrong or project.js is named incorrectly."}]
+      "list":[{
+        "problem":"“Error: .get() requires callback functions but got a [object Undefined]”",
+        "fix":"It couldn’t find the right controller function. The route is wrong or project.js is named incorrectly."
+      },
+      {
+        "problem":"When I click on the project, my browser responds 'Cannot GET /project.html'",
+        "fix":"Notice that we added the route '/project' not '/project.html'.  Your views/index.handlebars file probably has <code>&lt;a href=\"project.html\" ... &gt;</code>.  Just change it to <code>&lt;a href=\"project\" ... &gt;</code>.<br />Reminder: You need to explicitly refresh localhost:3000 in order to see the change."
+      }]
     }
   ],
   [],
@@ -203,28 +244,35 @@
     },
     {
       "type":"links",
-       "list":["<a href='http://localhost:3000/project/foo' target=\"_blank\">http://localhost:3000/project/foo</a>"]
+      "list":["<a href='http://localhost:3000/project/foo' target=\"_blank\">http://localhost:3000/project/foo</a>"]
+    },
+    {
+      "type": "debug",
+      "list": [{
+        "problem": "When I click on the project, I just get 'Cannot GET /project' again!",
+        "fix": "yes, again the problem is that we haven't fixed views/index.handlebars yet.  However, you can type localhost:3000/project/foo directly into your address bar to test the route we just added."
+      }]
     }
   ],
   [
     {
       "comment":"Pass the name to the template",
       "type":"code",
-      "text":", {\n  'projectName': name\n}"
+      "text":"  res.render('project', {\n    'projectName': name\n  });"
     }
   ],
   [
     {
       "comment":"Add the name to the template",
       "type":"code",
-      "text":"&lt;div class=\"jumbotron\"&gt;\n  &lt;h1&gt;{{projectName}}&lt;/h1&gt;\n  &lt;p&gt;one-sentence description of project&lt;/p&gt;\n&lt;/div&gt;"
+      "text":"    &lt;div class=\"jumbotron\"&gt;\n      &lt;h1&gt;{{projectName}}&lt;/h1&gt;\n      &lt;p&gt;one-sentence description of project&lt;/p&gt;\n    &lt;/div&gt;"
     }
   ],
   [
     {
       "comment":"Hompage: embed titles in the <a> links",
       "type":"code",
-      "text":"{{#each projects}}\n  &lt;div class=\"project\" id=\"{{id}}\"&gt;\n    &lt;a href=\"project/{{name}}\" class=\"thumbnail\"&gt;\n      &lt;img src=\"images/{{image}}\" ... /&gt;\n      &lt;p&gt;{{name}}&lt;/p&gt;\n    &lt;/a&gt;\n  &lt;/div&gt;\n{{/each}}"
+      "text":"    {{#each projects}}\n      &lt;div class=\"project\" id=\"{{id}}\"&gt;\n        &lt;a href=\"project/{{name}}\" class=\"thumbnail\"&gt;\n          &lt;img src=\"images/{{image}}\" ... /&gt;\n          &lt;p&gt;{{name}}&lt;/p&gt;\n        &lt;/a&gt;\n      &lt;/div&gt;\n    {{/each}}"
     }
   ],
   [
