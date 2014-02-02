@@ -54,6 +54,21 @@
   ],
   [
     {
+      "comment": "check-setup.sh",
+      "type": "code",
+      "title": "Terminal",
+      "text": "$ bash lab4/check-setup.sh"
+    },
+    {
+      "type": "debug",
+      "list": [{
+        "problem":"What's the vagrant password?",
+        "fix":"vagrant"
+      }]
+    }
+  ],
+  [
+    {
       "comment":"Start node.js",
       "type":"code",
       "title": "Terminal",
@@ -61,10 +76,7 @@
     },
     {
       "type":"debug",
-      "list":[{
-        "problem":"What's the vagrant password?",
-        "fix":"vagrant"
-      },
+      "list":[
       {
         "problem": "When I try to run <code>node app.js</code> I get a bunch of error messages, including the line <pre><code>Error: listen EADDRINUSE</code></pre>",
         "fix": "This probably happened because Node crashed.  For instance, Vagrant might have disconnected you all of a sudden.<br /> To fix this problem, tell your browser to refresh http://localhost:3000 until you get \"No data received\" or a similar message.  Now try starting Node again.  Everything should be fine. <br /><br />Explanation: The message <code>EADDRINUSE</code> means that Node can't start listening on port 3000 because it's already in use.  The problem is that the last instance of Node failed to properly release port 3000 when it crashed.  By refreshing the webpage, we're getting the OS to realize 'Oh, the Node server isn't using port 3000 anymore' and consequently release it."
