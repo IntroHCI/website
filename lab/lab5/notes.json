@@ -78,7 +78,12 @@
     }
   ],
   [],
-  [],
+  [
+    {
+      "type":"debug",
+      "list":[{"problem":"I can't load the Javascript at public/js", "fix":"Files in your /public directory are aliased to root.  (HUH?)  Suppose you have public/foo.js and you want to import it.  Then it would be at localhost:3000/foo.js"}]
+    }
+  ],
   [],
   [
     {
