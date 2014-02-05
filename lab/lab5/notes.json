@@ -107,7 +107,17 @@
   [],
   [],
   [],
-  [],
+  [
+    {
+      "type":"debug",
+      "list":[
+        {
+          "problem":"When I click on the name, it says that it can't find an anagram for that name.",
+          "fix":"The most common cause here is that your click listener is not listening to the right element. For example, if you put the click listener on the entire div, when you call text(), it will return a bunch of whitespace around the name, and it won't match our list of anagram keys. Make sure you're selecting only the element that actually has the text inside of it."
+        }
+      ]
+    }
+  ],
   [
     {
       "comment":"Anagram demo",
