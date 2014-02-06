@@ -78,7 +78,12 @@
     }
   ],
   [],
-  [],
+  [
+    {
+      "type":"debug",
+      "list":[{"problem":"I can't load the Javascript at public/js", "fix":"Files in your /public directory are aliased to root.  (HUH?)  Suppose you have public/foo.js and you want to import it.  Then it would be at localhost:3000/foo.js"}]
+    }
+  ],
   [],
   [
     {
@@ -102,7 +107,17 @@
   [],
   [],
   [],
-  [],
+  [
+    {
+      "type":"debug",
+      "list":[
+        {
+          "problem":"When I click on the name, it says that it can't find an anagram for that name.",
+          "fix":"The most common cause here is that your click listener is not listening to the right element. For example, if you put the click listener on the entire div, when you call text(), it will return a bunch of whitespace around the name, and it won't match our list of anagram keys. Make sure you're selecting only the element that actually has the text inside of it."
+        }
+      ]
+    }
+  ],
   [
     {
       "comment":"Anagram demo",

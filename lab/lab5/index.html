@@ -309,6 +309,14 @@ Express server listening on port 3000</code></pre>
       title="15" />
     <div class="col-md-5">
       
+      <div class="debug">
+        <h4>Debug</h4>
+        <div class="well well-sm">
+          <span class="lead"><p>I can't load the Javascript at public/js</p></span>
+          <p>Files in your /public directory are aliased to root.  (HUH?)  Suppose you have public/foo.js and you want to import it.  Then it would be at localhost:3000/foo.js</p>
+        </div>
+      </div>
+      
     </div>
   </div>
 <hr></hr>
@@ -452,6 +460,14 @@ Express server listening on port 3000</code></pre>
     <img src="2014-lab-05-putting-it-together-beta.026.jpg" class="img-responsive col-md-6"
       title="26" />
     <div class="col-md-5">
+      
+      <div class="debug">
+        <h4>Debug</h4>
+        <div class="well well-sm">
+          <span class="lead"><p>When I click on the name, it says that it can't find an anagram for that name.</p></span>
+          <p>The most common cause here is that your click listener is not listening to the right element. For example, if you put the click listener on the entire div, when you call text(), it will return a bunch of whitespace around the name, and it won't match our list of anagram keys. Make sure you're selecting only the element that actually has the text inside of it.</p>
+        </div>
+      </div>
       
     </div>
   </div>
