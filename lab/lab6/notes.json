@@ -1,0 +1,156 @@
+[
+  [],
+  [],
+  [],
+  [],
+  [
+    {
+      "comment":"Gmail",
+      "type":"video",
+      "src":"video/example-gmail.mov"
+    }
+  ],
+  [
+    {
+      "comment":"Github",
+      "type":"video",
+      "src":"video/example-github.mov"
+    }
+  ],
+  [
+    {
+      "comment":"Google",
+      "type":"video",
+      "src":"video/example-google.mov"
+    }
+  ],      
+  [],
+  [
+    {
+      "comment":"Demo",
+      "type":"video",
+      "src":"video/ajax-helloworld.mov"
+    }
+  ],   
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],    
+  [
+    {
+      "comment":"Final Result",
+      "type":"video",
+      "src":"video/final-result.mov"
+    }
+  ],   
+  [
+    {
+      "type":"links",
+      "comment":"Starter code github link",
+      "list":["<a href='https://github.com/IntroHCI/lab5'>https://github.com/IntroHCI/lab6</a>"]
+    }
+  ],
+  [
+    {
+      "comment": "check-setup.sh",
+      "type": "code",
+      "title": "Terminal",
+      "text": "$ bash lab6/check-setup.sh"
+    },
+    {
+      "type": "debug",
+      "list": [{
+        "problem": "I got the error <pre><code>bash: lab6/check-setup.sh: No such file or directory</code></pre>",
+        "fix": "Make sure you're in your 'introHCI' directory and that you've cloned lab6 here."
+      }]
+    }
+  ],
+  [
+    {
+      "comment": "check-setup.sh",
+      "type": "code",
+      "title": "Terminal",
+      "text": "$ sudo bash lab6/check-setup.sh"
+    },
+    {
+      "type": "debug",
+      "list": [{
+        "problem":"What's the vagrant password?",
+        "fix":"vagrant"
+      }]
+    }
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+    {
+      "comment": "CSS code",
+      "type": "code",
+      "title": "Code for changing CSS of page",
+      "text": "$('body').css('background-color', colors[0]);\n$('.thumbnail').css('background-color', colors[1]);\n$('h1, h2, h3, h4, h5, h5').css('color', colors[2]);\n$('p').css('color', colors[3]);\n$('.project img').css('opacity', .75);"
+    }
+  ],
+  [
+    {
+      "comment":"Final Result",
+      "type":"video",
+      "src":"video/final-color-result.mov"
+    }
+  ], 
+  [],  
+  [
+    {
+      "type":"code",
+      "title":"GitHub - Commit",
+      "text":"git status\ngit add ... \ngit commit -m \"putting it together lab\""
+    },
+    {
+      "type":"code",
+      "title":"Github - Push",
+      "text":"git push"
+    },
+    {
+      "type":"code",
+      "title":"Heroku - Create",
+      "text":"heroku create <i>newapplicationname</i>"
+    },
+    {
+      "type":"code",
+      "title":"Heroku - Push",
+      "text":"git push heroku master"
+    }
+  ],
+  [
+    {
+      "type":"links",
+      "list":["<a href='http://hci.st/lab-submit' target=\"_blank\">http://hci.st/lab-submit</a>"]
+    }
+  ]
+]
