@@ -1,7 +1,23 @@
 [
   [],
   [],
-  [],
+  [
+    {
+      "type":"debug",
+      "title":"Stretch Goals",
+      "comment":"Stretch Goals",
+      "list":[{"problem":"Integrate AJAX requests to at least one relevant external API into your portfolio", "fix":""}]
+    },
+    {
+      "type":"links",
+      "list": [
+                "<a href='http://www.panoramio.com/api/data/api.html' target='_blank' >Panoramio</a>",
+                "<a href='http://www.wefeelfine.org/api.html' target='_blank'>We Feel Fine</a>",
+                "<a href='http://data.worldbank.org/developers/api-overview' target='_blank'>World Bank</a>",
+                "<a href='https://developer.spotify.com/technologies/web-api/' target='_blank'>Spotify</a>"
+              ]
+    }
+  ],
   [],
   [
     {
@@ -23,7 +39,7 @@
       "type":"video",
       "src":"video/example-google.mov"
     }
-  ],      
+  ],
   [],
   [
     {
@@ -31,7 +47,7 @@
       "type":"video",
       "src":"video/ajax-helloworld.mov"
     }
-  ],   
+  ],
   [],
   [],
   [],
@@ -48,22 +64,29 @@
   [],
   [],
   [],
+  [
+    {
+      "comment":"$.get() $.post()",
+      "title":"APIs",
+      "type":"code",
+      "text":"$.get(\"http://URL\", callBackFn)\n\n$.post(\"http://URL\", {\"json\":\"json\"}, callBackFn)"
+    }
+  ],
   [],
   [],
   [],
-  [],    
   [
     {
       "comment":"Final Result",
       "type":"video",
       "src":"video/final-result.mov"
     }
-  ],   
+  ],
   [
     {
       "type":"links",
       "comment":"Starter code github link",
-      "list":["<a href='https://github.com/IntroHCI/lab5'>https://github.com/IntroHCI/lab6</a>"]
+      "list":["<a href='https://github.com/IntroHCI/lab6/fork' target=\"_blank\">https://github.com/IntroHCI/lab6/fork</a>"]
     }
   ],
   [
@@ -97,6 +120,25 @@
     }
   ],
   [],
+  [
+    {
+      "comment":"Test node.js:http://localhost:3000",
+      "type":"links",
+      "list":["<a href='http://localhost:3000' target=\"_blank\">http://localhost:3000</a>"]
+    },
+    {
+      "type":"debug",
+      "list":[{"problem":"I get a blank page!", "fix":"Make sure node is running (see previous slide)."}]
+    }
+  ],
+  [],
+  [
+    {
+      "comment":"Test the proejct detail endpoint in your browser",
+      "type":"links",
+      "list":["<a href='http://localhost:3000/project/1' target=\"_blank\">http://localhost:3000/project/1</a>"]
+    }
+  ],
   [],
   [],
   [],
@@ -104,10 +146,13 @@
   [],
   [],
   [],
-  [],
-  [],
-  [],
-  [],
+  [
+    {
+      "comment":"prepare the /palette endpoint",
+      "type":"links",
+      "list":["<a href='http://localhost:3000/palette' target=\"_blank\">http://localhost:3000/palette</a>"]
+    }
+  ],
   [],
   [
     {
@@ -123,8 +168,8 @@
       "type":"video",
       "src":"video/final-color-result.mov"
     }
-  ], 
-  [],  
+  ],
+  [],
   [
     {
       "type":"code",
@@ -151,6 +196,15 @@
     {
       "type":"links",
       "list":["<a href='http://hci.st/lab-submit' target=\"_blank\">http://hci.st/lab-submit</a>"]
+    }
+  ],
+  [],
+  [
+    {
+      "comment":"Cross-domain request security",
+      "title":"API - Cross-domain request security",
+      "type":"code",
+      "text":"$.get('http://foobar.com', callbackFunction, 'jsonp')"
     }
   ]
 ]
