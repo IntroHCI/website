@@ -443,6 +443,17 @@ $.post("http://URL", {"json":"json"}, callBackFn)</code></pre>
       title="28" />
     <div class="col-md-5">
       
+      <div class="code">
+        <h4>Code</h4>
+        <pre class='pre-scrollable'><code>function addProject(result) {
+  var projectHTML = '&lt;a href="#" class="thumbnail"&gt;' +
+    '&lt;img src="' + result['image'] + '" class="img"&gt;' +
+    '&lt;p&gt;' + result['title'] + '&lt;/p&gt;' +
+    '&lt;p&gt;&lt;small&gt;' + result['date'] +
+    '&lt;/small&gt;&lt;/p&gt;&lt;/a&gt;'; 
+}</code></pre>
+      </div>
+      
     </div>
   </div>
 <hr></hr>

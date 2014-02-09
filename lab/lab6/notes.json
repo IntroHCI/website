@@ -73,7 +73,13 @@
     }
   ],
   [],
-  [],
+  [
+    {
+      "comment":"Using the JSON result",
+      "type":"code",
+      "text":"function addProject(result) {\n  var projectHTML = '&lt;a href=\"#\" class=\"thumbnail\"&gt;' +\n    '&lt;img src=\"' + result['image'] + '\" class=\"img\"&gt;' +\n    '&lt;p&gt;' + result['title'] + '&lt;/p&gt;' +\n    '&lt;p&gt;&lt;small&gt;' + result['date'] +\n    '&lt;/small&gt;&lt;/p&gt;&lt;/a&gt;'; \n}"
+    }
+  ],
   [],
   [
     {
