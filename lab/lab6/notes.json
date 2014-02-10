@@ -147,7 +147,17 @@
   ],
   [],
   [],
-  [],
+  [
+    {
+      "comment":"Insert the project details into the page (1)",
+      "type":"debug",
+      "title":"Hint",
+      "list":[{
+        "problem":"I'm having trouble figuring out how to select the right div!",
+        "fix":"Try looking at lab 3, slide 21"
+      }]
+    }
+  ],
   [],
   [],
   [],
