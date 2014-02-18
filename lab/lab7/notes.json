@@ -1,0 +1,196 @@
+[
+  [],
+  [],
+  [
+    {
+      "type":"debug",
+      "title":"Stretch Goals",
+      "comment":"Stretch Goals",
+      "list":[{"problem":"TODO TODO", "fix":""}]
+    },
+    {
+      "type":"links",
+      "list": [
+                "useful links maybe?"
+              ]
+    }
+  ],
+  [
+    {
+      "comment":"Let's build a blog",
+      "type":"video",
+      "src":"video/full_blog-24711.mov"
+    }
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+    {
+      "comment":"Creating New Blog Posts",
+      "type":"video",
+      "src":"video/blog_broken_create-25482.mov"
+    }
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+    {
+      "comment":"Deleting Documents",
+      "type":"video",
+      "src":"video/blog_broken_delete-26358.mov"
+    }
+  ],
+  [],
+  [],
+  [],
+  [
+    {
+      "comment":"Our goal for this Practicum",
+      "type":"video",
+      "src":"video/complete_lab-27233.mov"
+    }
+  ],
+  [
+    {
+      "type":"links",
+      "comment":"Starter code github link",
+      "list":["<a href='https://github.com/IntroHCI/lab7/fork' target=\"_blank\">https://github.com/IntroHCI/lab7/fork</a>"]
+    }
+  ],
+  [],
+  [
+    {
+      "comment": "check-setup.sh",
+      "type": "code",
+      "title": "Terminal",
+      "text": "$ bash lab7/check-setup.sh"
+    },
+    {
+      "type": "debug",
+      "list": [{
+        "problem": "I got the error <pre><code>bash: lab7/check-setup.sh: No such file or directory</code></pre>",
+        "fix": "Make sure you're in your 'introHCI' directory and that you've cloned lab7 here."
+      }]
+    }
+  ],
+  [
+    {
+      "comment": "check-setup.sh",
+      "type": "code",
+      "title": "Terminal",
+      "text": "$ sudo bash lab7/check-setup.sh"
+    },
+    {
+      "type": "debug",
+      "list": [{
+        "problem":"What's the vagrant password?",
+        "fix":"vagrant"
+      }]
+    }
+  ],
+  [],
+  [
+    {
+      "comment":"Test node.js:http://localhost:3000",
+      "type":"links",
+      "list":["<a href='http://localhost:3000' target=\"_blank\">http://localhost:3000</a>"]
+    }
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+    {
+      "comment":"Project Info Retrieval",
+      "type":"video",
+      "src":"video/practice-projectinfo-26941.mov"
+    }
+  ],
+  [],
+  [],
+  [
+    {
+      "comment":"Delete Project Button",
+      "type":"video",
+      "src":"video/practice-deleteproject-27154.mov"
+    }
+  ],
+  [],
+  [],
+  [
+    {
+      "comment":"Delete Project Button",
+      "type":"video",
+      "src":"video/practice-addproject-27146.mov"
+    }
+  ],
+  [],
+  [
+    {
+      "type":"code",
+      "title":"GitHub - Commit",
+      "text":"git status\ngit add ... \ngit commit -m \"putting it together lab\""
+    },
+    {
+      "type":"code",
+      "title":"Github - Push",
+      "text":"git push"
+    }
+  ],
+  [
+    {
+      "comment":"Delete Project Button",
+      "type":"video",
+      "src":"video/heroku_credit_card-28066.mov"
+    },
+    {
+      "type":"links",
+      "list":["<a href='https://www.heroku.com' target=\"_blank\">Heroku</a>"]
+    }
+  ],
+  [
+    {
+      "type":"code",
+      "title":"Heroku - Create",
+      "text":"heroku create <i>newapplicationname</i>"
+    },
+    {
+      "type":"code",
+      "title":"Heroku - Addon for Mongo",
+      "text":"heroku create addons:add mongolab"
+    },
+    {
+      "type":"code",
+      "title":"Heroku - Push",
+      "text":"git push heroku master"
+    },
+    {
+      "type":"code",
+      "title":"Heroku - Initialize the Database",
+      "text":"heroku run node initDB.js"
+    }
+  ],
+  [],
+  []
+]
