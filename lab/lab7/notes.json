@@ -116,7 +116,17 @@
   [],
   [],
   [],
-  [],
+  [
+    {
+      "comment":"Restart the server",
+      "title":"Debug Hints",
+      "type":"debug",
+      "list": [{
+        "problem":"I restarted the server, but nothing shows!",
+        "fix":"In index.js, add a console.log(projects) inside renderProjects. Is your data formatted correctly? Perhaps you need to change the schema. Don't forget to rerun node initDB.js after changing your schema."
+      }]
+    }
+  ],
   [],
   [],
   [],
@@ -125,6 +135,14 @@
       "comment":"Project Info Retrieval",
       "type":"video",
       "src":"video/practice-projectinfo-26941.mov"
+    },
+    {
+      "title":"Debug Hints",
+      "type":"debug",
+      "list": [{
+        "problem":"I console.log()ed the data and it looks correct, but wont render!" ,
+        "fix":"find() returns an array of results. Perhaps you only need to select 1 of them."
+      }]
     }
   ],
   [],
