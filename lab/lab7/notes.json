@@ -6,12 +6,13 @@
       "type":"debug",
       "title":"Stretch Goals",
       "comment":"Stretch Goals",
-      "list":[{"problem":"TODO TODO", "fix":""}]
+      "list":[{"problem":"", "fix":"<ul><li>Extend your data model with at least one additional type in your Schema</li><li>Add references between types (e.g. associate \"skills\" with projects or allow uesers to \"comment\" on projects)</li></lu>"}]
     },
     {
       "type":"links",
       "list": [
-                "useful links maybe?"
+                "<a href='http://mongoosejs.com/docs/guide.html' target=\"_blank\">http://mongoosejs.com/docs/guide.html</a>",
+                "<a href='http://stackoverflow.com/questions/14730676/linking-2-mongoose-schemas' target=\"_blank\">http://stackoverflow.com/questions/14730676/linking-2-mongoose-schemas</a>"
               ]
     }
   ],
@@ -44,7 +45,13 @@
     }
   ],
   [],
-  [],
+  [
+    {
+      "comment":"Saving Documents",
+      "type":"code",
+      "text":"newPost.save(afterSaving);\n\nfunction afterSaving(err) { // this is a callback\n  if(err) {console.log(err); res.send(500); }\n  res.redirect('/');\n}"
+    }
+  ],
   [],
   [],
   [],
@@ -59,6 +66,13 @@
   ],
   [],
   [],
+  [
+    {
+      "type":"debug",
+      "title":"Mongoose cheatsheet",
+      "list":""
+    }
+  ],
   [],
   [
     {
@@ -129,7 +143,15 @@
   ],
   [],
   [],
-  [],
+  [
+    {
+      "type":"debug",
+      "list": [{
+        "problem":"I can't access res in my callback." ,
+        "fix":"You need to declare the callback function within the projectInfo function to get access to res."
+      }]
+    }
+  ],
   [
     {
       "comment":"Project Info Retrieval",
@@ -141,7 +163,7 @@
       "type":"debug",
       "list": [{
         "problem":"I console.log()ed the data and it looks correct, but wont render!" ,
-        "fix":"find() returns an array of results. Perhaps you only need to select 1 of them."
+        "fix":"Hint:find() returns an array of results."
       }]
     }
   ],
@@ -152,6 +174,21 @@
       "comment":"Delete Project Button",
       "type":"video",
       "src":"video/practice-deleteproject-27154.mov"
+    },
+    {
+      "type":"debug",
+      "title":"Debug Hints",
+      "list":[
+            {
+              "problem":"Doesn't work and I can't findout why!",
+              "fix":"In your callback, make sure there's a 'if (err) { console.log(err) }'. What does the console output say?"
+            }
+              ]
+    },
+    {
+      "title":"Callback Structure",
+      "type":"code",
+      "text":"function deleteCallback(err) {\n  if(err) { console.log(err); }\n  ... \n}"
     }
   ],
   [],
@@ -161,6 +198,21 @@
       "comment":"Delete Project Button",
       "type":"video",
       "src":"video/practice-addproject-27146.mov"
+    },
+    {
+      "type":"debug",
+      "title":"Debug Hints",
+      "list":[
+            {
+              "problem":"Doesn't work and I can't findout why!",
+              "fix":"In your callback, make sure there's a 'if (err) { console.log(err) }'. What does the console output say?"
+            }
+              ]
+    },
+    {
+      "title":"Callback Structure",
+      "type":"code",
+      "text":"function addCallback(err) {\n  if(err) { console.log(err); }\n  ... \n}"
     }
   ],
   [],

@@ -101,15 +101,16 @@
       <div class="debug">
         <h4>Stretch Goals</h4>
         <div class="well well-sm">
-          <span class="lead"><p>TODO TODO</p></span>
-          <p></p>
+          <span class="lead"><p></p></span>
+          <p><ul><li>Extend your data model with at least one additional type in your Schema</li><li>Add references between types (e.g. associate "skills" with projects or allow uesers to "comment" on projects)</li></lu></p>
         </div>
       </div>
       
       <div class="links">
         <h4>Links</h4>
         <ul>
-          <li>useful links maybe?</li>
+          <li><a href='http://mongoosejs.com/docs/guide.html' target="_blank">http://mongoosejs.com/docs/guide.html</a></li>
+          <li><a href='http://stackoverflow.com/questions/14730676/linking-2-mongoose-schemas' target="_blank">http://stackoverflow.com/questions/14730676/linking-2-mongoose-schemas</a></li>
         </ul>
       </div>
       
@@ -339,6 +340,16 @@
       title="21" />
     <div class="col-md-5">
       
+      <div class="code">
+        <h4>Code</h4>
+        <pre class='pre-scrollable'><code>newPost.save(afterSaving);
+
+function afterSaving(err) { // this is a callback
+  if(err) {console.log(err); res.send(500); }
+  res.redirect('/');
+}</code></pre>
+      </div>
+      
     </div>
   </div>
 <hr></hr>
@@ -452,6 +463,10 @@
       title="30" />
     <div class="col-md-5">
       
+      <div class="debug">
+        <h4>Mongoose cheatsheet</h4>
+      </div>
+      
     </div>
   </div>
 <hr></hr>
@@ -463,11 +478,6 @@
     <img src="2014-lab-07-databases-beta-2.031.jpg" class="img-responsive col-md-6"
       title="31" />
     <div class="col-md-5">
-      
-      <div class="video">
-        <h4>Video</h4>
-        <video src='video/complete_lab-27233.mov' style='width:100%' controls preload="none" poster="../video-poster.jpg"></video>
-      </div>
       
     </div>
   </div>
@@ -481,11 +491,9 @@
       title="32" />
     <div class="col-md-5">
       
-      <div class="links">
-        <h4>Links</h4>
-        <ul>
-          <li><a href='https://github.com/IntroHCI/lab7/fork' target="_blank">https://github.com/IntroHCI/lab7/fork</a></li>
-        </ul>
+      <div class="video">
+        <h4>Video</h4>
+        <video src='video/complete_lab-27233.mov' style='width:100%' controls preload="none" poster="../video-poster.jpg"></video>
       </div>
       
     </div>
@@ -500,6 +508,13 @@
       title="33" />
     <div class="col-md-5">
       
+      <div class="links">
+        <h4>Links</h4>
+        <ul>
+          <li><a href='https://github.com/IntroHCI/lab7/fork' target="_blank">https://github.com/IntroHCI/lab7/fork</a></li>
+        </ul>
+      </div>
+      
     </div>
   </div>
 <hr></hr>
@@ -510,6 +525,18 @@
     </div>
     <img src="2014-lab-07-databases-beta-2.034.jpg" class="img-responsive col-md-6"
       title="34" />
+    <div class="col-md-5">
+      
+    </div>
+  </div>
+<hr></hr>
+
+  <div id="slide-35" class="row lab-slide">
+    <div class="col-md-1">
+      <h2>35</h2>
+    </div>
+    <img src="2014-lab-07-databases-beta-2.035.jpg" class="img-responsive col-md-6"
+      title="35" />
     <div class="col-md-5">
       
       <div class="code">
@@ -529,12 +556,12 @@
   </div>
 <hr></hr>
 
-  <div id="slide-35" class="row lab-slide">
+  <div id="slide-36" class="row lab-slide">
     <div class="col-md-1">
-      <h2>35</h2>
+      <h2>36</h2>
     </div>
-    <img src="2014-lab-07-databases-beta-2.035.jpg" class="img-responsive col-md-6"
-      title="35" />
+    <img src="2014-lab-07-databases-beta-2.036.jpg" class="img-responsive col-md-6"
+      title="36" />
     <div class="col-md-5">
       
       <div class="code">
@@ -554,18 +581,6 @@
   </div>
 <hr></hr>
 
-  <div id="slide-36" class="row lab-slide">
-    <div class="col-md-1">
-      <h2>36</h2>
-    </div>
-    <img src="2014-lab-07-databases-beta-2.036.jpg" class="img-responsive col-md-6"
-      title="36" />
-    <div class="col-md-5">
-      
-    </div>
-  </div>
-<hr></hr>
-
   <div id="slide-37" class="row lab-slide">
     <div class="col-md-1">
       <h2>37</h2>
@@ -573,13 +588,6 @@
     <img src="2014-lab-07-databases-beta-2.037.jpg" class="img-responsive col-md-6"
       title="37" />
     <div class="col-md-5">
-      
-      <div class="links">
-        <h4>Links</h4>
-        <ul>
-          <li><a href='http://localhost:3000' target="_blank">http://localhost:3000</a></li>
-        </ul>
-      </div>
       
     </div>
   </div>
@@ -592,6 +600,13 @@
     <img src="2014-lab-07-databases-beta-2.038.jpg" class="img-responsive col-md-6"
       title="38" />
     <div class="col-md-5">
+      
+      <div class="links">
+        <h4>Links</h4>
+        <ul>
+          <li><a href='http://localhost:3000' target="_blank">http://localhost:3000</a></li>
+        </ul>
+      </div>
       
     </div>
   </div>
@@ -629,14 +644,6 @@
       title="41" />
     <div class="col-md-5">
       
-      <div class="debug">
-        <h4>Debug Hints</h4>
-        <div class="well well-sm">
-          <span class="lead"><p>I restarted the server, but nothing shows!</p></span>
-          <p>In index.js, add a console.log(projects) inside renderProjects. Is your data formatted correctly? Perhaps you need to change the schema. Don't forget to rerun node initDB.js after changing your schema.</p>
-        </div>
-      </div>
-      
     </div>
   </div>
 <hr></hr>
@@ -648,6 +655,14 @@
     <img src="2014-lab-07-databases-beta-2.042.jpg" class="img-responsive col-md-6"
       title="42" />
     <div class="col-md-5">
+      
+      <div class="debug">
+        <h4>Debug Hints</h4>
+        <div class="well well-sm">
+          <span class="lead"><p>I restarted the server, but nothing shows!</p></span>
+          <p>In index.js, add a console.log(projects) inside renderProjects. Is your data formatted correctly? Perhaps you need to change the schema. Don't forget to rerun node initDB.js after changing your schema.</p>
+        </div>
+      </div>
       
     </div>
   </div>
@@ -685,16 +700,11 @@
       title="45" />
     <div class="col-md-5">
       
-      <div class="video">
-        <h4>Video</h4>
-        <video src='video/practice-projectinfo-26941.mov' style='width:100%' controls preload="none" poster="../video-poster.jpg"></video>
-      </div>
-      
       <div class="debug">
-        <h4>Debug Hints</h4>
+        <h4>Debug</h4>
         <div class="well well-sm">
-          <span class="lead"><p>I console.log()ed the data and it looks correct, but wont render!</p></span>
-          <p>find() returns an array of results. Perhaps you only need to select 1 of them.</p>
+          <span class="lead"><p>I can't access res in my callback.</p></span>
+          <p>You need to declare the callback function within the projectInfo function to get access to res.</p>
         </div>
       </div>
       
@@ -709,6 +719,19 @@
     <img src="2014-lab-07-databases-beta-2.046.jpg" class="img-responsive col-md-6"
       title="46" />
     <div class="col-md-5">
+      
+      <div class="video">
+        <h4>Video</h4>
+        <video src='video/practice-projectinfo-26941.mov' style='width:100%' controls preload="none" poster="../video-poster.jpg"></video>
+      </div>
+      
+      <div class="debug">
+        <h4>Debug Hints</h4>
+        <div class="well well-sm">
+          <span class="lead"><p>I console.log()ed the data and it looks correct, but wont render!</p></span>
+          <p>Hint:find() returns an array of results.</p>
+        </div>
+      </div>
       
     </div>
   </div>
@@ -734,11 +757,6 @@
       title="48" />
     <div class="col-md-5">
       
-      <div class="video">
-        <h4>Video</h4>
-        <video src='video/practice-deleteproject-27154.mov' style='width:100%' controls preload="none" poster="../video-poster.jpg"></video>
-      </div>
-      
     </div>
   </div>
 <hr></hr>
@@ -750,6 +768,27 @@
     <img src="2014-lab-07-databases-beta-2.049.jpg" class="img-responsive col-md-6"
       title="49" />
     <div class="col-md-5">
+      
+      <div class="video">
+        <h4>Video</h4>
+        <video src='video/practice-deleteproject-27154.mov' style='width:100%' controls preload="none" poster="../video-poster.jpg"></video>
+      </div>
+      
+      <div class="debug">
+        <h4>Debug Hints</h4>
+        <div class="well well-sm">
+          <span class="lead"><p>Doesn't work and I can't findout why!</p></span>
+          <p>In your callback, make sure there's a 'if (err) { console.log(err) }'. What does the console output say?</p>
+        </div>
+      </div>
+      
+      <div class="code">
+        <h4>Callback Structure</h4>
+        <pre class='pre-scrollable'><code>function deleteCallback(err) {
+  if(err) { console.log(err); }
+  ... 
+}</code></pre>
+      </div>
       
     </div>
   </div>
@@ -775,11 +814,6 @@
       title="51" />
     <div class="col-md-5">
       
-      <div class="video">
-        <h4>Video</h4>
-        <video src='video/practice-addproject-27146.mov' style='width:100%' controls preload="none" poster="../video-poster.jpg"></video>
-      </div>
-      
     </div>
   </div>
 <hr></hr>
@@ -792,6 +826,27 @@
       title="52" />
     <div class="col-md-5">
       
+      <div class="video">
+        <h4>Video</h4>
+        <video src='video/practice-addproject-27146.mov' style='width:100%' controls preload="none" poster="../video-poster.jpg"></video>
+      </div>
+      
+      <div class="debug">
+        <h4>Debug Hints</h4>
+        <div class="well well-sm">
+          <span class="lead"><p>Doesn't work and I can't findout why!</p></span>
+          <p>In your callback, make sure there's a 'if (err) { console.log(err) }'. What does the console output say?</p>
+        </div>
+      </div>
+      
+      <div class="code">
+        <h4>Callback Structure</h4>
+        <pre class='pre-scrollable'><code>function addCallback(err) {
+  if(err) { console.log(err); }
+  ... 
+}</code></pre>
+      </div>
+      
     </div>
   </div>
 <hr></hr>
@@ -802,6 +857,18 @@
     </div>
     <img src="2014-lab-07-databases-beta-2.053.jpg" class="img-responsive col-md-6"
       title="53" />
+    <div class="col-md-5">
+      
+    </div>
+  </div>
+<hr></hr>
+
+  <div id="slide-54" class="row lab-slide">
+    <div class="col-md-1">
+      <h2>54</h2>
+    </div>
+    <img src="2014-lab-07-databases-beta-2.054.jpg" class="img-responsive col-md-6"
+      title="54" />
     <div class="col-md-5">
       
       <div class="code">
@@ -820,12 +887,12 @@ git commit -m "putting it together lab"</code></pre>
   </div>
 <hr></hr>
 
-  <div id="slide-54" class="row lab-slide">
+  <div id="slide-55" class="row lab-slide">
     <div class="col-md-1">
-      <h2>54</h2>
+      <h2>55</h2>
     </div>
-    <img src="2014-lab-07-databases-beta-2.054.jpg" class="img-responsive col-md-6"
-      title="54" />
+    <img src="2014-lab-07-databases-beta-2.055.jpg" class="img-responsive col-md-6"
+      title="55" />
     <div class="col-md-5">
       
       <div class="video">
@@ -844,12 +911,12 @@ git commit -m "putting it together lab"</code></pre>
   </div>
 <hr></hr>
 
-  <div id="slide-55" class="row lab-slide">
+  <div id="slide-56" class="row lab-slide">
     <div class="col-md-1">
-      <h2>55</h2>
+      <h2>56</h2>
     </div>
-    <img src="2014-lab-07-databases-beta-2.055.jpg" class="img-responsive col-md-6"
-      title="55" />
+    <img src="2014-lab-07-databases-beta-2.056.jpg" class="img-responsive col-md-6"
+      title="56" />
     <div class="col-md-5">
       
       <div class="code">
@@ -876,24 +943,24 @@ git commit -m "putting it together lab"</code></pre>
   </div>
 <hr></hr>
 
-  <div id="slide-56" class="row lab-slide">
-    <div class="col-md-1">
-      <h2>56</h2>
-    </div>
-    <img src="2014-lab-07-databases-beta-2.056.jpg" class="img-responsive col-md-6"
-      title="56" />
-    <div class="col-md-5">
-      
-    </div>
-  </div>
-<hr></hr>
-
   <div id="slide-57" class="row lab-slide">
     <div class="col-md-1">
       <h2>57</h2>
     </div>
     <img src="2014-lab-07-databases-beta-2.057.jpg" class="img-responsive col-md-6"
       title="57" />
+    <div class="col-md-5">
+      
+    </div>
+  </div>
+<hr></hr>
+
+  <div id="slide-58" class="row lab-slide">
+    <div class="col-md-1">
+      <h2>58</h2>
+    </div>
+    <img src="2014-lab-07-databases-beta-2.058.jpg" class="img-responsive col-md-6"
+      title="58" />
     <div class="col-md-5">
       
     </div>
