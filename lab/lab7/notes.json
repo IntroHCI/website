@@ -6,7 +6,7 @@
       "type":"debug",
       "title":"Stretch Goals",
       "comment":"Stretch Goals",
-      "list":[{"problem":"", "fix":"<ul><li>Extend your data model with at least one additional type in your Schema</li><li>Add references between types (e.g. associate \"skills\" with projects or allow uesers to \"comment\" on projects)</li></lu>"}]
+      "list":[{"problem":"Add comments to your projects.","fix":"Do this by adding a new schema and linking it to the project schema"}]
     },
     {
       "type":"links",
@@ -88,7 +88,6 @@
       "list":["<a href='https://github.com/IntroHCI/lab7/fork' target=\"_blank\">https://github.com/IntroHCI/lab7/fork</a>"]
     }
   ],
-  [],
   [
     {
       "comment": "check-setup.sh",
@@ -117,6 +116,14 @@
         "problem":"What's the vagrant password?",
         "fix":"vagrant"
       }]
+    }
+  ],
+  [
+    {
+      "comment": "mongod",
+      "type": "code",
+      "title": "Terminal",
+      "text": "$ mongod"
     }
   ],
   [],
