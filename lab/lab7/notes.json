@@ -118,20 +118,19 @@
       }]
     }
   ],
-  [
-    {
-      "comment": "mongod",
-      "type": "code",
-      "title": "Terminal",
-      "text": "$ mongod"
-    }
-  ],
   [],
   [
     {
       "comment":"Test node.js:http://localhost:3000",
       "type":"links",
       "list":["<a href='http://localhost:3000' target=\"_blank\">http://localhost:3000</a>"]
+    },
+    {
+      "type":"debug",
+      "list":[{
+        "problem":"When I run <code>node app.js</code> I get the following error <code><pre>Error: failed to connect to [localhost:xxxxx]</pre></code>",
+        "fix":"Mongo isn't running!  Did you remember to run the <code>check-setup.sh</code> script?"
+      }]
     }
   ],
   [],
