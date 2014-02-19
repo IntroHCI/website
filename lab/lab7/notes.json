@@ -254,7 +254,7 @@
     {
       "type":"code",
       "title":"Heroku - Addon for Mongo",
-      "text":"heroku create addons:add mongolab"
+      "text":"heroku addons:add mongolab"
     },
     {
       "type":"code",
