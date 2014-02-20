@@ -20,7 +20,7 @@
   </head>
   <body data-spy="scroll" data-target=".sidenav">
 
-    <!-- 
+    <!--
     IntroHCI assignment template
     ------------------
     To create a new assignment:
@@ -62,7 +62,7 @@
                   <li><a href="../logistics.html#cs77">CS 77</a></li>
                   <li><a href="../logistics.html#faq">FAQ</a></li>
                 </ul>
-            </li>            
+            </li>
             <li><a href="http://www.coursera.org">Submit Work</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
@@ -76,12 +76,12 @@
         <div class="row">
             <div class="col-md-3">
                 <div class="sidenav" data-spy="affix">
-                    <ul class="nav nav-stacked" id="sidenav-content">   
+                    <ul class="nav nav-stacked" id="sidenav-content">
                     </ul>
                 </div> <!-- /sidenav -->
-            </div> <!-- /col-md-3 -->  
-            <div class="col-md-9" id="assignment-description"> 
-                
+            </div> <!-- /col-md-3 -->
+            <div class="col-md-9" id="assignment-description">
+
                 <div>
                     <h1>Assignment 7: Ready for testing</h1>
                 </div>
@@ -90,13 +90,13 @@
                     <h2>Brief</h2>
                     <p>Crunch time! Your interactive prototypes have to be <b>ready for user testing</b> by the end of this week.</p>
                 </div>
-                
+
                 <div id="assignment" class="sidenav-anchor">
                     <h2>Assignment</h2>
                     <p>By the end of this week your interactive prototypes should be fully functional. Use the JSON and handlebars techniques that you learned in lab (or equivalent technology) to populate the data for your application. Remember, we are not at the "making it pretty" phase yet, so don't procrastinate by playing with Photoshop. If you planned it out right and you have been doing your work, you should be in good shape. If not, it's time to step it up. You will get much less out of user testing if you are still struggling with bugs and a half finished interface.</p>
                     <p>Keep updating your development plan. You'll submit it again this week. (If you'd like to give yourself the option of "late days", set an early deadline so your schedule has some flexibility.)</p>
                 </div>
-                
+
                 <div id="examples" class="sidenav-anchor">
                     <h2>Student Examples</h2>
                     <p>Student examples from last year will be posted shortly. Keep in mind that the assignment was slightly different last year. </p>
@@ -108,6 +108,7 @@
                         <li>The URL of the prototype version that you want us to see. Note: the URL must work at least until your assignment is graded. If it doesn't work, you'll receive no credit.</li>
                         <li>The PDF of your development plan that you submitted last week.</li>
                         <li>The PDF of your updated development plan. (<i>We recommend making a Google spreadsheet and saving it as a pdf; this gives you a snapshot for comparison.</i>)</li>
+                        <li>The shared github repo for your project.</li>
                     </ul>
                     <p>Note: since we may grade your assignment up to a few days after submission, per the honor code, we expect that the prototype URL show the state of your prototype at the time of submission. You will very likely be updating your prototype after submission, but please do so on another version.</p>
                 </div>
@@ -125,25 +126,32 @@
                                     <th id="above" valign="top">Mastery</th>
                                 </tr>
                                 <tr>
-                                    <td>Functionality<br /><span style="color:lightGray;">4 points</span></td>
+                                    <td>Functionality<br /><span style="color:lightGray;">3 points</span></td>
                                     <td>0: No pages are connected and interactive.</td>
                                     <td>1: Prototype lacks a lot of features or has many bugs.</td>
-                                    <td>3: Prototype is mostly complete but may still lack one or two features.</td>
-                                    <td>4: Prototype is completely functional and ready for user testing. While not completely polished, the overall look and feel is reflective of the final prototype.</td>
+                                    <td>2: Prototype is mostly complete but may still lack one or two features.</td>
+                                    <td>3: Prototype is completely functional and ready for user testing. While not completely polished, the overall look and feel is reflective of the final prototype.</td>
                                 </tr>
                                 <tr>
-                                    <td>Mobile Design<br /><span style="color:lightGray;">4 points</span></td>
+                                    <td>Data/Templates<br /><span style="color:lightGray;">2 points</span></td>
+                                    <td colspan=2>0: No data customization (e.g., JSON/Handlebars).</td>
+                                    <td>1: Data customization (e.g., JSON/Handlebars) in key places.</td>
+                                    <td>2: Pervasive data customization and templating. All major functionality is templated rather than copied & pasted.</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Mobile Design<br /><span style="color:lightGray;">3 points</span></td>
                                     <td>0: Prototype is not designed for a mobile form factor.</td>
                                     <td>1: Minimal attempt to design the prototype for a mobile form factor.</td>
-                                    <td>3: Prototype is somewhat designed for a mobile form factor.</td>
-                                    <td>4: The prototype's information architecture is well-tuned for a mobile form factor.</td>
+                                    <td>2: Prototype is somewhat designed for a mobile form factor.</td>
+                                    <td>3: The prototype's information architecture is well-tuned for a mobile form factor.</td>
                                 </tr>
                                 <tr>
-                                    <td>Goals<br /><span style="color:lightGray;">4 points</span></td>
+                                    <td>Goals<br /><span style="color:lightGray;">3 points</span></td>
                                     <td>0: No goals were met.</td>
                                     <td>1: Only a few goals were met.</td>
-                                    <td>3: Most, but not all, of the goals were met.</td>
-                                    <td>4: All goals were met.</td>
+                                    <td>2: Most, but not all, of the goals were met.</td>
+                                    <td>3: All goals were met.</td>
                                 </tr>
                                 <tr>
                                     <td>Updated Development Plan<br /><span style="color:lightGray;">3 points</span></td>
@@ -153,7 +161,11 @@
                                     <td>3: Plan is detailed and reflects progress, new tasks, and any changes to previous tasks.</td>
                                 </tr>
                                 <tr>
-                                    <td headers="guiding" colspan=2><br>Outside the Box<br><span style="color:lightGray;"><span style="color:lightGray;">+1. Up to 5% of submissions.</span></td>
+                                    <td headers="guiding" colspan=2><br>Github Repo<br><span style="color:lightGray;"><span style="color:lightGray;">1 point.</span></td>
+                                    <td colspan=3 align=right>Github Repo URL present.</td>
+                                </tr>
+                                <tr>
+                                    <td headers="guiding" colspan=2><br>Outside the Box<br><span style="color:lightGray;"><span style="color:lightGray;">1 point. Up to 5% of submissions.</span></td>
                                     <td colspan=3 align=right>Your prototype is amazing and the TAs are extremely impressed with how complete it is. Not only is everything working, you have either solved an incredibly difficult engineering problem or you have introduced an extremely unique design. Your prototype shows thought and care. You should turn your app into a start-up or at least bring it to market.</td>
                                 </tr>
                             </tbody>

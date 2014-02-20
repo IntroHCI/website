@@ -1,0 +1,272 @@
+[
+  [],
+  [],
+  [
+    {
+      "type":"debug",
+      "title":"Stretch Goals",
+      "comment":"Stretch Goals",
+      "list":[{"problem":"Add comments to your projects.","fix":"Do this by adding a new schema and linking it to the project schema"}]
+    },
+    {
+      "type":"links",
+      "list": [
+                "<a href='http://mongoosejs.com/docs/guide.html' target=\"_blank\">http://mongoosejs.com/docs/guide.html</a>",
+                "<a href='http://stackoverflow.com/questions/14730676/linking-2-mongoose-schemas' target=\"_blank\">http://stackoverflow.com/questions/14730676/linking-2-mongoose-schemas</a>"
+              ]
+    }
+  ],
+  [
+    {
+      "comment":"Let's build a blog",
+      "type":"video",
+      "src":"video/full_blog-24711.mov"
+    }
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+    {
+      "comment":"Creating New Blog Posts",
+      "type":"video",
+      "src":"video/blog_broken_create-25482.mov"
+    }
+  ],
+  [],
+  [
+    {
+      "comment":"Saving Documents",
+      "type":"code",
+      "text":"newPost.save(afterSaving);\n\nfunction afterSaving(err) { // this is a callback\n  if(err) {console.log(err); res.send(500); }\n  res.redirect('/');\n}"
+    }
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+    {
+      "comment":"Deleting Documents",
+      "type":"video",
+      "src":"video/blog_broken_delete-26358.mov"
+    }
+  ],
+  [],
+  [],
+  [
+    {
+      "type":"debug",
+      "title":"Mongoose cheatsheet",
+      "list":""
+    }
+  ],
+  [],
+  [
+    {
+      "comment":"Our goal for this Practicum",
+      "type":"video",
+      "src":"video/complete_lab-27233.mov"
+    }
+  ],
+  [
+    {
+      "type":"links",
+      "comment":"Starter code github link",
+      "list":["<a href='https://github.com/IntroHCI/lab7/fork' target=\"_blank\">https://github.com/IntroHCI/lab7/fork</a>"]
+    }
+  ],
+  [
+    {
+      "comment": "check-setup.sh",
+      "type": "code",
+      "title": "Terminal",
+      "text": "$ bash lab7/check-setup.sh"
+    },
+    {
+      "type": "debug",
+      "list": [{
+        "problem": "I got the error <pre><code>bash: lab7/check-setup.sh: No such file or directory</code></pre>",
+        "fix": "Make sure you're in your 'introHCI' directory and that you've cloned lab7 here."
+      }]
+    }
+  ],
+  [
+    {
+      "comment": "check-setup.sh",
+      "type": "code",
+      "title": "Terminal",
+      "text": "$ sudo bash lab7/check-setup.sh"
+    },
+    {
+      "type": "debug",
+      "list": [{
+        "problem":"What's the vagrant password?",
+        "fix":"vagrant"
+      }]
+    }
+  ],
+  [],
+  [
+    {
+      "comment":"Test node.js:http://localhost:3000",
+      "type":"links",
+      "list":["<a href='http://localhost:3000' target=\"_blank\">http://localhost:3000</a>"]
+    },
+    {
+      "type":"debug",
+      "list":[{
+        "problem":"When I run <code>node app.js</code> I get the following error <code><pre>Error: failed to connect to [localhost:xxxxx]</pre></code>",
+        "fix":"Mongo isn't running!  Did you remember to run the <code>check-setup.sh</code> script?"
+      }]
+    }
+  ],
+  [],
+  [],
+  [],
+  [
+    {
+      "comment":"Restart the server",
+      "title":"Debug Hints",
+      "type":"debug",
+      "list": [{
+        "problem":"I restarted the server, but nothing shows!",
+        "fix":"In index.js, add a console.log(projects) inside renderProjects. Is your data formatted correctly? Perhaps you need to change the schema. Don't forget to rerun node initDB.js after changing your schema."
+      }]
+    }
+  ],
+  [],
+  [],
+  [
+    {
+      "type":"debug",
+      "list": [{
+        "problem":"I can't access res in my callback." ,
+        "fix":"You need to declare the callback function within the projectInfo function to get access to res."
+      }]
+    }
+  ],
+  [
+    {
+      "comment":"Project Info Retrieval",
+      "type":"video",
+      "src":"video/practice-projectinfo-26941.mov"
+    },
+    {
+      "title":"Debug Hints",
+      "type":"debug",
+      "list": [{
+        "problem":"I console.log()ed the data and it looks correct, but wont render!" ,
+        "fix":"Hint:find() returns an array of results."
+      }]
+    }
+  ],
+  [],
+  [],
+  [
+    {
+      "comment":"Delete Project Button",
+      "type":"video",
+      "src":"video/practice-deleteproject-27154.mov"
+    },
+    {
+      "type":"debug",
+      "title":"Debug Hints",
+      "list":[
+            {
+              "problem":"Doesn't work and I can't findout why!",
+              "fix":"In your callback, make sure there's a 'if (err) { console.log(err) }'. What does the console output say?"
+            }
+              ]
+    },
+    {
+      "title":"Callback Structure",
+      "type":"code",
+      "text":"function deleteCallback(err) {\n  if(err) { console.log(err); }\n  ... \n}"
+    }
+  ],
+  [],
+  [],
+  [
+    {
+      "comment":"Delete Project Button",
+      "type":"video",
+      "src":"video/practice-addproject-27146.mov"
+    },
+    {
+      "type":"debug",
+      "title":"Debug Hints",
+      "list":[
+            {
+              "problem":"Doesn't work and I can't findout why!",
+              "fix":"In your callback, make sure there's a 'if (err) { console.log(err) }'. What does the console output say?"
+            }
+              ]
+    },
+    {
+      "title":"Callback Structure",
+      "type":"code",
+      "text":"function addCallback(err) {\n  if(err) { console.log(err); }\n  ... \n}"
+    }
+  ],
+  [],
+  [
+    {
+      "type":"code",
+      "title":"GitHub - Commit",
+      "text":"git status\ngit add ... \ngit commit -m \"putting it together lab\""
+    },
+    {
+      "type":"code",
+      "title":"Github - Push",
+      "text":"git push"
+    }
+  ],
+  [
+    {
+      "comment":"Delete Project Button",
+      "type":"video",
+      "src":"video/heroku_credit_card-28066.mov"
+    },
+    {
+      "type":"links",
+      "list":["<a href='https://www.heroku.com' target=\"_blank\">Heroku</a>"]
+    }
+  ],
+  [
+    {
+      "type":"code",
+      "title":"Heroku - Create",
+      "text":"heroku create <i>newapplicationname</i>"
+    },
+    {
+      "type":"code",
+      "title":"Heroku - Addon for Mongo",
+      "text":"heroku addons:add mongolab"
+    },
+    {
+      "type":"code",
+      "title":"Heroku - Push",
+      "text":"git push heroku master"
+    },
+    {
+      "type":"code",
+      "title":"Heroku - Initialize the Database",
+      "text":"heroku run node initDB.js"
+    }
+  ],
+  [],
+  []
+]
