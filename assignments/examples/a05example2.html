@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Introduction to Human-Computer Interaction: Assignment">
+    <title>Intro to HCI: Assignment 5, Example 2</title>
+
+    <!-- Bootstrap -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="../../css/hci.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body data-spy="scroll" data-target=".sidenav">
+
+    <!-- 
+    IntroHCI assignment template
+    ------------------
+    To create a new assignment:
+    1) Write all the HTML as you normally would underneath the #assignment-description div.
+    2) Anything that you want to appear in the navbar on the left needs to be enclosed
+        in a <div id="unique-id" class="sidenav-anchor">. On page load, hci.js will look up
+        anything enclosed in .sidenav-anchor, find the first header (h1-h6) inside it, and add
+        it to the navigation pane on the left. Make sure it has a unique div id so that there is something
+        to anchor the hyperlink to.
+    3) I recommend going with Bootstrap's recommendation and putting any <table class="table"> elements enclosed in a
+        <div class="table-responsive">.
+    -->
+
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Intro to HCI</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class=""><a href="../../index.html">Home</a></li>
+            <li><a href="../../index.html#calendar">Calendar</a></li>
+            <li><a href="../../lab/">Lab</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Logistics <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="../logistics.html#prereqs">Prerequisites</a></li>
+                  <li><a href="../../logistics.html#lab">Lab</a></li>
+                  <li><a href="../../logistics.html#grading">Grading</a></li>
+                  <li><a href="../logistics.html#attendance">Attendance</a></li>
+                  <li><a href="../../logistics.html#cs77">CS 77</a></li>
+                  <li><a href="../../logistics.html#faq">FAQ</a></li>
+                </ul>
+            </li>            
+            <li><a href="http://www.coursera.org">Submit Work</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="staffemailorpiazzaforum@university.edu">Questions</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="sidenav" data-spy="affix">
+                    <ul class="nav nav-stacked" id="sidenav-content">   
+                    </ul>
+                </div> <!-- /sidenav -->
+            </div> <!-- /col-md-3 -->  
+            <div class="col-md-9" id="assignment-description"> 
+                    
+                    <div>
+                        <h1>Assignment 5, Example 2</h1>
+                    </div>
+
+                <div id="changes" class="sidenav-anchor">
+                    <h2>List of Changes</h2>
+                    <ul>
+                        <li>The navigation bar is now persistent throughout the app to address our issue of a confusing navigational hierarchy.</li>
+                        <li>We implemented a more fleshed out goal timeline in order to address issues with being able to access a global list of goals.</li>
+                        <li>We visibly tag each milestone now with color (associated with a certain goal) and a description of goal progress to address confusion about which milestone belongs to which goal. We also have the option of filtering the timeline to show one goal's milestones at a time.</li>
+                        <li>We ditched the graph/chart concept and we're now going strictly with a timeline. This allows us to decrease the complexity of goal and milestone creation, as we no longer need to have the user input a lot of quantifiable data in an effort to extrapolate their progress. The removal of graphs should address a lot of usability concerns raised in the heuristic evaluation process, and has the side benefit of pushing our app towards minimalism.</li>
+                        <li>In conjunction with the above change, we're removing the quantifiable/unquantifiable distinction and have users input all of their goals and milestones as plain text, tagged with a due date, simplifying the goal and milestone creation process.</li>
+                        <li>Tapping on a milestone reveals information about the goal it's associated with and gives further options for viewing the goal and editing/deleting goals and milestones.</li>
+                        <li>Excuses will now be visible on the timeline, in place of the milestone you missed. This solves the problem of being unable to see your past excuses and gives the user a more holistic view of their path to goal completion.</li>
+                    </ul>
+                </div>
+
+                <div id="devplan" class="sidenav-anchor">
+                    <h2>Development Plan</h2>
+                    <p><a href="./pdfs/a05e2.pdf" target="_blank">Development Plan - Week 5</a></p>
+                </div>
+
+                <div id="prototype" class="sidenav-anchor">
+                    <h2>Prototype</h2>
+                    <p><a href="./images/a05e2p1.png"><img src="./images/a05e2p1.png" class="img-responsive" alt="image" style="border: 0px none; "></a></p>
+                    <p><a href="./images/a05e2p2.png"><img src="./images/a05e2p2.png" class="img-responsive" alt="image" style="border: 0px none; "></a></p>
+                    <p><a href="./images/a05e2p3.png"><img src="./images/a05e2p3.png" class="img-responsive" alt="image" style="border: 0px none; "></a></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/hci.js"></script>
+  </body>
+</html>
