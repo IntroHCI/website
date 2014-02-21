@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Introduction to Human-Computer Interaction: Assignment">
+    <title>Intro to HCI: Extra Credit Assignments</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="../css/hci.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body data-spy="scroll" data-target=".sidenav">
+
+    <!-- 
+    IntroHCI assignment template
+    ------------------
+    To create a new assignment:
+    1) Write all the HTML as you normally would underneath the #assignment-description div.
+    2) Anything that you want to appear in the navbar on the left needs to be enclosed
+        in a <div id="unique-id" class="sidenav-anchor">. On page load, hci.js will look up
+        anything enclosed in .sidenav-anchor, find the first header (h1-h6) inside it, and add
+        it to the navigation pane on the left. Make sure it has a unique div id so that there is something
+        to anchor the hyperlink to.
+    3) I recommend going with Bootstrap's recommendation and putting any <table class="table"> elements enclosed in a
+        <div class="table-responsive">.
+    -->
+
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Intro to HCI</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class=""><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#calendar">Calendar</a></li>
+            <li><a href="../lab/">Lab</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Logistics <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="../logistics.html#prereqs">Prerequisites</a></li>
+                  <li><a href="../logistics.html#lab">Lab</a></li>
+                  <li><a href="../logistics.html#grading">Grading</a></li>
+                  <li><a href="../logistics.html#attendance">Attendance</a></li>
+                  <li><a href="../logistics.html#cs77">CS 77</a></li>
+                  <li><a href="../logistics.html#faq">FAQ</a></li>
+                </ul>
+            </li>            
+            <li><a href="http://www.coursera.org">Submit Work</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="staffemailorpiazzaforum@university.edu">Questions</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="sidenav" data-spy="affix">
+                    <ul class="nav nav-stacked" id="sidenav-content">   
+                    </ul>
+                </div> <!-- /sidenav -->
+            </div> <!-- /col-md-3 -->  
+            <div class="col-md-9" id="assignment-description"> 
+                
+                <div>
+                    <h1>Extra Credit Assignments</h1>
+                    <p>You have three opportunities for extra credit. Feel free to do as many as you wish. They are all group extra credit opportunities.</p>
+                </div>
+
+                <div id="inspirations" class="sidenav-anchor">
+                    <h2>Find Related Projects - 3 points</h2>
+                    <p>Before the implementation of your prototype, you compiled a list of inspirations. Since then, your prototype has probably made so many twists and turns and transformations that it is no longer recognizable as the idea that you started off with. To prepare for your final presentation, update your knowledge of related projects. Related projects can be existing applications, artifacts, products, or services that relate to your concept. Here, web search is your friend (potentially useful sites include Google, Google Scholar, the ACM Digital Library, TechCrunch, Engadget...). Pick the five related projects that a juror is mostly like to ask you "How are you different than _____?" In some cases, this might be a similar service like another to-do list, photo-sharing app, or party-finder. In other cases, it might be repurposing general services like Google Docs or Twitter.</p>
+                    <p>Pick out your five favorite related projects. For each one, give a brief explanation (1-2 sentences) of how you would answer the following questions from a juror "How are you different from _____? Why would users use your application instead of _____?"</p>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <th id="guiding" valign="top">Category</th>
+                                    <th id="unsatisfactory" valign="top">Nope</th>
+                                    <th id="minimum" valign="top">Adequacy</th>
+                                    <th id="satisfactory" valign="top">Proficiency</th>
+                                    <th id="above" valign="top">Mastery</th>
+                                </tr>
+                                <tr>
+                                    <td>Find Related Projects<br /><span style="color:lightGray;">3 points</span></td>
+                                    <td>0: No extra credit submitted or any number of related projects submitted without meaningful explanation.</td>
+                                    <td>1: One or two key relevant projects found and differences explained. (If more than two submitted, the rest are not relevant or not well explained.)</td>
+                                    <td>2: Three or four key relevant projects found and differences explained. (If more than three submitted, the rest are not relevant or not well explained.)</td>
+                                    <td>3: Five relevant projects found and differences explained. A juror will exclaim "Wow, you've really done your homework!"</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div id="launch" class="sidenav-anchor">
+                    <h2>Launch Your App - 4 points</h2>
+                    <p>You have done an amazing job prototyping and evaluating your application, and now it's time to see what the world thinks. Launch your app to the public. This means advertising on Google, creating a Fan Page on Facebook, posting in the Mozilla Marketplace, or announcing on your app on social networks like Facebook and Twitter. These are all just suggestions for what you might do. The goal of this extra credit opportunity is to expose your app to the public by any method you wish to use.</p>
+                    <p>Submit any materials that show that you have successfully launched your application. This can include email receipts, screenshots of the app on a app store, or URLs to app listings. Also submit any materials necessary to show that people outside of this class and the university have started using your application as a direct result of your launch. Since this will differ between groups, we will leave up to you to decide what exactly is necessary to be submitted. The only requirement is to provide sufficient proof to show that you have launched your app to the public and that people have started using it.</p>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <th id="guiding" valign="top">Category</th>
+                                    <th id="unsatisfactory" valign="top">Nope</th>
+                                    <th id="minimum" valign="top">Adequacy</th>
+                                    <th id="satisfactory" valign="top">Proficiency</th>
+                                    <th id="above" valign="top">Mastery</th>
+                                </tr>
+                                <tr>
+                                    <td>Launch Your App<br /><span style="color:lightGray;">4 points</span></td>
+                                    <td>0: No extra credit submitted.</td>
+                                    <td>1: You've provided evidence that you've taken good effort to launch your app, but you have not given evidence that people are using it.</td>
+                                    <td>3: You've launched your app, but only a few people, or only people you know, have started using it.</td>
+                                    <td>4: A lot of time and effort was put into launching the app. You've shown evidence of it's accessibility and more than a couple strangers (who are not people you know or in this class) have found your app and started using it.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div id="video" class="sidenav-anchor">
+                    <h2>Create a Video - 6 points</h2>
+                    <p>Your objective is to record a 1-minute video that includes the motivation behind your app (needfinding/brainstorming) and the main feature or “secret sauce” in your app.</p>
+                    <p>Think of this video as a mixture of advertising and showing off all the hard work you have put into your application. <a href="http://www.youtube.com/watch?v=6NniNjKXoh8" target="_blank">Here is a great example of a video</a>, and <a href="http://hci.stanford.edu/courses/cs147/2012/show/video.php" target="_blank">here are the top 10 videos from last year</a>. Exercise your creativity as much as possible! Try to plan out your video before actually taking any footage. Storyboards are great tool to use here. This video will not be used as part of your final presentation slides, but should instead complement your poster session as well as serve as a way for you to remember your hard work in years to come. Upload these videos to YouTube.</p>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <th id="guiding" valign="top">Category</th>
+                                    <th id="unsatisfactory" valign="top">Nope</th>
+                                    <th id="minimum" valign="top">Adequacy</th>
+                                    <th id="satisfactory" valign="top">Proficiency</th>
+                                    <th id="above" valign="top">Mastery</th>
+                                </tr>
+                                <tr>
+                                    <td>Create a Video<br /><span style="color:lightGray;">6 points</span></td>
+                                    <td>0: No extra credit submitted.</td>
+                                    <td>2: Video covers the motivation behind the app or the app's main feature, but not both.</td>
+                                    <td>4: Video covers both the motivation behind the app and the app's main feature, and is visually attractive.</td>
+                                    <td>6: The video has mass appeal, is very creative, and shows a lot of careful planning. Only one video in the entire class can get a full 6 points on this extra credit assignment.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/hci.js"></script>
+  </body>
+</html>
