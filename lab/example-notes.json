@@ -11,6 +11,12 @@
     },
     {
       "type": "code",
+      "comment": """
+        To encode any HTML correctly, go into the Python command line and do:
+        import cgi
+        code = [your big long string here, multiline using triple quotes]
+        unescaped = cgi.escape(code, quote=True)
+      """
       "text": "[example] cd something_here"
     }
   ],
