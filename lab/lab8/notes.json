@@ -1,0 +1,187 @@
+[
+  [],
+  [],
+  [],
+  [
+    {
+      "type":"debug",
+      "title":"Stretch Goals",
+      "comment":"Stretch Goals",
+      "list":[{"problem":"Include analytic tracking for user timing.", "fix":""}]
+    },
+    {
+      "type":"links",
+      "title":"API",
+      "list":["<a href='https://developers.google.com/analytics/devguides/collection/analyticsjs/user-timings' target=\"_blank\">https://developers.google.com/analytics/devguides/collection/analyticsjs/user-timings</a>"]
+    }
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+    {
+      "type":"debug",
+      "title":"Goal",
+      "comment":"Goal 1",
+      "list":[{"problem":"Install pageview analyticson your portfolio.", "fix":""}]
+    }
+  ],
+  [
+    {
+      "type":"links",
+      "comment":"Starter code github link",
+      "list":["<a href='https://github.com/IntroHCI/lab8/fork' target=\"_blank\">https://github.com/IntroHCI/lab8/fork</a>"]
+    }
+  ],
+  [],
+  [],
+  [],
+  [
+    {
+      "comment":"Test node.js:http://localhost:3000",
+      "type":"links",
+      "list":["<a href='http://localhost:3000' target=\"_blank\">http://localhost:3000</a>"]
+    }
+  ],
+  [
+    {
+      "comment":"Open a Google Analytics account",
+      "type":"links",
+      "list":["<a href='http://www.google.com/analytics/' target=\"_blank\">http://www.google.com/analytics/</a>"]
+    }
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+    {
+      "type":"debug",
+      "title":"Goal",
+      "comment":"Goal 2",
+      "list":[{"problem":"run an A/B test on a grid vs. the old vertical layout", "fix":""}]
+    }
+  ],
+  [],
+  [
+    {
+      "type":"debug",
+      "comment":"Write index.viewGrid",
+      "list":[{"problem":"It says \"Cannot GET /grid\"", "fix":"Did you add the route in app.js? (See Prev Slide)"}]
+    }
+  ],
+  [],
+  [],
+  [
+    {
+      "comment":"Grid code",
+      "type":"code",
+      "text":"\n&lt;div class=&quot;row&quot;&gt;\n&lt;div class=&quot;project col-md-4&quot; id=&quot;{{projects.0.id}}&quot;&gt;\n\t&lt;div class=&quot;thumbnail&quot;&gt;\n\t\t&lt;a href=&quot;/project/{{projects.0.id}}&quot;&gt;\n\t\t\t&lt;img src=&quot;images/{{projects.0.image}}&quot; alt=&quot;Lorem Pixel image&quot;&gt;\n\t\t\t&lt;h4&gt;{{projects.0.title}}&lt;/h4&gt;\n\t\t&lt;/a&gt;\n\t\t&lt;div class=&quot;details&quot;&gt;&lt;/div&gt;\n\t&lt;button class=&quot;btn btn-default likeBtn&quot;&gt;Like&lt;/button&gt;\t\t\t\t\t\t\n\t&lt;/div&gt;\n&lt;/div&gt;\n\n&lt;div class=&quot;project col-md-4&quot; id=&quot;{{projects.1.id}}&quot;&gt;\n\t&lt;div class=&quot;thumbnail&quot;&gt;\n\t\t&lt;a href=&quot;/project/{{projects.1.id}}&quot;&gt;\n\t\t\t&lt;img src=&quot;images/{{projects.1.image}}&quot; alt=&quot;Lorem Pixel image&quot; class=&quot;img-responsive&quot;&gt;\n\t\t\t&lt;h4&gt;{{projects.1.title}}&lt;/h4&gt;\n\t\t&lt;/a&gt;\n\t\t&lt;button class=&quot;btn btn-default likeBtn&quot;&gt;Like&lt;/button&gt;\t\t\t\t\t\t\n\t\t&lt;div class=&quot;details&quot;&gt;&lt;/div&gt;\n\t&lt;/div&gt;\n&lt;/div&gt;\n\n\n&lt;div class=&quot;project col-md-4&quot; id=&quot;{{projects.2.id}}&quot;&gt;\n\t&lt;div class=&quot;thumbnail&quot;&gt;\n\t\t&lt;a href=&quot;/project/{{projects.2.id}}&quot;&gt;\n\t\t\t&lt;img src=&quot;images/{{projects.2.image}}&quot; alt=&quot;Lorem Pixel image&quot; class=&quot;img-responsive&quot;&gt;\n\t\t\t&lt;h4&gt;{{projects.2.title}}&lt;/h4&gt;\n\t\t&lt;/a&gt;\n\t\t&lt;button class=&quot;btn btn-default likeBtn&quot;&gt;Like&lt;/button&gt;\t\t\t\t\t\t\n\t\t&lt;div class=&quot;details&quot;&gt;&lt;/div&gt;\n\t&lt;/div&gt;\n&lt;/div&gt;\n&lt;/div&gt;\n\n&lt;div class=&quot;row&quot;&gt;\n&lt;div class=&quot;project col-md-3&quot; id=&quot;{{projects.3.id}}&quot;&gt;\n\t&lt;div class=&quot;thumbnail&quot;&gt;\n\t\t&lt;a href=&quot;/project/{{projects.3.id}}&quot;&gt;\n\t\t\t&lt;img src=&quot;images/{{projects.3.image}}&quot; alt=&quot;Lorem Pixel image&quot; class=&quot;img-responsive&quot;&gt;\n\t\t\t&lt;h4&gt;{{projects.3.title}}&lt;/h4&gt;\n\t\t&lt;/a&gt;\n\t\t&lt;button class=&quot;btn btn-default likeBtn&quot;&gt;Like&lt;/button&gt;\t\t\t\t\t\t\n\t\t&lt;div class=&quot;details&quot;&gt;&lt;/div&gt;\n\t&lt;/div&gt;\n&lt;/div&gt;\n\n\n&lt;div class=&quot;project col-md-3&quot; id=&quot;{{projects.4.id}}&quot;&gt;\n\t&lt;div class=&quot;thumbnail&quot;&gt;\n\t\t&lt;a href=&quot;/project/{{projects.4.id}}&quot;&gt;\n\t\t\t&lt;img src=&quot;images/{{projects.4.image}}&quot; alt=&quot;Lorem Pixel image&quot; class=&quot;img-responsive&quot;&gt;\n\t\t\t&lt;h4&gt;{{projects.4.title}}&lt;/h4&gt;\n\t\t&lt;/a&gt;\n\t\t&lt;button class=&quot;btn btn-default likeBtn&quot;&gt;Like&lt;/button&gt;\t\t\t\t\t\t\n\t\t&lt;div class=&quot;details&quot;&gt;&lt;/div&gt;\n\t&lt;/div&gt;\n&lt;/div&gt;\n\n\n&lt;div class=&quot;project col-md-3&quot; id=&quot;{{projects.5.id}}&quot;&gt;\n\t&lt;div class=&quot;thumbnail&quot;&gt;\n\t\t&lt;a href=&quot;/project/{{projects.5.id}}&quot;&gt;\n\t\t\t&lt;img src=&quot;images/{{projects.5.image}}&quot; alt=&quot;Lorem Pixel image&quot; class=&quot;img-responsive&quot;&gt;\n\t\t\t&lt;h4&gt;{{projects.5.title}}&lt;/h4&gt;\n\t\t&lt;/a&gt;\n\t\t&lt;button class=&quot;btn btn-default likeBtn&quot;&gt;Like&lt;/button&gt;\t\t\t\t\t\t\n\t\t&lt;div class=&quot;details&quot;&gt;&lt;/div&gt;\n\t&lt;/div&gt;\n&lt;/div&gt;\n\n&lt;div class=&quot;project col-md-3&quot; id=&quot;{{projects.6.id}}&quot;&gt;\n\t&lt;div class=&quot;thumbnail&quot;&gt;\n\t\t&lt;a href=&quot;/project/{{projects.6.id}}&quot;&gt;\n\t\t\t&lt;img src=&quot;images/{{projects.6.image}}&quot; alt=&quot;Lorem Pixel image&quot; class=&quot;img-responsive&quot;&gt;\n\t\t\t&lt;h4&gt;{{projects.6.title}}&lt;/h4&gt;\n\t\t&lt;/a&gt;\n\t\t&lt;button class=&quot;btn btn-default likeBtn&quot;&gt;Like&lt;/button&gt;\t\t\t\t\t\t\n\t\t&lt;div class=&quot;details&quot;&gt;&lt;/div&gt;\n\t&lt;/div&gt;\n&lt;/div&gt;\n&lt;/div&gt;\n\n&lt;div class=&quot;row&quot;&gt;\n&lt;div class=&quot;project col-md-2&quot; id=&quot;{{projects.7.id}}&quot;&gt;\n\t&lt;div class=&quot;thumbnail&quot;&gt;\n\t\t&lt;a href=&quot;/project/{{projects.7.id}}&quot;&gt;\n\t\t\t&lt;img src=&quot;images/{{projects.7.image}}&quot; alt=&quot;Lorem Pixel image&quot; class=&quot;img-responsive&quot;&gt;\n\t\t\t&lt;h4&gt;{{projects.7.title}}&lt;/h4&gt;\n\t\t&lt;/a&gt;\n\t\t&lt;button class=&quot;btn btn-default likeBtn&quot;&gt;Like&lt;/button&gt;\t\t\t\t\t\t\n\t\t&lt;div class=&quot;details&quot;&gt;&lt;/div&gt;\n\t&lt;/div&gt;\n&lt;/div&gt;\n\n&lt;div class=&quot;project col-md-2&quot; id=&quot;{{projects.8.id}}&quot;&gt;\n\t&lt;div class=&quot;thumbnail&quot;&gt;\n\t\t&lt;a href=&quot;/project/{{projects.8.id}}&quot;&gt;\n\t\t\t&lt;img src=&quot;images/{{projects.8.image}}&quot; alt=&quot;Lorem Pixel image&quot; class=&quot;img-responsive&quot;&gt;\n\t\t\t&lt;h4&gt;{{projects.8.title}}&lt;/h4&gt;\n\t\t&lt;/a&gt;\n\t\t&lt;button class=&quot;btn btn-default likeBtn&quot;&gt;Like&lt;/button&gt;\t\t\t\t\t\t\n\t\t&lt;div class=&quot;details&quot;&gt;&lt;/div&gt;\n\t&lt;/div&gt;\n&lt;/div&gt;\n\n&lt;div class=&quot;project col-md-2&quot; id=&quot;{{projects.9.id}}&quot;&gt;\n\t&lt;div class=&quot;thumbnail&quot;&gt;\n\t\t&lt;a href=&quot;/project/{{projects.9.id}}&quot;&gt;\n\t\t\t&lt;img src=&quot;images/{{projects.9.image}}&quot; alt=&quot;Lorem Pixel image&quot; class=&quot;img-responsive&quot;&gt;\n\t\t\t&lt;h4&gt;{{projects.9.title}}&lt;/h4&gt;\n\t\t&lt;/a&gt;\n\t\t&lt;button class=&quot;btn btn-default likeBtn&quot;&gt;Like&lt;/button&gt;\t\t\t\t\t\t\n\t\t&lt;div class=&quot;details&quot;&gt;&lt;/div&gt;\n\t&lt;/div&gt;\n&lt;/div&gt;\n\n&lt;div class=&quot;project col-md-2&quot; id=&quot;{{projects.10.id}}&quot;&gt;\n\t&lt;div class=&quot;thumbnail&quot;&gt;\n\t\t&lt;a href=&quot;/project/{{projects.10.id}}&quot;&gt;\n\t\t\t&lt;img src=&quot;images/{{projects.10.image}}&quot; alt=&quot;Lorem Pixel image&quot; class=&quot;img-responsive&quot;&gt;\n\t\t\t&lt;h4&gt;{{projects.10.title}}&lt;/h4&gt;\n\t\t&lt;/a&gt;\n\t\t&lt;button class=&quot;btn btn-default likeBtn&quot;&gt;Like&lt;/button&gt;\t\t\t\t\t\t\n\t\t&lt;div class=&quot;details&quot;&gt;&lt;/div&gt;\n\t&lt;/div&gt;\n&lt;/div&gt;\n\n&lt;div class=&quot;project col-md-2&quot; id=&quot;{{projects.11.id}}&quot;&gt;\n\t&lt;div class=&quot;thumbnail&quot;&gt;\n\t\t&lt;a href=&quot;/project/{{projects.11.id}}&quot;&gt;\n\t\t\t&lt;img src=&quot;images/{{projects.11.image}}&quot; alt=&quot;Lorem Pixel image&quot; class=&quot;img-responsive&quot;&gt;\n\t\t\t&lt;h4&gt;{{projects.11.title}}&lt;/h4&gt;\n\t\t&lt;/a&gt;\n\t\t&lt;button class=&quot;btn btn-default likeBtn&quot;&gt;Like&lt;/button&gt;\t\t\t\t\t\t\n\t\t&lt;div class=&quot;details&quot;&gt;&lt;/div&gt;\n\t&lt;/div&gt;\n&lt;/div&gt;\n\n&lt;div class=&quot;project col-md-2&quot; id=&quot;{{projects.12.id}}&quot;&gt;\n\t&lt;div class=&quot;thumbnail&quot;&gt;\n\t\t&lt;a href=&quot;/project/{{projects.12.id}}&quot;&gt;\n\t\t\t&lt;img src=&quot;images/{{projects.12.image}}&quot; alt=&quot;Lorem Pixel image&quot; class=&quot;img-responsive&quot;&gt;\n\t\t\t&lt;h4&gt;{{projects.12.title}}&lt;/h4&gt;\n\t\t&lt;/a&gt;\n\t\t&lt;button class=&quot;btn btn-default likeBtn&quot;&gt;Like&lt;/button&gt;\t\t\t\t\t\t\n\t\t&lt;div class=&quot;details&quot;&gt;&lt;/div&gt;\n\t&lt;/div&gt;\n&lt;/div&gt;\n&lt;/div&gt;\n"
+    },
+    {
+      "type":"debug",
+      "list":[{"problem":"It still looks the same!", "fix":"Restart node and maximize your browser window."}]
+    }
+  ],
+  [],
+  [],
+  [],
+  [
+    {
+      "type":"code",
+      "title":"GitHub - Commit",
+      "text":"git status\ngit add ... \ngit commit -m \"analytics lab\""
+    },
+    {
+      "type":"code",
+      "title":"Github - Push",
+      "text":"git push"
+    },
+    {
+      "type":"code",
+      "title":"Heroku - Create",
+      "text":"heroku create <i>newapplicationname</i>"
+    },
+    {
+      "type":"code",
+      "title":"Heroku - Push",
+      "text":"git push heroku master"
+    }
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+    {
+      "type":"code",
+      "title":"GitHub - Commit",
+      "text":"git status\ngit add ... \ngit commit -m \"Added Experiment Header\""
+    },
+    {
+      "type":"code",
+      "title":"Heroku - Push",
+      "text":"git push heroku master"
+    }
+  ],
+  [
+    {
+      "type":"debug",
+      "comment":"Validate your experiment setup",
+      "list":[{"problem":"Experiment code not found", "fix":"Make sure you inserted the code on step 3 into the &lt;head&gt; tag of index.handlebars"}]
+    }
+  ],
+  [],
+  [],
+  [
+    {
+      "type":"code",
+      "title":"GitHub - Commit",
+      "text":"git status\ngit add ... \ngit commit -m \"Added Experiment Header\""
+    },
+    {
+      "type":"code",
+      "title":"Github - Push",
+      "text":"git push"
+    },
+    {
+      "type":"code",
+      "title":"Heroku - Push",
+      "text":"git push heroku master"
+    }
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  []
+]
