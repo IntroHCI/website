@@ -21,7 +21,14 @@
   [],
   [],
   [],
-  [],
+  [
+    {
+      "comment":"Store any kind of event",
+      "type":"code",
+      "title":"Sample event calls",
+      "text":"ga(\"send\", \"event\", \"friendsuggestion\", \"dismiss\");\nga(\"send\", \"event\", \"friendsuggestion\", \"accept\");\nga(\"send\", \"event\", \"humankind\", \"destroy\");\n\nga(\"send\", \"event\", \"Category\", \"Action\");"
+    }
+  ],
   [],
   [],
   [],
@@ -59,6 +66,19 @@
   ],
   [
     {
+      "comment":"Reserve your Heroku URL",
+      "type":"code",
+      "title":"Heroku - Create",
+      "text":"heroku create <i>newapplicationname</i>"
+    },
+    {
+      "type":"code",
+      "title":"Heroku - Push",
+      "text":"git push heroku master"
+    }
+  ],
+  [
+    {
       "comment":"Open a Google Analytics account",
       "type":"links",
       "list":["<a href='http://www.google.com/analytics/' target=\"_blank\">http://www.google.com/analytics/</a>"]
@@ -67,9 +87,24 @@
   [],
   [],
   [],
+  [
+    {
+      "comment":"If you need to find the tracking code again later...",
+      "type":"debug",
+      "title":"Universal Analytics Tracking Code",
+      "list":[{"problem":"Where do I get my code again if I've lost it?", "fix":"Use the instructions on the next slide."}]
+    }
+  ],
   [],
   [],
-  [],
+  [
+    {
+      "comment":"Edit the code in both files so it can be tested on localhost",
+      "title":"Testing analytics on localhost",
+      "type":"code",
+      "text":"{ 'cookieDomain': 'none' }"
+    }
+  ],
   [],
   [],
   [],
@@ -80,7 +115,7 @@
       "type":"debug",
       "title":"Goal",
       "comment":"Goal 2",
-      "list":[{"problem":"run an A/B test on a grid vs. the old vertical layout", "fix":""}]
+      "list":[{"problem":"Run an A/B test on a grid vs. the old vertical layout", "fix":""}]
     }
   ],
   [],
@@ -91,7 +126,14 @@
       "list":[{"problem":"It says \"Cannot GET /grid\"", "fix":"Did you add the route in app.js? (See Prev Slide)"}]
     }
   ],
-  [],
+  [
+    {
+      "comment":"Send a boolean flag to the template",
+      "title":"Hint",
+      "type":"debug",
+      "list":[{"problem":"Hint: Slide 14-16 may have relevant information.", "fix":""}]
+    }
+  ],
   [],
   [
     {
@@ -104,6 +146,15 @@
       "list":[{"problem":"It still looks the same!", "fix":"Restart node and maximize your browser window."}]
     }
   ],
+  [
+    {
+      "comment":"Record an event whenever the user clicks a Like button on a project",
+      "type":"code",
+      "title":"Hint",
+      "text":"ga(\"send\", \"event\", \"Category\", \"Action\");"
+    }
+  ],
+  [],
   [],
   [],
   [],
@@ -111,17 +162,12 @@
     {
       "type":"code",
       "title":"GitHub - Commit",
-      "text":"git status\ngit add ... \ngit commit -m \"analytics lab\""
+      "text":"git status\ngit add ... \ngit commit -m \"initial analytics lab\""
     },
     {
       "type":"code",
       "title":"Github - Push",
       "text":"git push"
-    },
-    {
-      "type":"code",
-      "title":"Heroku - Create",
-      "text":"heroku create <i>newapplicationname</i>"
     },
     {
       "type":"code",
@@ -150,16 +196,17 @@
     {
       "type":"debug",
       "comment":"Validate your experiment setup",
-      "list":[{"problem":"Experiment code not found", "fix":"Make sure you inserted the code on step 3 into the &lt;head&gt; tag of index.handlebars"}]
+      "list":[{"problem":"Experiment code not found", "fix":"Make sure you inserted the code on step 3 inside the &lt;head&gt;...&lt;/head&gt; block of index.handlebars"}]
     }
   ],
+  [],
   [],
   [],
   [
     {
       "type":"code",
       "title":"GitHub - Commit",
-      "text":"git status\ngit add ... \ngit commit -m \"Added Experiment Header\""
+      "text":"git status\ngit add ... \ngit commit -m \"final analytics lab\""
     },
     {
       "type":"code",
