@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Introduction to Human-Computer Interaction: Assignment">
+    <title>Intro to HCI: Assignment 8, Example 1</title>
+
+    <!-- Bootstrap -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="../../css/hci.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body data-spy="scroll" data-target=".sidenav">
+
+    <!-- 
+    IntroHCI assignment template
+    ------------------
+    To create a new assignment:
+    1) Write all the HTML as you normally would underneath the #assignment-description div.
+    2) Anything that you want to appear in the navbar on the left needs to be enclosed
+        in a <div id="unique-id" class="sidenav-anchor">. On page load, hci.js will look up
+        anything enclosed in .sidenav-anchor, find the first header (h1-h6) inside it, and add
+        it to the navigation pane on the left. Make sure it has a unique div id so that there is something
+        to anchor the hyperlink to.
+    3) I recommend going with Bootstrap's recommendation and putting any <table class="table"> elements enclosed in a
+        <div class="table-responsive">.
+    -->
+
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Intro to HCI</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class=""><a href="../../index.html">Home</a></li>
+            <li><a href="../../index.html#calendar">Calendar</a></li>
+            <li><a href="../../lab/">Lab</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Logistics <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="../logistics.html#prereqs">Prerequisites</a></li>
+                  <li><a href="../../logistics.html#lab">Lab</a></li>
+                  <li><a href="../../logistics.html#grading">Grading</a></li>
+                  <li><a href="../logistics.html#attendance">Attendance</a></li>
+                  <li><a href="../../logistics.html#cs77">CS 77</a></li>
+                  <li><a href="../../logistics.html#faq">FAQ</a></li>
+                </ul>
+            </li>            
+            <li><a href="http://www.coursera.org">Submit Work</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="staffemailorpiazzaforum@university.edu">Questions</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="sidenav" data-spy="affix">
+                    <ul class="nav nav-stacked" id="sidenav-content">   
+                    </ul>
+                </div> <!-- /sidenav -->
+            </div> <!-- /col-md-3 -->  
+            <div class="col-md-9" id="assignment-description"> 
+                    
+                    <div>
+                        <h1>Assignment 8, Example 1</h1>
+                    </div>
+
+                <div id="prototype" class="sidenav-anchor">
+                    <h2>In-person Testing</h2>
+                    <p><a href="./images/a08e1p1.jpg"><img src="./images/a08e1p1.jpg" class="img-responsive" alt="image" style="border: 0px none; "></a></p>
+                    <p>Test #1: This person thought that the title of the event was actually a button that you could click on. The person tried to click on the non-existent button for about 3 seconds and then figured out that it did nothing. The rectangular shape and the gradient could mislead people; however, the other participant did not have this issue.</p>
+                    <br />
+                    <p><a href="./images/a08e1p2.jpg"><img src="./images/a08e1p2.jpg" class="img-responsive" alt="image" style="border: 0px none; "></a></p>
+                    <p>Test #2: This person thought that the threshold number (in this screenshot '2') was too small. He thought that this was an important piece of information that was not given enough emphasis.</p>
+                    <br />
+                    <p><b>Consent forms were included in the original submission here.</b></p>
+                    <br />
+                    <p><b>Here is the usability script that was used to maintain some level of consistency between sessions:</b></p>
+                    <p>Usability script:</p>
+                    <ul>
+                        <li>have participants receive a text with the message: "Bball? &lt;URL to app&gt;"</li>
+                        <li>users navigate to event page</li>
+                        <li>decide to rsvp to time or add new time</li>
+                        <li>return to my events screen</li>
+                        <li>decide to add new event or not</li>
+                        <li>log out</li>
+                        <li>log back in</li>
+                        <li>leave participants to explore</li>
+                    </ul>
+                    <p>Things to keep an eye out for:</p>
+                    <ul>
+                        <li>How easily can people find out and use the pull down RSVP shelf?</li>
+                        <li>How easily do they understand why the app could be useful? What do they say are the positive aspects of the app or the cases in which they would use it?</li>
+                        <li>What do they understand about the threshold functionality?</li>
+                        <li>How easily can they navigate between the event pages and the my event screen?</li>
+                        <li>Are they confused by the "back" button as some were during our in-class heuristic design?</li>
+                        <li>What do they make of the fact that alternate times cards are ordered by the time they were created and not by the time suggested on the card?</li>
+                        <li>What do people want to do, but are unable to do in the current implementation?</li>
+                    </ul>
+                </div>
+                
+                <div id="chagnes" class="sidenav-anchor">
+                    <h2>List of Changes</h2>
+                    <p>Changes implemented in this iteration</p>
+                    <ul>
+                        <li>Simplevent logo on login screen needs to be changed to semble <i>(Small oversite when we changed the name.)</i></li>
+                        <li>Fix formatting and implement custom theme on login <i>(Theming was inconsistent - needed to be fixed.)</i></li>
+                        <li>set up semble.co domain name <i>(some people were confused by the bit.ly domain name. Using our own domain name should clear things up.)</i></li>
+                        <li>Finished back end wiring so that events are linked to time modules. When times are added, the times persist and are saved in the database. New tables were created for more database storage. <i>(Improvements to back end will make the app function more realistically with less hard-coded database content.)</i></li>
+                    </ul>
+                    <p>Changes started in this iteration and will be continued in the next iteration</p>
+                    <ul>
+                        <li>Set up redirect from semble.co to event page, semble.co/event takes you to an event page <i>(People were a bit confused why bit.ly was used as the shortlink to events. Using our own domain name now will clear up the confusion.)</i></li>
+                        <li>Implement sign up page - change username to phone number as the unique identifier and prompt users to select which carrier they have (AT&amp;T, Verizon, etc.) <i>(Both people were expecting / desired this feature because they wanted to be notified when the event time was settled upon without returning to the app. They said that they would give their phone numbers to the site given this use case.)</i></li>
+                        <li>Put shortlink at the top of events page so that people can copy and paste it. <i>(One person wondered how he might share the event to friends in the first place if he lost the original shortlink. To fix this we implemented a small 'i' icon at the top of the screen that reveals a popover when clicked and gives the person a shortlink to the event that they can copy and paste.)</i></li>
+                        <li>Change the threshold number so that it is large and visible at a glance. <i>(One person complained that the threshold number was too small and not emphasized enough even thought it was an important bit of information that needed to be recognized at a glance. We redesigned how this is portrayed so that the threshold number is larger and more prominent.)</i></li>
+                    </ul>
+                    <p>Changes for next iteration</p>
+                    <ul>
+                        <li>Send attendees text notifications when one of the events reaches the desired threshold indicated when the event was created. <i>(As stated earlier, both participants desired/requested/expected this feature. We will change the person's unique ID from email to phone number because this seems to be a more useful piece of contact information. We will also need to collect the person's carrier so that we can send an email to the [number]@[carrier].com that will forward the message via SMS to the users phone. Both participants said they would agree to give up their cell phone number if it was to be used to notify them of a finalized event time.)</i></li>
+                        <li>Put progress bars on each of the time cards. The progress bars will be incremented with each yes vote and will reach completion when the number yes votes is equal to the given yes threshold for the event (set by the owner of the event). <i>(It was clear during the in-person testing that the people took some time comparing different time cards to see which ones were closest to the threshold. In order to accelerate the comparison process we will provide progress bars with three-way redundant coding. The progress bars will indicate the proximity of the event to yes threshold by proving the visual bar increasing in size, the percentage of yes/threshold, and a color change as the bar gets closer to completion. This visual system will provide more information at-a-glance and we hypothesize that the redundant coding will make the experience of comparing times more efficient.)</i></li>
+                    </ul>
+                </div>
+                
+                <div id="redesign" class="sidenav-anchor">
+                    <h2>Paper Prototype Redesign</h2>
+                    <p><a href="./images/a08e1p5.jpg"><img src="./images/a08e1p5.jpg" class="img-responsive" alt="image" style="border: 0px none; "></a></p>
+                    <p>These show redesign possibilities for people that were slow or hesitant to use the close and rsvp button. The far right shows the button as is (skinny). Second and third from the right shows a variant that is wider. And the variant all the way on the left shows a variation on the wide button where the button that opens the shelf stays in a constant position. This was a a problem during the in-person test because participants were having trouble closing the shelf when the close button slipped below the fold of the phone. You can see how this can be a problem in the variant second from the left but how it it might be improved in the variation on the left.</p>
+                    <br />
+                    <p><a href="./images/a08e1p3.jpg"><img src="./images/a08e1p3.jpg" class="img-responsive" alt="image" style="border: 0px none; "></a></p>
+                    <p><a href="./images/a08e1p4.jpg"><img src="./images/a08e1p4.jpg" class="img-responsive" alt="image" style="border: 0px none; "></a></p>
+                    <p>The top image here shows the app as it currently is with a box around the title. The second variation shows that boxed removed to show a more simplified and traditional title design. One person in the in-person test thought that the box was an affordance for a link. The second variation attempts to eliminate this affordance cue mistake.</p>
+                </div>
+                
+                <div id="proposal" class="sidenav-anchor">
+                    <h2>Online Test Plan</h2>
+                    <p><b>Experiment #1: Can I click it? Yes you can?</b></p>
+                    <p>Our in-person testing data showed the some people perceive the event title, which is currently contained in a gradient-shaded blue rectangle at the top of the event, as a clickable button. This may be a perception by few or many people, but the small sample size of the in-person testing group doesn’t help us generalize and answer this question. Thus, we will turn to online testing to increase the sample size, gather more data, and see if this perception is held by a significant population of people. In order to test this, we will have two interfaces to A/B test. One interface - the "A" - will be the original implementation of the button as it was in our user testing with the title contained within a blue-gradiented rectangle and the alternative - the "B" - will be a sort of addition by subtraction: removing the rectangle and making the title simply black text on white background in a size suitable of a header (slightly bigger than the body text). The "B" version draws on the the notion of a visual hierarchy (larger text + high on the page) to convey that it is the title, while the A version relies on style differentiation and positioning (different color + high on the page) in order to convey its function. Hopefully our online test will let us know which version fewer people click on. Clicks to this area is a negative in this test, as clicking on the title is the user behavior that we are trying to minimize in this experiment.</p>
+                    <br />
+                    <p><b>Experiment #2: The RSVP shelf button. (Size? and Stationary?)</b></p>
+                    <p>We saw that opening and closing the RSVP shelf was a bit clunky in the in-person tests. So we designed some alternatives. In one variation we decided to make the shelf button bigger so as to provide a larger target area for our users to click on. In addition we also went a step further in a second variation to include not only a larger button but also an RSVP shelf button that stays in the same position when it is opened and closed. We noticed that it was a bit unnatural in the current implementation for people to have to click in two different locations on the screen to open and close the shelf. We hypothesize that keeping the button in one location but changing the text from RSVP to close will increase users propensity to click and close the shelves which is key to using the application. In this test we have two variations that will both be compared to each other and the original control design.</p>
+                    <br />
+                    <p>Note that experiment 1 and 2 will be run in the same session. Since both variations ultimately will be compared back to the control design we can combine the experiments into so that we can get more data with fewer people in less time.</p>
+                    <p>Also note that this test provides small incremental variations that build upon one another. This is to avoid confounding variables and to focus in on specific causal relationships between the independent and dependent variables of our test. If we wrapped all of the changes into one we wouldn't know which changes were the ones that caused the results. So instead we split the changes into 3 variations that all can all be compared back to the baseline original design (1 variation for the header experiment and 2 variations for the RSVP shelf).</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/hci.js"></script>
+  </body>
+</html>
