@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Introduction to Human-Computer Interaction: Assignment">
+    <title>Intro to HCI: Assignment 8, Example 3</title>
+
+    <!-- Bootstrap -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="../../css/hci.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body data-spy="scroll" data-target=".sidenav">
+
+    <!-- 
+    IntroHCI assignment template
+    ------------------
+    To create a new assignment:
+    1) Write all the HTML as you normally would underneath the #assignment-description div.
+    2) Anything that you want to appear in the navbar on the left needs to be enclosed
+        in a <div id="unique-id" class="sidenav-anchor">. On page load, hci.js will look up
+        anything enclosed in .sidenav-anchor, find the first header (h1-h6) inside it, and add
+        it to the navigation pane on the left. Make sure it has a unique div id so that there is something
+        to anchor the hyperlink to.
+    3) I recommend going with Bootstrap's recommendation and putting any <table class="table"> elements enclosed in a
+        <div class="table-responsive">.
+    -->
+
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Intro to HCI</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class=""><a href="../../index.html">Home</a></li>
+            <li><a href="../../index.html#calendar">Calendar</a></li>
+            <li><a href="../../lab/">Lab</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Logistics <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="../logistics.html#prereqs">Prerequisites</a></li>
+                  <li><a href="../../logistics.html#lab">Lab</a></li>
+                  <li><a href="../../logistics.html#grading">Grading</a></li>
+                  <li><a href="../logistics.html#attendance">Attendance</a></li>
+                  <li><a href="../../logistics.html#cs77">CS 77</a></li>
+                  <li><a href="../../logistics.html#faq">FAQ</a></li>
+                </ul>
+            </li>            
+            <li><a href="http://www.coursera.org">Submit Work</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="staffemailorpiazzaforum@university.edu">Questions</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="sidenav" data-spy="affix">
+                    <ul class="nav nav-stacked" id="sidenav-content">   
+                    </ul>
+                </div> <!-- /sidenav -->
+            </div> <!-- /col-md-3 -->  
+            <div class="col-md-9" id="assignment-description"> 
+                    
+                    <div>
+                        <h1>Assignment 8, Example 3</h1>
+                    </div>
+
+               <div id="prototype" class="sidenav-anchor">
+                    <br><h2>In-person Testing</h2>
+                    <br><h4>User Test 1</h4>
+                    <p><a href="./images/a08e3p1.png"><img src="./images/a08e3p1.png" class="img-responsive" alt="image" style="border: 0px none; "></a></p>
+                    <br />
+                    <h4>User Test 2</h4>
+                    <p><a href="./images/a08e3v2.mp4">View a 3 minute video excerpt of the test.</a><br></p>
+                    <p><a href="./images/a08e3p2.png"><img src="./images/a08e3p2.png" class="img-responsive" alt="image" style="border: 0px none; "></a></p>
+                    <p><a href="./images/a08e3p3.png"><img src="./images/a08e3p3.png" class="img-responsive" alt="image" style="border: 0px none; "></a></p>
+                    <p><a href="./images/a08e3p4.png"><img src="./images/a08e3p4.png" class="img-responsive" alt="image" style="border: 0px none; "></a></p>
+                    
+                    <br />
+                    <h4>User Test 3</h4>
+                    <p><a href="./images/a08e3p5.png"><img src="./images/a08e3p5.png" class="img-responsive" alt="image" style="border: 0px none; "></a></p>
+                    <p><a href="./images/a08e3p6.png"><img src="./images/a08e3p6.png" class="img-responsive" alt="image" style="border: 0px none; "></a></p>
+                    <p><a href="./images/a08e3p7.png"><img src="./images/a08e3p7.png" class="img-responsive" alt="image" style="border: 0px none; "></a></p>
+                    <p><a href="./images/a08e3p8.png"><img src="./images/a08e3p8.png" class="img-responsive" alt="image" style="border: 0px none; "></a></p>
+
+                </div>
+                
+                <br><div id="changes" class="sidenav-anchor">
+                    <h2>Usability Script</h2>
+                    <ol>
+                        <li>Before showing the test subject our app, we explained the goal of the app in order to set up their context; we told them that they’ll be testing a coupon consolidator. After prepping them, we asked what they are expecting of this app as far as brand and feel.</li>
+                        <li>Ask them to sign the consent form.</li>
+                        <li>Present the user with a smartphone displaying our app’s homepage and allow them to look at the home page for approximately 5 seconds before the assigning of tasks.</li>
+                        <li>Assign tasks:</li>
+                            <ol>
+                                <li>Add a coupon to the wallet.</li>
+                                <li>Sort a coupon list by expiration date.</li>
+                                <li>Add 3 more coupons.</li>
+                                <li>Remove a coupon.</li>
+                                <li>Ask the user to determine how many coupons are in the wallet without prior knowledge.</li>
+                                <li>Ask the user to take a picture of an imaginary coupon and upload it.</li>
+                                <li>Generate the QR coupon.</lI>                        
+                            </ol>
+                         <li>Conduct post test survey.</li>
+                    </ol>
+
+                    <h4>Things to keep an eye out for:</h4>
+                    <ul>
+                        <li>How is the user interacting with the navbar?</li>
+                        <li>Does the user use the how-to page at all?</li>
+                        <li>If so, how long do they spend on it?</li>
+                        <li>How often do they go back to the home page?</li>
+                        <li>What do they care about? What information helps them navigate?</li>
+                        <li>What do they not care about- what are some extraneous steps or information?</li>
+                    </ul>
+
+                    <h4>Consent forms were included here</h4>
+                </div>
+
+                <br><div id="changes" class="sidenav-anchor">
+                    <h2>List of Changes</h2>
+                    <ul>
+                        <li>Disable the upload button until the user chooses a file to upload.  Currently the user can upload an empty file which caused confusion in our second user test. </li>
+                        <li>Add informational text or diagrams to the “Snap” page to make it more intuitive to use.  Currently there are no instructions or diagrams and relies on the user to divine how to use the page.  Some users were not able to do so and were not able to use the page.</li>
+                        <li>Shorten/condense the text on the “How To” page.  A user visited the page to find specific information, and although that information was present, they were not able to quickly find it and instead moved elsewhere on the site in pursuit of the information.</li>
+                        <li>Convert the drop down menu that handles coupon sort parameters to buttons.  Users had to scroll or resize page when drop-down menu was used because it automatically zooms in slightly which cuts off information on the edges off the page.  This creates more work for the user, and we might be able to fix this by creating buttons to represent the parameters.</li>
+                        <li>Change the Choose File button’s text from choose file to Take Picture/Choose FIle.  When the user was presented with the task to take a picture and upload it, the user did not use the choose file button.  To make this button’s purpose clearer, we might change the text to indicate that this button leads to taking a picture as well as choosing a file.</li>
+                        <li>Change the arrangement of grocery coupons available so that instead of displaying all of the information with the image of the food item, images of coupons would be displayed to look more like a gallery wall. (If time permits because this is actually a very large redesign change)</li>
+                      
+                    </ul>
+                </div>
+                
+                <br><div id="devplan" class="sidenav-anchor">
+                    <h2>Implementation Plans</h2>
+                    <p><a href="./pdfs/a08e3p1.pdf">Last week's implementation plan.</a></p>
+                    <p><a href="./pdfs/a08e3p2.pdf">This week's implementation plan.</a></p>
+
+                </div>
+
+                 <br><div id="redesign" class="sidenav-anchor">
+                    <h2>Redesign</h2>
+                    <p><a href="./images/a08e3v1.mp4">View the redesign here.</a><br>Note: The team submitted this as a functional, implemented redesign-- the video was made for archival purposes.</p>
+
+                </div>
+
+                <br><div id="onlinetest" class="sidenav-anchor">
+                    <h2>Description of Online Test</h2>
+                    <h4>Experiment 1: Dropdown or Buttons (see user test 3)</h4>
+                    <p>While conducting in person testing, it became apparent that when the user interacted with the drop down bar that determined how coupons are sorted, the page zooms in after a sorting parameter is selected.  This did not seem to bother the user, who immediately scrolled to find the information that was cut off when the page zoomed.  While the user did not express frustration, we realize this is a single view point of a user who easily navigated the page.  To a user who experiences difficulty navigating, this auto zoom byproduct might be a turnoff.  To determine if this zoom effect is problematic, we need to increase the sample size in order to get more data, and we will do so by turning to online testing.  This testing will be conducted in A/B fashion, with the A design being our original interface (the sort functionality being placed within a dropdown menu).  The B design will incorporate changes to the interface by which users select coupons sorting parameters through a series of adjacent buttons.  These buttons allow for the user to see all options simultaneously while still being able to see the list of coupons, it would negate the zoom factor caused by the drop down, and if we are able to find suitable imagery to represent the sort parameters, it will promote recognition over recall.  We hope that this user testing will enable us to determine the superior, and more intuitive way to display sorting parameters by inquiring as to which design the user preferred, and asking about any frustrations or annoyances faced using either one.  Additionally, if images or graphics are used in the buttons to represent the parameters, we will also be looking for confusion on the part of the user when interacting with the buttons.</p>
+                    <h4>Experiment 2: Snap page - Instructions or no instructions</h4>
+                    <p>While conducting in person test, we found that one user found the snap page difficult to use. Specifically, when given the task “upload a coupon”, the user was not sure how to proceed once on the snap page.  From there the user navigated to the “How To” page, skimmed the text, did not immediately find the information they needed, and then proceeded to navigate around aimlessly.  We fear that this user’s experience is not unique and is indicative of the experience that many others will have.  We plan on redesigning the “Snap” page to include information that instructs the user how to operate the page.  This hopefully reduces the confusion that the “Snap” page causes.  In the A/B testing, the A test will consist of the original design.   The “Snap” page will not have any explanations on how to use the page.  The B test will hold informational text, or diagrams to help the user understand the page’s functionality.  Ideally, the results of the testing will be made apparent by the ratio of how many people successfully upload a coupon to the page quickly and efficiently between the two tests.</p>
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/hci.js"></script>
+  </body>
+</html>
