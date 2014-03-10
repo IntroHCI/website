@@ -1,0 +1,157 @@
+[
+  [
+    {
+      "type":"links",
+      "list":["<a href='https://creative.adobe.com/products/premiere' target=\"_blank\">Adobe Premiere</a>",
+              "<a href='http://www.openshot.org' target=\"_blank\">Open Shot (for Linux)</a>",
+              "<a href='http://hci.st/lab-video' target=\"_blank\">Lab Video Files</a>"]
+    }
+  ],
+  [],
+  [
+    {
+      "comment":"YouMote",
+      "type":"video",
+      "src":"video/youmote.mp4"
+    }
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+    {
+      "comment":"Earthquake",
+      "type":"video",
+      "src":"video/earthquake.mp4"
+    }
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+    {
+      "comment":"Shadow Warhol",
+      "type":"video",
+      "src":"video/shadow-warhol.mp4"
+    },
+    {
+      "type":"links",
+      "list":["<a href='https://creativecommons.org/legalmusicforvideos' target=\"_blank\">Legal Music For Videos</a>"]
+    }
+  ],
+  [
+    {
+      "type":"links",
+      "list":["<a href='https://creativecommons.org/legalmusicforvideos' target=\"_blank\">Legal Music For Videos</a>"]
+    }
+  ],
+  [],
+  [],
+  [],
+  [
+    {
+      "comment":"Timeline",
+      "title":"Drag media onto the timeline",
+      "type":"video",
+      "src":"video/add-to-timeline.mov"
+    }
+  ],
+  [
+    {
+      "comment":"Trim",
+      "title":"Trim the clip's endpoints",
+      "type":"video",
+      "src":"video/trim.mov"
+    }
+  ],
+  [
+    {
+      "comment":"Fade",
+      "title":"Zoom the timeline and fade between clips",
+      "type":"video",
+      "src":"video/fade.mov"
+    }
+  ],
+  [
+    {
+      "comment":"Title",
+      "title":"Add a title on a higher layer",
+      "type":"video",
+      "src":"video/title.mov"
+    }
+  ],
+  [
+    {
+      "comment":"Speed",
+      "title":"Speed up a clip and render previews",
+      "type":"video",
+      "src":"video/speed.mov"
+    }
+  ],
+  [
+    {
+      "comment":"Music",
+      "title":"Import media and add music",
+      "type":"video",
+      "src":"video/music.mov"
+    }
+  ],
+  [],
+  [
+    {
+      "type":"links",
+      "list":["<a href='http://hci.st/lab-video' target=\"_blank\">http://hci.st/lab-video</a>"]
+    }
+  ],
+  [
+    {
+      "type":"debug",
+      "title":"Lab Assignment",
+      "comment":"edit a movie",
+      "list":[{"problem":"Create your own 20-second movie using YouMote clips to tell a story.", "fix":""}]
+    },
+    {
+      "type":"links",
+      "title":"Requirements",
+      "list":["Use at least 3 different clips",
+              "Include a transition effect (i.e. Cross Dissolve)",
+              "Edit the playback speed of a clip",
+              "Include a title or overlay",
+              "Add music"]
+    }
+  ],
+  [
+    {
+      "type":"debug",
+      "title":"Stretch Goals",
+      "comment":"Stretch Goals",
+      "list":[{"problem":"Pan and/or zoom a clip in your video.", "fix":""}]
+    }
+  ],
+  [],
+  [
+    {
+      "comment":"Export",
+      "type":"video",
+      "src":"video/export.mov"
+    }
+  ],
+  [],
+  [
+    {
+      "comment":"submit",
+      "type":"links",
+      "title":"Submit a public video link to",
+      "list":["<a href='http://hci.st/lab-submit' target=\"_blank\">http://hci.st/lab-submit</a>"]
+    }
+  ]
+]
