@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Introduction to Human-Computer Interaction">
+	<title>Intro to HCI</title>
+
+	<!-- Bootstrap -->
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="../css/hci.css" rel="stylesheet">
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+      <![endif]-->
+  </head>
+<style>
+    .judge .img-circle{
+    	width: 140px; 
+    	height: 140px;
+    	margin-bottom: 10px;
+    }
+    .judge{
+    	float: left;
+    	height: 250px;
+    	text-align: left;
+    }
+    .featurette-heading{
+    	padding-bottom: 30px;
+    }
+    .lead span{
+    	font-weight: bold;
+    }
+</style>
+  <body>
+
+  	<!-- Fixed navbar -->
+  	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  		<div class="container">
+  			<div class="navbar-header">
+  				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+  					<span class="sr-only">Toggle navigation</span>
+  					<span class="icon-bar"></span>
+  					<span class="icon-bar"></span>
+  					<span class="icon-bar"></span>
+  				</button>
+  				<a class="navbar-brand" href="#">Intro to HCI</a>
+  			</div>
+  			<div class="navbar-collapse collapse">
+  				<ul class="nav navbar-nav">
+  					<li class="active"><a href="index.html">Home</a></li>
+  					<li><a href="index.html#calendar">Calendar</a></li>
+  					<li><a href="lab/">Lab</a></li>
+  					<li class="dropdown">
+  						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Logistics <b class="caret"></b></a>
+  						<ul class="dropdown-menu">
+  							<li><a href="logistics.html#prereqs">Prerequisites</a></li>
+  							<li><a href="logistics.html#lab">Lab</a></li>
+  							<li><a href="logistics.html#grading">Grading</a></li>
+  							<li><a href="logistics.html#attendance">Attendance</a></li>
+  							<li><a href="logistics.html#cs77">CS 77</a></li>
+  							<li><a href="logistics.html#faq">FAQ</a></li>
+  						</ul>
+  					</li>            
+  					<li><a href="http://www.coursera.org">Submit Work</a></li>
+  				</ul>
+  				<ul class="nav navbar-nav navbar-right">
+  					<li><a href="staffemailorpiazzaforum@university.edu">Questions</a></li>
+  				</ul>
+  			</div><!--/.nav-collapse -->
+  		</div>
+  	</div>
+
+  	<!-- this is a comment in HTML -->
+  	<div class="container">
+  		<div class="jumbotron">
+  			<h3>CS147 Introduction to HCI Design</h3>
+  			<h1>Final Presentation</h1>
+  			<p>Friday, March 14, 4pm - 6pm</p>
+  			<p>@Stanford d.school (550 Panama Mall, Stanford)</p>
+  			<!-- <p><a class="btn btn-primary btn-lg" role="button">Contact me</a></p> -->
+  		</div>
+
+  		<div id="syllabus">
+  			<p class="lead">Come and check out how 220 Stanford students see the future of mobile interaction. </p>
+  			<p class="lead">There will be 77 teams presentationing their projects. </p>
+
+  			<hr>
+
+  			<div class="row">
+  				<div class="container">
+  					<div class="row featurette">
+  						<div class="col-md-7">
+  							<h2 class="featurette-heading">Agenda</h2>
+  							<ul class="lead">
+  								<li> 
+  									3:30pm - 4:00pm   Social Mixer
+  								</li>
+  								<li>
+  									4:00pm - 4:15pm   Introduction
+  								</li>
+  								<li>
+  									4:15pm - 5:00pm   Elevator Pitch
+  								</li>
+  								<li>
+  									5:00pm - 5:50pm   Poster and Demo Session
+  								</li>
+  								<li>
+  									5:50pm - 6:00pm   Closing Remarks
+  								</li>  								
+  							</ul>
+  						</div>
+  						<div class="col-md-5">
+  							<img class="featurette-image img-responsive" alt="project themes:Time, Glance, Collaboration, Style, Digital Self, Change, Learning, Language, Community, Emotion, Health" src="hci.png">
+  							<p>
+  								Project themes: Time, Glance, Collaboration, Style, Digital Self, Change, Learning, Language, Community, Emotion, Health
+  							</p>
+  						</div>
+  					</div>
+
+
+  					<hr class="featurette-divider">
+
+  					<!-- Three columns of text below the carousel -->
+  					<h2 class="featurette-heading">Judges</h2>
+  					<div class="row" id="judgeWrapper">
+  					</div>
+
+
+  					<!-- START THE FEATURETTES -->
+
+
+  					<hr class="featurette-divider">
+
+  					<div class="row featurette">
+  						<div class="col-md-7">
+  							<h2 class="featurette-heading">Direction <span class="text-muted">& Parking</span></h2>
+  							<p class="lead">The d.school (Hasso Platner Institute of Design) lives in <span><a href="https://www.google.com/maps/place/550+Panama+Mall/@37.4262451,-122.1719006,17z/data=!3m1!4b1!4m2!3m1!1s0x808fbad571970303:0xe54e90a1fed21300" target="_blank">Building 550</a></span>, in the center of campus. </p>
+  							<p class="lead">If you are visiting from off-campus, you should park at <span><a href="https://www.google.com/maps/place/L-39/@37.4234363,-122.1709056,17z/data=!3m1!4b1!4m2!3m1!1s0x808fbad4658159a1:0x24ff3038f06f81fe" target="_blank">Tressider Visitor Parking</a></span> and then walk to Building 550. Parking is free, starting at 4PM.</p>
+  							<p>For more information, please visit <a href="http://dschool.stanford.edu/about/#getting-to-our-building" target="_blank" >http://dschool.stanford.edu/about/#getting-to-our-building</a></p>
+  						</div>
+  						<div class="col-md-5">
+  							<a href="http://maps.google.com/maps?saddr=Stanford,+California+(Tresidder+Union+Parking+Lot)&amp;daddr=Panama+St&amp;hl=en&amp;ll=37.424366,-122.169529&amp;spn=0.008001,0.015374&amp;sll=37.424475,-122.17039&amp;sspn=0.004,0.007687&amp;geocode=FdUHOwIdYtK3-CEtOFr4xFyIWg%3BFQUTOwIdkM63-A&amp;vpsrc=6&amp;t=v&amp;dirflg=w&amp;mra=dme&amp;mrsp=1&amp;sz=18&amp;z=17"><img src="http://cl.ly/2M152a0u1m341K1A3A3T/Screen%20shot%202011-11-21%20at%2012.54.57%20AM.png" alt="image" width="100%"></a>
+  						</div>
+  					</div>
+
+  					<hr class="featurette-divider">
+
+
+  					<!-- FOOTER -->
+  					<footer>
+  						<p class="pull-right"><a href="#">Back to top</a></p>
+  					</footer>
+
+  				</div>
+
+
+  			</div>
+
+  			<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+  			<!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="../js/bootstrap.min.js"></script>
+
+  <script>
+
+    $(document).ready(function(){
+
+    // $.getJSON('./judge/info.json', function(data){
+
+
+       var $data=[
+       {
+       	    "name":"Ann Grimes",
+       	    "photo":"./judge/ann_grimes.jpg",
+       	    "title":"Professor, Stanford Dept. of Communications",
+       },
+       {
+       	    "name":"Bill Verplank",
+       	    "photo":"./judge/bill_verplank.jpg",
+       	    "title":"Interaction Designer & Visiting Scholar, Stanford CCRMA",
+       },
+       {
+       	    "name":"Camille Utterback",
+       	    "photo":"./judge/camille_utterback.jpg",
+       	    "title":"Digital Artist / Asst. Professor, Stanford Art Practice Dept.",
+       },
+       {
+       	    "name":"Chris Messina",
+       	    "photo":"./judge/chris_messina.jpg",
+       	    "title":"Designer & Open Web Advocate",
+       },
+       {
+       	    "name":"Dan Russell",
+       	    "photo":"./judge/dan_russell.jpg",
+       	    "title":"Research Scientist, Google",
+       },
+       {
+       	    "name":"John Tang",
+       	    "photo":"./judge/john_tang.jpg",
+       	    "title":"Senior Researcher, Microsoft Research",
+       },
+       {
+       	    "name":"Marco Triverio",
+       	    "photo":"./judge/marco_triverio.jpg",
+       	    "title":"Interaction Designer, IDEO",
+       },
+       {
+       	    "name":"Scott Snibbe",
+       	    "photo":"./judge/scott_snibbe.jpg",
+       	    "title":"Media Artist, Snibbe Studios",
+       },
+       {
+       	    "name":"Sean White",
+       	    "photo":"./judge/sean_white.jpg",
+       	    "title":"Technologist in Residence, Greylock Partners",
+       },
+       {
+       	    "name":"Ted Selker",
+       	    "photo":"./judge/ted_selker.jpg",
+       	    "title":"Computer scientist, CMU Silicon Valley",
+       },
+       ];
+
+        for (var i=0;i<$data.length;++i){
+        	var $judge=$("<div>", {id: "judge"+i, class: "col-lg-3 judge"});
+        	var $photo=$("<img>",{class:"img-circle", alt:$data[i].name, src:$data[i].photo});
+        	$("#judgeWrapper").append($judge);
+        	$("#judge"+i).append($photo);
+        	$("#judge"+i).append("<h3>"+$data[i].name+"</h3><p>"+$data[i].title+"</p>");
+        }
+  
+    // });
+  });
+
+  </script>
+  
+  </body>
+</html>
