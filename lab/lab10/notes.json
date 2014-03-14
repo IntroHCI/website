@@ -34,8 +34,13 @@
   [],
   [],
   [],
-  [],
-  [],
+  [
+    {
+      "comment":"Flash successor",
+      "type":"video",
+      "src":"video/flashthing.mp4"
+    }
+  ],  
   [],
   [
     {
@@ -43,12 +48,6 @@
       "type":"video",
       "src":"video/shadow-warhol.mp4"
     },
-    {
-      "type":"links",
-      "list":["<a href='https://creativecommons.org/legalmusicforvideos' target=\"_blank\">Legal Music For Videos</a>"]
-    }
-  ],
-  [
     {
       "type":"links",
       "list":["<a href='https://creativecommons.org/legalmusicforvideos' target=\"_blank\">Legal Music For Videos</a>"]
